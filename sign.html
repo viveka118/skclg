@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Portal - All in One</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fa;
+      padding: 40px 20px;
+    }
+
+    .container, .dashboard {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2, h1 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .hidden { display: none; }
+
+    .link { text-align: center; margin-top: 15px; }
+
+    .link a { color: #0077b6; text-decoration: none; font-size: 14px; }
+
+    .dashboard {
+      max-width: 800px;
+      margin-top: 30px;
+    }
+
+    .features {
+      margin-top: 20px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      font-size: 16px;
+      margin: 10px 0;
+      background-color: #e7f3fa;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .features li:hover {
+      background-color: #d0ecff;
+    }
+
+    .features a {
+      text-decoration: none;
+      color: #0077b6;
+      display: block;
+      width: 100%;
+    }
+
+    .logout-btn {
+      background: red;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sign Up Form -->
+<div class="container" id="signupForm">
+  <h2>Sign Up</h2>
+  <input type="text" id="signupName" placeholder="Full Name" required>
+  <input type="email" id="signupEmail" placeholder="Email" required>
+  <input type="password" id="signupPassword" placeholder="Password" required>
+  <button onclick="signUp()">Create Account</button>
+  <div class="link">Already have an account? <a href="#" onclick="showLogin()">Login</a></div>
+</div>
+
+<!-- Login Form -->
+<div class="container hidden" id="loginForm">
+  <h2>Login</h2>
+  <input type="email" id="loginEmail" placeholder="Email" required>
+  <input type="password" id="loginPassword" placeholder="Password" required>
+  <button onclick="login()">Login</button>
+  <div class="link">
+    <a href="#" onclick="showForgot()">Forgot Password?</a><br><br>
+    New user? <a href="#" onclick="showSignup()">Create Account</a>
+  </div>
+</div>
+
+<!-- Forgot Password -->
+<div class="container hidden" id="forgotForm">
+  <h2>Forgot Password</h2>
+  <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+  <button onclick="recoverPassword()">Recover Password</button>
+  <div class="link"><a href="#" onclick="showLogin()">Back to Login</a></div>
+</div>
+
+<!-- Dashboard -->
+<div class="dashboard hidden" id="dashboard">
+  <h1>Welcome, <span id="username">Student</span> 👋</h1>
+  <p>Your personalized student dashboard is here:</p>
+  <ul class="features">
+    <li><a href="profile.html">📋 View & Edit Profile</a></li>
+    <li><a href="materials.html">📁 Download Study Materials</a></li>
+    <li><a href="test.html">📊 Class wise Test</a></li>
+    <li><a href="fee managment.html">📅 Fees Managment</a></li>
+    <li><a href="submit.html">📝 Submit Assignments</a></li>
+    <li><a href="announcement.html">📢 Latest Announcements</a></li>
+    <li><a href="school contact.html">📬 Contact Teachers/Support</a></li>
+    <li><a href="password.html">🔒 Change Password (Coming Soon)</a></li>
+  </ul>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<script>
+  // Initial Check
+  if (localStorage.getItem("userSignedUp")) {
+    showLogin();
+  } else {
+    showSignup();
+  }
+
+  function showSignup() {
+    hideAll();
+    document.getElementById("signupForm").classList.remove("hidden");
+  }
+
+  function showLogin() {
+    hideAll();
+    document.getElementById("loginForm").classList.remove("hidden");
+  }
+
+  function showForgot() {
+    hideAll();
+    document.getElementById("forgotForm").classList.remove("hidden");
+  }
+
+  function hideAll() {
+    document.getElementById("signupForm").classList.add("hidden");
+    document.getElementById("loginForm").classList.add("hidden");
+    document.getElementById("dashboard").classList.add("hidden");
+    document.getElementById("forgotForm").classList.add("hidden");
+  }
+
+  function signUp() {
+    const name = document.getElementById("signupName").value.trim();
+    const email = document.getElementById("signupEmail").value.trim();
+    const password = document.getElementById("signupPassword").value;
+
+    if (name && email && password) {
+      localStorage.setItem("username", name);
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userPassword", password);
+      localStorage.setItem("userSignedUp", true);
+      alert("Account created! Please login.");
+      showLogin();
+    } else {
+      alert("Please fill all fields.");
+    }
+  }
+
+  function login() {
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value;
+    const savedEmail = localStorage.getItem("userEmail");
+    const savedPassword = localStorage.getItem("userPassword");
+
+    if (email === savedEmail && password === savedPassword) {
+      hideAll();
+      document.getElementById("dashboard").classList.remove("hidden");
+      document.getElementById("username").textContent = localStorage.getItem("username");
+    } else {
+      alert("Invalid email or password.");
+    }
+  }
+
+  function recoverPassword() {
+    const email = document.getElementById("forgotEmail").value.trim();
+    const savedEmail = localStorage.getItem("userEmail");
+    const savedPassword = localStorage.getItem("userPassword");
+
+    if (email === savedEmail) {
+      alert("✅ Your password is: " + savedPassword);
+      showLogin();
+    } else {
+      alert("❌ Email not found.");
+    }
+  }
+
+  function logout() {
+    localStorage.removeItem("userSignedUp");
+    location.reload();
+  }
+</script>
+
+</body>
+</html>

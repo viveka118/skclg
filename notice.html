@@ -1,0 +1,360 @@
+<!-- Header Start -->
+<header>
+  <link rel="stylesheet" href="gallery.css">
+  <div class="container">
+    <div class="logo">
+     <img src="logo.jpg" alt="SK Inter College Logo">
+      <h1>SK Inter College</h1>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Notice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="my self.html">About Developer</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Header End -->
+ <script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notice | SK Inter College</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .notice-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 25px;
+    }
+
+    /* Latest Notices */
+    .notice-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px 0;
+    }
+
+    .notice-list li {
+      background: #f9f9f9;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-left: 5px solid #007BFF;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .notice-list .date {
+      font-weight: bold;
+      color: #007BFF;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* Scrolling Notices */
+    .scroll-notice {
+      height: 300px;
+      overflow-y: auto; /* Allow manual scroll */
+      background: #eaf4ff;
+      border-radius: 10px;
+      padding: 10px;
+      position: relative;
+    }
+
+    .scroll-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: scroll-down 20s linear infinite;
+    }
+
+    @keyframes scroll-down {
+      0% { transform: translateY(0%); }
+      100% { transform: translateY(-50%); }
+    }
+
+    .pause-scroll {
+      animation-play-state: paused !important;
+    }
+
+    .notice-card {
+      border-left: 5px solid #007BFF;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .notice-card h4 {
+      margin: 0;
+      color: #003366;
+    }
+
+    .notice-card p {
+      margin: 5px 0;
+      color: gray;
+    }
+
+    .notice-card a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .notice-card a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .notice-container {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice-container">
+    <h2>📌 Latest Notices</h2>
+    <ul class="notice-list">
+      <li>
+        <span class="date">5 April 2025</span>
+        <p>Admission for Class 11 Science & Commerce stream will begin from 1 June 2025.</p>
+      </li>
+      <li>
+        <span class="date">15 June 2025</span>
+        <p>Annual Result for Class 10 and 12 declared. Check the school notice board or website login.</p>
+      </li>
+      <li>
+        <span class="date">05 June 2025</span>
+        <p>Environment Day celebration will be held on 7 June. Students must wear green dress.</p>
+      </li>
+      <li>
+        <span class="date">01 July 2025</span>
+        <p>Summer vacation ends on 30 June. Regular classes will resume from 1 July.</p>
+      </li>
+    </ul>
+
+    <h2>📢 Scrolling Notices</h2>
+    <div class="scroll-notice" id="scrollNotice">
+      <div class="scroll-inner" id="scrollInner">
+        <div class="notice-card">
+          <h4>🔔 Admission Open for 2025</h4>
+          <p>Date: 21 June 2025</p>
+          <a href="admission notice.html">📄 Download Notice</a>
+        </div>
+        <div class="notice-card">
+          <h4>📅 Independence Day Holiday</h4>
+          <p>Date: 15 August 2025</p>
+          <a href="holiday.html">📄 View PDF</a>
+        </div>
+        <div class="notice-card">
+          <h4>📜 Exam Schedule Released</h4>
+          <p>Date: 5 July 2025</p>
+          <a href="time table.html">📄 Check Schedule</a>
+        </div>
+        <div class="notice-card">
+          <h4>📢 Result Declared Notice 2025</h4>
+          <p>Date: 1 September 2025</p>
+          <a href="result declared.html">📄 View Details</a>
+        </div>
+        <div class="notice-card">
+          <h4>🕒 Time Update</h4>
+          <p>Date: 1 September 2025</p>
+          <a href="time updata.html">📄 View Details</a>
+        </div>
+        <!-- Repeat for loop feel -->
+        <div class="notice-card">
+          <h4>🔔 Admission Open for 2025</h4>
+          <p>Date: 21 June 2025</p>
+          <a href="admission notice.html">📄 Download Notice</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const scrollInner = document.getElementById('scrollInner');
+    const scrollNotice = document.getElementById('scrollNotice');
+
+    scrollNotice.addEventListener('mouseenter', () => {
+      scrollInner.classList.add('pause-scroll');
+    });
+
+    scrollNotice.addEventListener('mouseleave', () => {
+      scrollInner.classList.remove('pause-scroll');
+    });
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    footer {
+      background: linear-gradient(to right, #002244, #005f73);
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, .footer-column a {
+      font-size: 15px;
+      color: #eee;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+      color: #FFD700;
+    }
+
+    .footer-social {
+      margin-top: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About School -->
+      <div class="footer-column">
+        <h3>SK Inter College</h3>
+        <p>Bari Bajhiya Kaundhiyara <br>Prayagraj Utter Pradesh 212306</p>
+        <p>Email: vivekanand00440@gmail.com>
+        <p>Phone:   91+ 8303606978</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.vivekanand_roy_184.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="admission.html">Admission</a><br>
+        <a href="#">Notice</a><br>
+        <a href="gallery.html">Gallery</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Important Info -->
+      <div class="footer-column">
+        <h3>Information</h3><br>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a><br>
+        <a href="#">FAQs</a><br>
+        <a href="portal.html">Student Portal</a><br>
+        <a href="sign.html">Student Sign up</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>

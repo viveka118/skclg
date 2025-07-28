@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Your Class - Online Test</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #ffffff;
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 25px;
+      padding: 10px;
+    }
+
+    .class-box {
+      background: linear-gradient(135deg, #00b894, #55efc4);
+      color: white;
+      text-decoration: none;
+      padding: 30px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .class-box:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #0984e3, #74b9ff);
+    }
+
+    @media (max-width: 600px) {
+      .class-box {
+        font-size: 18px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Your Class to Start the Test</h1>
+
+    <div class="grid">
+      <a href="class8.html" class="class-box">Class 8</a>
+      <a href="class9.html" class="class-box">Class 9</a>
+      <a href="class10.html" class="class-box">Class 10</a>
+      <a href="class11.html" class="class-box">Class 11</a>
+      <a href="class12.html" class="class-box">Class 12</a>
+    </div>
+  </div>
+
+</body>
+</html>

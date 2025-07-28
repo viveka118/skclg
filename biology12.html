@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 12 Biology Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8f5;
+      padding: 20px;
+    }
+    h1 {
+      color: #2e8b57;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 5px solid #2e8b57;
+      box-shadow: 2px 2px 5px #ccc;
+      font-size: 25px;
+    }
+    .options button {
+      display: block;
+      margin: 5px 0;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      background: #e7f5ea;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .correct {
+      background-color: #a0e7a0 !important;
+    }
+    .wrong {
+      background-color: #f8a5a5 !important;
+    }
+    ol li{
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Class 12 Biology Quiz (MCQ + Theory)</h1>
+
+  <!-- Optional Questions -->
+  <div class="question">
+    <p>1. डीएनए की दो श्रंखलाओं को कौनसे बंध जोड़ते हैं?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. पेप्टाइड बंध</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. हाइड्रोजन बंध</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. डाइसल्फाइड बंध</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. ग्लाइकोसाइड बंध</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. अनुवांशिक पदार्थ के रूप में कार्य करता है:</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. आरएनए</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. प्रोटीन</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. डीएनए</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. एंजाइम</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>3. आनुवंशिकता का जनक किसे कहा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. मेंडल</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. डार्विन</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. लैमार्क</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. हुक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>4. डीएनए की द्विकुंडली संरचना की खोज किसने की?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. मेंडल</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. वाटसन और क्रिक</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. डार्विन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. पाश्चर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. लाल वर्णांधता एक प्रकार का क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. जीवाणु रोग</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. विषाणु रोग</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. ऑटोइम्यून रोग</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. आनुवंशिक रोग</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. मानव में कुल कितने गुणसूत्र होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. 42</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. 44</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 46</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. 48</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. HIV वायरस किसे प्रभावित करता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. RBC</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. T-लिम्फोसाइट्स</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. प्लेटलेट्स</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. न्युट्रोफिल</button>
+  </div>
+</div>
+<div class="question">
+  <p>8. डीएनए की दो शृंखलाएँ एक-दूसरे के विरुद्ध किस रूप में होती हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. समरूप</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. पूरक</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. समान</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. विपरीत</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. ट्रांसक्रिप्शन की प्रक्रिया कहाँ होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. नाभिक में</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. साइटोप्लाज्म में</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. माइटोकॉन्ड्रिया में</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. लाइसोसोम में</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. ‘जीन’ का कार्य है –</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. ऊर्जा देना</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. कोशिका विभाजन</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. अपघटन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. लक्षण नियंत्रित करना</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>11. रक्त का pH मान सामान्यतः होता है –</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. 5.0</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 7.4</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. 9.1</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. 3.2</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. मानव शरीर में कितनी युग्मित पसलियाँ होती हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 12</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. 10</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. 14</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. 8</button>
+  </div>
+</div>
+<div class="question">
+  <p>13. हृदय का कौन सा भाग सबसे मोटा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. ऐट्रियम</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. वेंट्रिकल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. लेफ्ट वेंट्रिकल</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. राइट ऐट्रियम</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. ऑक्सीजन का परिवहन किसके द्वारा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. हीमोग्लोबिन</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. श्वेत रक्त कण</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. प्लेटलेट्स</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. प्लाज्मा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. गुर्दे की कार्यात्मक इकाई क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. नाभिक</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. मूत्राशय</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. यूरीटर</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. नेफ्रॉन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>16. मनुष्यों में रक्त शर्करा का नियंत्रण कौन करता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. एड्रिनलिन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. इंसुलिन</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. थाइरॉक्सिन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. ग्लूकागोन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. माइट्रोकॉन्ड्रिया को क्या कहा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. कोशिका का मस्तिष्क</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. जीन का वाहक</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. ऊर्जा का घर</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. पाचन केंद्र</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. रक्त का थक्का जमाने में कौन सहायक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. प्लेटलेट्स</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. RBC</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. WBC</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. प्लाज्मा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. DNA की खोज किसने की थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. चार्ल्स डार्विन</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. ग्रेगर मेंडल</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. एलेक जेफरीज</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. वॉटसन और क्रिक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. किसी जीव में गुणसूत्रों की संख्या दोगुनी होना क्या कहलाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. उत्परिवर्तन</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. विभाजन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. पॉलीप्लॉइडी</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. माइटोसिस</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>21. थायमीन किसका घटक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. DNA</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. RNA</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. ATP</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. ADP</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. पराश्रयी जनन का उदाहरण है:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. बीज अंकुरण</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. युफीलिया</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. परागण</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. अंकुरजनन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. ATP का पूरा नाम है:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. ऐडीनिन ट्राइफॉस्फेट</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. एड्रिनल ट्राइफॉस्फेट</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. एडेनोसिन ट्राइफॉस्फेट</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. अमीनो ट्राइफॉस्फेट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. पादपों में जल का परिवहन किसके द्वारा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. फलोएम</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. क्लोरोप्लास्ट</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. स्टोमेटा</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. ज़ाइलेम</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. कोशिका की खोज किसने की थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. ल्यूवेनहॉक</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. रॉबर्ट हुक</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. श्लाइडेन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. श्वान</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>26. जैविक विकास का सिद्धांत किसने दिया?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. लैमार्क</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. डार्विन</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. मेंडल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>27. वायरस किसका उदाहरण है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. अजीवित व जीवित के बीच की कड़ी</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. पूर्ण जीवित</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. प्रोटिस्ट</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. कवक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>28. जैव विविधता को सबसे अधिक खतरा किससे है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. उर्वरक</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. कीटनाशक</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. वनों की कटाई</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. मानवीय गतिविधियाँ</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>29. लिवर का मुख्य कार्य क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. ऑक्सीजन का आदान-प्रदान</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. पित्त रस का निर्माण</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. मूत्र निर्माण</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. पाचन एंजाइम बनाना</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>30. पादपों में प्रकाश संश्लेषण मुख्यतः किस अंग में होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. पत्तियों</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. जड़ों</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. तनों</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. बीज</button>
+  </div>
+</div>
+<div class="question">
+  <p>31. डार्विन का सिद्धांत किस पर आधारित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. उत्परिवर्तन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. प्राकृतिक वरण</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. कृत्रिम वरण</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. जैव विकास</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>32. डीएनए की दोहरी कुंडली की खोज किसने की?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. मेंडल</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. लैमार्क</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. वॉटसन और क्रिक</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. डार्विन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>33. वंशानुक्रम का नियम किसने प्रतिपादित किया?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. ग्रेगर मेंडल</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. हर्शे और चेइस</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. वॉटसन और क्रिक</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. डार्विन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>34. एड्स रोग किस वायरस के कारण होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. TMV</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. इन्फ्लुएंजा</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. कोरोनावायरस</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. HIV</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. रक्त में हीमोग्लोबिन का कार्य क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. ग्लूकोज का परिवहन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ऑक्सीजन का परिवहन</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. यूरिया का उत्सर्जन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. प्रोटीन का निर्माण</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>36. पौधों में जल का परिवहन किस ऊतक द्वारा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. जाइलम</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. फ्लोएम</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. पेरिब्लेम</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. कोलेन्काइमा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. मनुष्य में कुल कितने गुणसूत्र होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. 42</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. 40</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. 50</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 46</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. किस हार्मोन को ‘तनाव हार्मोन’ कहा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. थायरॉक्सिन</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. एस्ट्रोजन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. एड्रिनालिन</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. इंसुलिन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. जीवों में सबसे अधिक पाया जाने वाला तत्व कौन-सा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. नाइट्रोजन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ऑक्सीजन</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. फास्फोरस</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. लोहा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. प्रोटीन की इकाई क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. अमीनो अम्ल</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. ग्लूकोज</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. वसा</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. ATP</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>41. आनुवंशिक पदार्थ किसमें पाया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. माइटोकॉन्ड्रिया</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. राइबोसोम</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. डीएनए</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. लाइसोसोम</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>42. पौधों की वृद्धि मापी जाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. पत्ती की संख्या से</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. कोशिका की संख्या से</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. वजन से</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. लंबाई से</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>43. मनुष्य के शरीर में सबसे बड़ी ग्रंथि कौन-सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. यकृत</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. अग्न्याशय</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. थायरॉयड</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. अधिवृक्क</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>44. पाचन की प्रक्रिया मुख्यतः कहाँ होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. अमाशय</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. छोटी आंत</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. बड़ी आंत</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. ग्रासनली</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>45. मनुष्य की त्वचा में रंग किसके कारण होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. केराटिन</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. कोलेजन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. मेलानिन</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. एक्टिन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>46. टीबी रोग का कारक क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. माइकोबैक्टेरियम ट्यूबरक्युलोसिस</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. एचआईवी</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. प्लाज्मोडियम</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. सालमोनेला</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>47. हृदय की धड़कन को नियंत्रित करने वाला भाग है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. AV node</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. Bundle of His</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. Vagus nerve</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. SA node</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>48. कौन सा जीव द्विलिंगी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. मच्छर</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. मेंढ़क</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. केंचुआ</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. शेर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>49. मानव में निषेचन कहाँ होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. गर्भाशय</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. फैलोपियन नलिका</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. योनि</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. अंडाशय</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>50. DNA प्रतिकृति किस प्रक्रिया से होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. अर्ध-संरक्षण</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. पूर्ण संरक्षण</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. व्युत्क्रमण</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. अनुवर्तन</button>
+  </div>
+</div>
+  <script>
+    function checkAnswer(button, selected, correct) {
+      const buttons = button.parentElement.querySelectorAll("button");
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        const choice = btn.textContent.trim().charAt(0);
+        if (choice === correct) {
+          btn.classList.add("correct");
+        }
+        if (choice === selected && selected !== correct) {
+          btn.classList.add("wrong");
+        }
+      });
+    }
+  </script>
+
+  <!-- Theory Questions -->
+  <h2>Theory Questions (21-50)</h2>
+  <ol>
+    <li>डीएनए की संरचना और कार्यों का वर्णन कीजिए।</li>
+    <li>अनुवांशिकता और जैव विविधता में अंतर बताइए।</li>
+    <li>लैमरक और डार्विन के सिद्धांतों की तुलना कीजिए।</li>
+    <li>एंजाइम क्या हैं? इनके कार्य एवं गुण लिखिए।</li>
+    <li>मानव रक्त परिसंचरण तंत्र का वर्णन कीजिए।</li>
+    <li>पारिस्थितिकी तंत्र के घटकों को समझाइए।</li>
+    <li>माइटोकॉन्ड्रिया को ऊर्जा का घर क्यों कहते हैं?</li>
+    <li>मानव मस्तिष्क की संरचना समझाइए।</li>
+    <li>फोटोसिंथेसिस की प्रक्रिया चरणबद्ध रूप से समझाइए।</li>
+    <li>जीन और गुणसूत्रों के बीच संबंध स्पष्ट कीजिए।</li>
+    <li>मानव प्रजनन तंत्र का चित्र सहित वर्णन कीजिए।</li>
+    <li>प्रतिरक्षा तंत्र के प्रकारों का वर्णन करें।</li>
+    <li>होर्मोन क्या होते हैं? मुख्य होर्मोनों के नाम एवं कार्य लिखिए।</li>
+    <li>डीएनए प्रतिकृति की प्रक्रिया को समझाइए।</li>
+    <li>जैव प्रौद्योगिकी में क्लोनिंग क्या है?</li>
+    <li>किसी एक आनुवंशिक विकार का वर्णन करें।</li>
+    <li>पर्यावरणीय प्रदूषण के प्रकार व उपाय समझाइए।</li>
+    <li>एंटीबायोटिक्स क्या हैं? इनका प्रयोग व हानियाँ।</li>
+    <li>वातावरण में कार्बन चक्र को समझाइए।</li>
+    <li>कैंसर क्या है? इसके प्रकार एवं रोकथाम के उपाय बताइए।</li>
+    <li>टीके (Vaccines) क्या हैं और ये कैसे कार्य करते हैं?</li>
+    <li>मानव यकृत (liver) की संरचना और कार्य समझाइए।</li>
+    <li>RNA के प्रकारों को समझाइए।</li>
+    <li>एंटीबॉडी क्या होती है? इसका कार्य बताइए।</li>
+    <li>मानव जनन कोशिकाओं के निर्माण की प्रक्रिया बताइए।</li>
+    <li>DNA फिंगरप्रिंटिंग क्या है और इसका उपयोग बताइए।</li>
+    <li>प्राकृतिक चयन क्या है? उदाहरण सहित समझाइए।</li>
+    <li>एन्जाइमों के कारकों और कार्यशीलता पर प्रभाव बताइए।</li>
+    <li>ऑक्सीज़न चक्र क्या है? समझाइए।</li>
+    <li>मानव हार्मोनल विकारों के दो उदाहरण दें।</li>
+    <li>डीएनए प्रतिकृति की प्रक्रिया को समझाइए।</li>
+  <li>लैक्टिक अम्ल किण्वन क्या होता है?</li>
+  <li>जीवों में माइटोसिस और मियोसिस विभाजन में क्या अंतर होता है?</li>
+  <li>प्रजनन के प्रकार क्या होते हैं?</li>
+  <li>जननांग और जनन कोशिकाओं में क्या भिन्नता होती है?</li>
+  <li>जैव प्रौद्योगिकी क्या है? इसके अनुप्रयोग बताइए।</li>
+  <li>जीएम फसलें क्या होती हैं?</li>
+  <li>टीकाकरण क्या होता है? इसका महत्व बताइए।</li>
+  <li>मानव आनुवंशिकी में वंशवृक्ष विश्लेषण का क्या महत्व है?</li>
+  <li>एक्स-लिंक्ड वंशानुक्रम समझाइए।</li>
+  <li>प्लाज्मिड क्या होता है? इसका जैव प्रौद्योगिकी में प्रयोग बताइए।</li>
+  <li>एंटीबायोटिक प्रतिरोध क्या होता है?</li>
+  <li>डीएनए फिंगरप्रिंटिंग क्या है? इसका उपयोग कहाँ होता है?</li>
+  <li>RNA और DNA में अंतर लिखिए।</li>
+  <li>जैव विकास का साक्ष्य क्या है?</li>
+  <li>नेचुरल सेलेक्शन सिद्धांत किसने दिया था? उसका वर्णन कीजिए।</li>
+  <li>जैव विविधता संरक्षण के उपाय बताइए।</li>
+  <li>रेड डाटा बुक क्या होती है?</li>
+  <li>मानव स्वास्थ्य पर प्रदूषण का क्या प्रभाव पड़ता है?</li>
+  <li>जलवायु परिवर्तन के कारणों का वर्णन कीजिए।</li>
+  <li>ओजोन परत क्षरण क्या है?</li>
+  <li>पर्यावरणीय संकट के समाधान हेतु कोई दो उपाय लिखिए।</li>
+  <li>अपशिष्ट प्रबंधन क्या होता है?</li>
+  <li>वनस्पति क्लोनिंग क्या है?</li>
+  <li>टिशू कल्चर तकनीक क्या होती है?</li>
+  <li>अनुवांशिक विकार क्या होते हैं? उदाहरण दीजिए।</li>
+  <li>मानव प्रजनन तंत्र का वर्णन कीजिए।</li>
+  <li>एण्डोक्राइन ग्रंथि और उसका कार्य समझाइए।</li>
+  <li>रक्त समूह क्या होता है? ABO प्रणाली समझाइए।</li>
+  <li>प्रतिरक्षा तंत्र क्या है? प्रकार लिखिए।</li>
+  <li>HIV संक्रमण कैसे फैलता है?</li>
+  <li>टेस्ट ट्यूब बेबी तकनीक क्या है?</li>
+  <li>एथिलीन का पौधों में क्या कार्य होता है?</li>
+  <li>वृक्क (Kidney) का कार्य क्या है?</li>
+  <li>हार्मोन और एंजाइम में क्या अंतर है?</li>
+  <li>ट्रांसजेनिक जीव क्या होते हैं?</li>
+  <li>DNA प्रोफाइलिंग में प्रयुक्त तकनीकें क्या हैं?</li>
+  <li>पारिस्थितिकी तंत्र क्या होता है?</li>
+  <li>पिरामिड ऑफ बायोमास समझाइए।</li>
+  <li>जनसंख्या वृद्धि और उसके प्रभाव क्या हैं?</li>
+  <li>प्लाज्मा झिल्ली की संरचना और कार्य लिखिए।</li>
+  <li>श्वसन क्रिया में ATP की भूमिका क्या है?</li>
+  <li>मानव तंत्रिका तंत्र का सामान्य परिचय दीजिए।</li>
+  <li>नेफ्रॉन की संरचना और कार्य बताइए।</li>
+  <li>प्रतिरक्षात्मक टीका क्या होता है? उदाहरण सहित समझाइए।</li>
+  <li>एक कोशीय जीव और बहुकोशीय जीव में अंतर बताइए।</li>
+  <li>DNA अनुक्रमण क्या होता है?</li>
+  <li>पादप हार्मोन के प्रकार एवं कार्य लिखिए।</li>
+  <li>एन्जाइम क्रिया के सिद्धांत को समझाइए।</li>
+  <li>गोल्गी निकाय का कार्य क्या होता है?</li>
+  <li>माइटोकॉन्ड्रिया को "शक्ति घर" क्यों कहते हैं?</li>
+  <li>जीवों की वर्गीकरण प्रणाली क्या है?</li>
+  <li>इन्फेक्शन और एलर्जी में क्या अंतर होता है?</li>
+  <li>मानव हार्मोनल नियंत्रण प्रणाली कैसे कार्य करती है?</li>
+  <li>कोशिका चक्र और उसके चरण लिखिए।</li>
+  <li>क्लोनिंग क्या है? इसके लाभ और हानि लिखिए।</li>
+  <li>भ्रूण विज्ञान में प्रयुक्त आधुनिक तकनीकें क्या हैं?</li>
+  <li>DNA और RNA के प्रकारों को समझाइए।</li>
+  <li>जीवों में विविधता क्यों आवश्यक है?</li>
+  <li>एपोप्टोसिस (Apoptosis) क्या है?</li>
+  <li>बायोसेंसर क्या होता है?</li>
+  <li>पारिस्थितिकी तंत्र के घटकों का वर्णन कीजिए।</li>
+  <li>वातावरणीय प्रदूषकों को नियंत्रित करने के उपाय बताइए।</li>
+  <li>वन्य जीव संरक्षण की विधियाँ बताइए।</li>
+  <li>जैविक खेती क्या होती है? लाभ लिखिए।</li>
+  <li>प्लास्टिड्स क्या होते हैं? प्रकार सहित लिखिए।</li>
+  <li>सजीवों में अनुवांशिकता कैसे कार्य करती है?</li>
+  <li>कोशिका विभाजन में सेंट्रोमियर की क्या भूमिका होती है?</li>
+  <li>RNA इंटरफेरेंस क्या होता है?</li>
+  <li>संज्ञापक तंत्र क्या है? उसका कार्य बताइए।</li>
+  <li>प्रकाश संश्लेषण की प्रक्रिया समझाइए।</li>
+  <li>फोटोफास्फोरिलेशन क्या होता है?</li>
+  <li>अवायवीय श्वसन क्या होता है?</li>
+  <li>होमियोटिक जीन क्या होते हैं?</li>
+  <li>एंटीबॉडीज क्या होते हैं? कैसे बनते हैं?</li>
+  <li>मानव शरीर में लिवर का कार्य बताइए।</li>
+  <li>DNA माइक्रोअर्रे तकनीक क्या है?</li>
+  <li>एपिजेनेटिक्स क्या होता है?</li>
+  <li>जैविक नियंत्रण क्या होता है? उदाहरण दीजिए।</li>
+  <li>ट्रांसक्रिप्शन और ट्रांसलेशन प्रक्रिया क्या होती है?</li>
+  <li>एक्स-क्रोमोसोम निष्क्रियता क्या होती है?</li>
+  <li>लिगेस एंजाइम का कार्य क्या है?</li>
+  <li>एल्युमिनीशन ऑफ वेस्ट तकनीक क्या है?</li>
+  <li>बायोरिएक्टर क्या होता है?</li>
+  <li>अनुवांशिक परामर्श का महत्व क्या है?</li>
+  <li>आनुवंशिक इंजीनियरिंग में प्रयुक्त तकनीकें बताइए।</li>
+  <li>ट्रांसजेनिक पशु क्या होते हैं?</li>
+  <li>जैव संवर्धन क्या है?</li>
+  <li>एग्रोबैक्टीरियम क्या होता है?</li>
+  <li>मानव पाचन तंत्र का सामान्य परिचय दीजिए।</li>
+  <li>हार्मोन का स्त्रवण कैसे नियंत्रित होता है?</li>
+  <li>टीको का निर्माण कैसे होता है?</li>
+  <li>बीमारी प्रतिरोधक शरीर क्रियाएं कौन-कौन सी हैं?</li>
+  <li>मानव उत्सर्जन तंत्र को समझाइए।</li>
+  <li>कोशिका सिद्धांत किसने दिया? उसका विवरण दीजिए।</li>
+  <li>प्रोटीन संश्लेषण की प्रक्रिया को समझाइए।</li>
+  <li>जैविक उत्तरजीविता में म्युटेशन की भूमिका क्या है?</li>
+
+  </ol>
+
+</body>
+</html>

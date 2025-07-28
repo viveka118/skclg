@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class 11 English Grammar Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      background: #fff;
+      font-size: 25px;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #f9f9f9;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 20px;
+    }
+    .options button:hover {
+      background: #e2f0ff;
+    }
+    .correct {
+      background-color: #d4edda !important;
+      border-color: #28a745 !important;
+      color: #155724;
+    }
+    .incorrect {
+      background-color: #f8d7da !important;
+      border-color: #dc3545 !important;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Class 11 English Grammar Quiz</h1>
+
+  <div id="quiz-container"></div>
+
+  <script>
+    const questions = [
+      {
+        q: "1. Choose the correctly punctuated sentence:",
+        options: ["He said, 'I am coming'", "He said 'I am coming.'", "He said 'I am coming'", "He said: I am coming"],
+        answer: 0
+      },
+      {
+        q: "2. Identify the part of speech of the underlined word: 'He ran quickly to the station.'",
+        options: ["Adjective", "Adverb", "Noun", "Verb"],
+        answer: 1
+      },
+      {
+        q: "3. Select the correct form of the verb: She _____ her homework before dinner.",
+        options: ["has finished", "have finished", "finishing", "finisheds"],
+        answer: 0
+      },
+      {
+        q: "4. Which sentence is in passive voice?",
+        options: ["She will write a letter.", "A letter will be written by her.", "She writes a letter.", "She wrote a letter."],
+        answer: 1
+      },
+      {
+        q: "5. Choose the correct indirect speech: He said, 'I will go there.'",
+        options: ["He said that he will go there.", "He said that he would go there.", "He said that I would go there.", "He said he go there."],
+        answer: 1
+      },
+      {
+        q: "6. Choose the correct article: I saw _____ eagle in the sky.",
+        options: ["an", "a", "the", "no article"],
+        answer: 0
+      },
+      {
+        q: "7. Fill in the blank with correct tense: By next year, I _____ my course.",
+        options: ["complete", "will completed", "will have completed", "have completed"],
+        answer: 2
+      },
+      {
+        q: "8. Identify the type of sentence: 'Please help me with this work.'",
+        options: ["Declarative", "Interrogative", "Imperative", "Exclamatory"],
+        answer: 2
+      },
+      {
+        q: "9. Choose the correct synonym of 'benevolent':",
+        options: ["Cruel", "Kind", "Greedy", "Strict"],
+        answer: 1
+      },
+      {
+        q: "10. Which sentence uses correct subject-verb agreement?",
+        options: ["The list of items are on the desk.", "The list of items is on the desk.", "The lists of item is on the desk.", "The list of item are on desk."],
+        answer: 1
+      },
+      {
+        q: "11. Which sentence is grammatically correct?",
+        options: ["He don't like coffee.", "She doesn't likes tea.", "They doesn't play cricket.", "She doesn't like tea."],
+        answer: 3
+      },
+      {
+        q: "12. Identify the modal verb: 'You must finish your work.'",
+        options: ["finish", "must", "your", "work"],
+        answer: 1
+      },
+      {
+        q: "13. Choose the correct comparative form: 'This road is _____ than the old one.'",
+        options: ["more narrow", "narrower", "narrow", "narrowest"],
+        answer: 1
+      },
+      {
+        q: "14. Select the sentence with the correct preposition:",
+        options: ["He is good in math.", "He is good at math.", "He is good on math.", "He is good by math."],
+        answer: 1
+      },
+      {
+        q: "15. Identify the correct synonym of 'obstacle':",
+        options: ["help", "barrier", "support", "aid"],
+        answer: 1
+      },
+      {
+        q: "16. What is the antonym of 'optimistic'?",
+        options: ["Hopeful", "Joyful", "Pessimistic", "Lively"],
+        answer: 2
+      },
+      
+      {
+        q: "17. Choose the correctly spelled word:",
+        options: ["Comittee", "Committee", "Comitee", "Commetee"],
+        answer: 1
+      },
+      {
+        q: "18. Select the correct option: Neither of the boys _____ going.",
+        options: ["are", "were", "is", "have"],
+        answer: 2
+      },
+      {
+        q: "19. Which is a complex sentence?",
+        options: ["He came and he went.", "He came after the bell rang.", "He came.", "Come here!"],
+        answer: 1
+      },
+      {
+        q: "20. Choose the correct conjunction: He is poor _____ he is honest.",
+        options: ["but", "and", "or", "because"],
+        answer: 0
+      },
+      {
+  q: "21. Choose the correct passive voice: 'They will complete the project by tomorrow.'",
+  options: ["The project will completed by them by tomorrow.", "The project will be completed by them by tomorrow.", "They will be completed the project by tomorrow.", "The project will be complete by them tomorrow."],
+  answer: 1
+},
+{
+  q: "22. Identify the adjective in the sentence: 'She wore a beautiful dress.'",
+  options: ["She", "wore", "beautiful", "dress"],
+  answer: 2
+},
+{
+  q: "23. Choose the correct indirect speech: He said, 'I am working on the assignment.'",
+  options: ["He said that he is working on the assignment.", "He said that he was working on the assignment.", "He said he working on the assignment.", "He told that he was working."],
+  answer: 1
+},
+{
+  q: "24. Fill in the blank with correct tense: She _____ here since morning.",
+  options: ["has been sitting", "was sitting", "is sitting", "sat"],
+  answer: 0
+},
+{
+  q: "25. What is the synonym of 'benevolent'?",
+  options: ["Cruel", "Kind", "Rude", "Angry"],
+  answer: 1
+},
+{
+  q: "26. Identify the type of sentence: 'What a beautiful painting!'",
+  options: ["Declarative", "Interrogative", "Imperative", "Exclamatory"],
+  answer: 3
+},
+{
+  q: "27. Choose the correct article: She is _____ honest woman.",
+  options: ["a", "an", "the", "no article"],
+  answer: 1
+},
+{
+  q: "28. Find the error: 'Each of the boys have submitted the homework.'",
+  options: ["Each", "of the boys", "have", "submitted the homework"],
+  answer: 2
+},
+{
+  q: "29. Choose the correct conjunction: He is poor _____ he is honest.",
+  options: ["and", "but", "or", "so"],
+  answer: 1
+},
+{
+  q: "30. What is the antonym of 'generous'?",
+  options: ["Stingy", "Brave", "Loyal", "Clever"],
+  answer: 0
+},
+{
+  q: "31. Change into comparative degree: 'She is the most intelligent girl in the class.'",
+  options: ["She is more intelligent than any girl in the class.", "She is more intelligent than any other girl in the class.", "She is very intelligent girl in the class.", "She is intelligent in the class."],
+  answer: 1
+},
+{
+  q: "32. Identify the adverb in the sentence: 'He runs very fast.'",
+  options: ["He", "runs", "very", "fast"],
+  answer: 3
+},
+{
+  q: "33. Choose the correct preposition: He is good _____ English.",
+  options: ["in", "at", "on", "with"],
+  answer: 1
+},
+{
+  q: "34. Fill in the blank: I prefer tea _____ coffee.",
+  options: ["to", "than", "from", "over"],
+  answer: 0
+},
+{
+  q: "35. What is the plural of 'child'?",
+  options: ["Childs", "Childes", "Children", "Childrens"],
+  answer: 2
+},
+{
+  q: "36. Choose the correct form of verb: Neither of the boys _____ present.",
+  options: ["were", "was", "are", "be"],
+  answer: 1
+},
+{
+  q: "37. What kind of noun is 'team'?",
+  options: ["Proper", "Collective", "Abstract", "Material"],
+  answer: 1
+},
+{
+  q: "38. Choose the correct modal: You _____ speak politely.",
+  options: ["could", "might", "should", "would"],
+  answer: 2
+},
+{
+  q: "39. Identify the voice: 'The window was broken by the boy.'",
+  options: ["Active voice", "Passive voice", "Narrative voice", "Direct voice"],
+  answer: 1
+},
+{
+  q: "40. Find the correct spelling:",
+  options: ["Accomodation", "Acommodation", "Accommodation", "Accommadation"],
+  answer: 2
+},
+{
+  q: "41. Choose the correct reported speech: He said, 'I will go to Delhi.'",
+  options: ["He said that I will go to Delhi.", "He said that he would go to Delhi.", "He told that he will go to Delhi.", "He said he would going to Delhi."],
+  answer: 1
+},
+{
+  q: "42. Choose the correct synonym for 'obstacle':",
+  options: ["Support", "Hurdle", "Help", "Comfort"],
+  answer: 1
+},
+{
+  q: "43. Fill in the blank: He is capable _____ doing it.",
+  options: ["to", "for", "of", "with"],
+  answer: 2
+},
+{
+  q: "44. Choose the correct question tag: She is coming, _____?",
+  options: ["isn't she", "does she", "won't she", "did she"],
+  answer: 0
+},
+{
+  q: "45. What is the meaning of idiom 'a piece of cake'?",
+  options: ["A bakery item", "Very easy task", "A difficult task", "A slice of cake"],
+  answer: 1
+},
+{
+  q: "46. Identify the pronoun: 'He gave me a pen.'",
+  options: ["He", "gave", "me", "pen"],
+  answer: 0
+},
+{
+  q: "47. Which is an example of a helping verb?",
+  options: ["Run", "Eat", "Is", "Jump"],
+  answer: 2
+},
+{
+  q: "48. Fill in the blank: She is married _____ a doctor.",
+  options: ["with", "to", "for", "at"],
+  answer: 1
+},
+{
+  q: "49. Which is a countable noun?",
+  options: ["Milk", "Water", "Chair", "Sugar"],
+  answer: 2
+},
+{
+  q: "50. What is the correct indirect speech: He said, 'Honesty is the best policy.'",
+  options: ["He said honesty was the best policy.", "He said that honesty is the best policy.", "He told honesty is the best policy.", "He said that honesty be the best policy."],
+  answer: 1
+},
+{
+  q: "51. Which sentence is in passive voice?",
+  options: ["She sings a song.", "He is writing a letter.", "A letter was written by him.", "They play cricket."],
+  answer: 2
+},
+{
+  q: "52. Which of the following is an abstract noun?",
+  options: ["Book", "Table", "Honesty", "Pen"],
+  answer: 2
+},
+{
+  q: "53. Identify the correct indirect speech: He said, \"I am reading a book.\"",
+  options: ["He said that he was reading a book.", "He said that I was reading a book.", "He said he is reading a book.", "He said that he reads a book."],
+  answer: 0
+},
+{
+  q: "54. Choose the correct form of verb: Neither the boys nor their coach ___ present.",
+  options: ["are", "is", "have", "were"],
+  answer: 1
+},
+{
+  q: "55. Which one is a finite verb in this sentence: 'She likes to dance in the evening.'?",
+  options: ["likes", "to dance", "evening", "in"],
+  answer: 0
+},
+{
+  q: "56. Pick the correct spelling.",
+  options: ["Recieve", "Receive", "Receeve", "Receve"],
+  answer: 1
+},
+{
+  q: "57. Which word is an example of a conjunction?",
+  options: ["Quickly", "Although", "Bright", "Jump"],
+  answer: 1
+},
+{
+  q: "58. What type of sentence is this: 'What a beautiful painting!'?",
+  options: ["Assertive", "Interrogative", "Exclamatory", "Imperative"],
+  answer: 2
+},
+{
+  q: "59. Which article is suitable before 'university'?",
+  options: ["An", "A", "The", "No article"],
+  answer: 1
+},
+{
+  q: "60. Choose the correct synonym for 'Brave'.",
+  options: ["Coward", "Timid", "Courageous", "Fearful"],
+  answer: 2
+},
+{
+  q: "61. Which sentence is in the present perfect tense?",
+  options: ["She was cooking.", "She has cooked dinner.", "She cooks daily.", "She is cooking."],
+  answer: 1
+},
+{
+  q: "62. Identify the correct passive form: 'They will complete the work.'",
+  options: ["The work will be completed by them.", "The work is completed.", "They will be completed the work.", "The work will complete by them."],
+  answer: 0
+},
+{
+  q: "63. Which is an example of a demonstrative pronoun?",
+  options: ["He", "This", "My", "Some"],
+  answer: 1
+},
+{
+  q: "64. Find the antonym of the word 'Generous'.",
+  options: ["Kind", "Selfish", "Helpful", "Polite"],
+  answer: 1
+},
+{
+  q: "65. Which sentence shows future perfect tense?",
+  options: ["He will write a letter.", "He has written a letter.", "He will have written a letter.", "He writes a letter."],
+  answer: 2
+},
+{
+  q: "66. Choose the correct preposition: 'She is good ___ mathematics.'",
+  options: ["at", "on", "in", "with"],
+  answer: 0
+},
+{
+  q: "67. Identify the correct indirect speech: He said, \"I will go to the market.\"",
+  options: ["He said that he will go to the market.", "He said that he would go to the market.", "He said he goes to the market.", "He said he is going to the market."],
+  answer: 1
+},
+{
+  q: "68. What is the function of an adjective?",
+  options: ["Describes a noun", "Replaces a noun", "Shows action", "Connects words"],
+  answer: 0
+},
+{
+  q: "69. Which word is a proper noun?",
+  options: ["Book", "City", "Delhi", "Girl"],
+  answer: 2
+},
+{
+  q: "70. Identify the correct spelling:",
+  options: ["Acomodation", "Accomodation", "Accommodation", "Acommadation"],
+  answer: 2
+},
+{
+  q: "71. Which of the following is a reflexive pronoun?",
+  options: ["Himself", "His", "He", "Him"],
+  answer: 0
+},
+{
+  q: "72. Choose the correct form: He has been working here ___ 2010.",
+  options: ["since", "for", "from", "by"],
+  answer: 0
+},
+{
+  q: "73. Identify the type of sentence: 'Please close the door.'",
+  options: ["Declarative", "Exclamatory", "Imperative", "Interrogative"],
+  answer: 2
+},
+{
+  q: "74. Choose the correct reported speech: She said, \"I can swim.\"",
+  options: ["She said she can swim.", "She said she could swim.", "She said I can swim.", "She said she will swim."],
+  answer: 1
+},
+{
+  q: "75. Which part of speech is the word 'quickly'?",
+  options: ["Adjective", "Adverb", "Noun", "Verb"],
+  answer: 1
+},
+{
+  q: "76. Fill in the blank: 'The news ___ very shocking.'",
+  options: ["are", "were", "is", "be"],
+  answer: 2
+},
+{
+  q: "77. What is the noun form of 'advise'?",
+  options: ["Adviser", "Advice", "Advisory", "Advised"],
+  answer: 1
+},
+{
+  q: "78. Choose the correct form: 'She said that she ___ tired.'",
+  options: ["is", "was", "has", "will"],
+  answer: 1
+},
+{
+  q: "79. Identify the part of speech of the word 'beautiful'.",
+  options: ["Verb", "Adverb", "Noun", "Adjective"],
+  answer: 3
+},
+{
+  q: "80. Which sentence is grammatically correct?",
+  options: ["She do not like apples.", "She does not likes apples.", "She does not like apples.", "She do not likes apples."],
+  answer: 2
+},
+{
+  q: "81. Which is an example of a collective noun?",
+  options: ["Chair", "Family", "Boy", "Woman"],
+  answer: 1
+},
+{
+  q: "82. Fill in the blank: He prefers tea ___ coffee.",
+  options: ["to", "than", "over", "on"],
+  answer: 0
+},
+{
+  q: "83. Identify the correct sentence in active voice.",
+  options: ["The door was opened by her.", "She opened the door.", "The door had been opened.", "The door was being opened."],
+  answer: 1
+},
+{
+  q: "84. Which is a correct use of article?",
+  options: ["He is an honest man.", "He is a honest man.", "He is the honest man.", "He is honest man."],
+  answer: 0
+},
+{
+  q: "85. Which of these is a transitive verb?",
+  options: ["Sleep", "Go", "Bring", "Arrive"],
+  answer: 2
+},
+{
+  q: "86. Choose the correct tense: 'By next month, I ___ my exams.'",
+  options: ["finished", "will finish", "will have finished", "have finished"],
+  answer: 2
+},
+{
+  q: "87. Select the correctly punctuated sentence.",
+  options: ["She said, I am coming.", "She said 'I am coming'.", "She said, 'I am coming.'", "She said I am coming"],
+  answer: 2
+},
+{
+  q: "88. Identify the error: 'He did not knew the answer.'",
+  options: ["He", "did", "not", "knew"],
+  answer: 3
+},
+{
+  q: "89. Choose the synonym of 'Abandon'.",
+  options: ["Leave", "Hate", "Love", "Protect"],
+  answer: 0
+},
+{
+  q: "90. Which sentence is in the past continuous tense?",
+  options: ["He was playing football.", "He plays football.", "He has played football.", "He had played football."],
+  answer: 0
+},
+{
+  q: "91. Identify the part of speech of 'honestly' in: 'He spoke honestly.'",
+  options: ["Verb", "Adverb", "Adjective", "Noun"],
+  answer: 1
+},
+{
+  q: "92. What is the superlative form of 'good'?",
+  options: ["Gooder", "Better", "Best", "More good"],
+  answer: 2
+},
+{
+  q: "93. Select the correct preposition: 'He is afraid ___ the dark.'",
+  options: ["from", "of", "with", "at"],
+  answer: 1
+},
+{
+  q: "94. Choose the correct modal verb: 'You ___ leave now.'",
+  options: ["should", "can to", "might to", "musted"],
+  answer: 0
+},
+{
+  q: "95. Which word is a countable noun?",
+  options: ["Information", "Advice", "Pen", "Music"],
+  answer: 2
+},
+{
+  q: "96. Identify the sentence with the correct verb agreement.",
+  options: ["The list of items are on the table.", "The list of items is on the table.", "The lists of item is on the table.", "The list of item are on the table."],
+  answer: 1
+},
+{
+  q: "97. What is the comparative form of 'beautiful'?",
+  options: ["More beautiful", "Beautifuller", "Beautifulest", "Most beautiful"],
+  answer: 0
+},
+{
+  q: "98. Which sentence is in interrogative form?",
+  options: ["He goes to school.", "Did he go to school?", "He went to school.", "He will go to school."],
+  answer: 1
+},
+{
+  q: "99. Choose the correct passive voice: 'She helps the poor.'",
+  options: ["The poor is helped by her.", "The poor are helped by her.", "The poor was helped by her.", "The poor were helped by her."],
+  answer: 1
+},
+{
+  q: "100. What is the past tense of 'teach'?",
+  options: ["Teached", "Taught", "Teach", "Teaching"],
+  answer: 1
+}
+    ];
+
+    const container = document.getElementById('quiz-container');
+
+    questions.forEach((item, index) => {
+      const qDiv = document.createElement("div");
+      qDiv.className = "question";
+
+      const qText = document.createElement("p");
+      qText.innerText = item.q;
+      qDiv.appendChild(qText);
+
+      const optionsDiv = document.createElement("div");
+      optionsDiv.className = "options";
+
+      item.options.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.innerText = opt;
+        btn.onclick = () => {
+          if (i === item.answer) {
+            btn.classList.add("correct");
+          } else {
+            btn.classList.add("incorrect");
+          }
+          Array.from(btn.parentNode.children).forEach(b => b.disabled = true);
+        };
+        optionsDiv.appendChild(btn);
+      });
+
+      qDiv.appendChild(optionsDiv);
+      container.appendChild(qDiv);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📁 Download Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #f0f8ff, #ffffff);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #023e8a;
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+    }
+
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .file-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .file-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .file-icon {
+      font-size: 40px;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .file-title {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .file-card a {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .file-card a:hover {
+      background-color: #023e8a;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+      .file-card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>📁 Download Center</h1>
+
+<div class="section">
+  <h2>📘 Notes</h2>
+  <div class="downloads">
+    <div class="file-card">
+      <div class="file-icon">📄</div>
+      <div class="file-title">Class 10 - Science Notes</div>
+      <a href="#">Download</a>
+    </div>
+    <div class="file-card">
+      <div class="file-icon">📄</div>
+      <div class="file-title">Class 9 - English Notes</div>
+      <a href="#">Download</a>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📐 Assignments</h2>
+  <div class="downloads">
+    <div class="file-card">
+      <div class="file-icon">📝</div>
+      <div class="file-title">Math Assignment - Class 8</div>
+      <a href="#">Download</a>
+    </div>
+    <div class="file-card">
+      <div class="file-icon">📝</div>
+      <div class="file-title">History Assignment - Class 7</div>
+      <a href="#">Download</a>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📚 Syllabus</h2>
+  <div class="downloads">
+    <div class="file-card">
+      <div class="file-icon">📘</div>
+      <div class="file-title">Class 6 - Full Syllabus</div>
+      <a href="#">Download</a>
+    </div>
+    <div class="file-card">
+      <div class="file-icon">📘</div>
+      <div class="file-title">Class 12 - Syllabus (All Streams)</div>
+      <a href="#">Download</a>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📢 Circulars & Notices</h2>
+  <div class="downloads">
+    <div class="file-card">
+      <div class="file-icon">📢</div>
+      <div class="file-title">Holiday Notice - July</div>
+      <a href="holiday notice.html">Download</a>
+    </div>
+    <div class="file-card">
+      <div class="file-icon">📢</div>
+      <div class="file-title">Parent Meeting Circular</div>
+      <a href="parents.html">Download</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 8 Social Science Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f9f9f9;
+      font-size: 25px;
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      background: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    .options button.correct {
+      background-color: #c8e6c9;
+    }
+    .options button.wrong {
+      background-color: #ffcdd2;
+    }
+    .tick {
+      float: right;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      .options button {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Class 8 Social Science Quiz</h1>
+
+    <!-- Question Template -->
+     <div class="question" data-answer="B">
+  <p>1. भारतीय संविधान कब लागू हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 15 अगस्त 1947</button>
+    <button onclick="checkAnswer(this, 'B')">B. 26 जनवरी 1950</button>
+    <button onclick="checkAnswer(this, 'C')">C. 2 अक्टूबर 1949</button>
+    <button onclick="checkAnswer(this, 'D')">D. 15 अगस्त 1950</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>2. भारत का पहला प्रधानमंत्री कौन था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सरदार पटेल</button>
+    <button onclick="checkAnswer(this, 'B')">B. महात्मा गांधी</button>
+    <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'D')">D. डॉ. भीमराव अंबेडकर</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>3. भारतीय राष्ट्रीय कांग्रेस की स्थापना कब हुई?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1885</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1857</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1905</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1942</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>4. 1857 की क्रांति का मुख्य कारण क्या था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कर व्यवस्था</button>
+    <button onclick="checkAnswer(this, 'B')">B. अंग्रेजों का अत्याचार</button>
+    <button onclick="checkAnswer(this, 'C')">C. सेना में भेदभाव</button>
+    <button onclick="checkAnswer(this, 'D')">D. उपरोक्त सभी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>5. संविधान निर्माता सभा के अध्यक्ष कौन थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. डॉ. अंबेडकर</button>
+    <button onclick="checkAnswer(this, 'B')">B. डॉ. राजेन्द्र प्रसाद</button>
+    <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'D')">D. मौलाना आज़ाद</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>6. महात्मा गांधी ने किस आंदोलन की शुरुआत की?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. असहयोग आंदोलन</button>
+    <button onclick="checkAnswer(this, 'B')">B. क्रांति आंदोलन</button>
+    <button onclick="checkAnswer(this, 'C')">C. रेड क्रॉस आंदोलन</button>
+    <button onclick="checkAnswer(this, 'D')">D. हिंसात्मक आंदोलन</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>7. भारतीय स्वतंत्रता संग्राम में झाँसी की रानी लक्ष्मीबाई की भूमिका कब रही?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1905</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1947</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1930</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1857</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>8. भारत छोड़ो आंदोलन कब शुरू हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1857</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1920</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1942</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1950</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>9. डॉ. भीमराव अंबेडकर को किस रूप में जाना जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. भारतीय संविधान के निर्माता</button>
+    <button onclick="checkAnswer(this, 'B')">B. पहले राष्ट्रपति</button>
+    <button onclick="checkAnswer(this, 'C')">C. पहले प्रधानमंत्री</button>
+    <button onclick="checkAnswer(this, 'D')">D. गवर्नर जनरल</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>10. किस अधिनियम के तहत भारत का विभाजन हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. भारत शासन अधिनियम 1935</button>
+    <button onclick="checkAnswer(this, 'B')">B. भारतीय स्वतंत्रता अधिनियम 1947</button>
+    <button onclick="checkAnswer(this, 'C')">C. सॉल्ट लॉ</button>
+    <button onclick="checkAnswer(this, 'D')">D. नागरिकता अधिनियम</button>
+  </div>
+</div>
+<div class="question" data-answer="A">
+  <p>11. 1857 की क्रांति को किसने 'भारत का प्रथम स्वतंत्रता संग्राम' कहा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. वी.डी. सावरकर</button>
+    <button onclick="checkAnswer(this, 'B')">B. नेहरू</button>
+    <button onclick="checkAnswer(this, 'C')">C. टैगोर</button>
+    <button onclick="checkAnswer(this, 'D')">D. गांधीजी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>12. भारतीय संविधान कब लागू हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 15 अगस्त 1947</button>
+    <button onclick="checkAnswer(this, 'B')">B. 26 जनवरी 1950</button>
+    <button onclick="checkAnswer(this, 'C')">C. 2 अक्टूबर 1949</button>
+    <button onclick="checkAnswer(this, 'D')">D. 26 नवंबर 1949</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>13. भारत का राष्ट्रीय चिन्ह कहाँ से लिया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. लाल किला</button>
+    <button onclick="checkAnswer(this, 'B')">B. कुतुब मीनार</button>
+    <button onclick="checkAnswer(this, 'C')">C. सारनाथ स्तंभ</button>
+    <button onclick="checkAnswer(this, 'D')">D. चार मीनार</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>14. जलवायु परिवर्तन का मुख्य कारण क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. ग्लोबल वार्मिंग</button>
+    <button onclick="checkAnswer(this, 'B')">B. चक्रवात</button>
+    <button onclick="checkAnswer(this, 'C')">C. भूकंप</button>
+    <button onclick="checkAnswer(this, 'D')">D. ज्वालामुखी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>15. भारतीय राष्ट्रीय कांग्रेस की स्थापना कब हुई?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1886</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1890</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1888</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1885</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>16. भारत का प्रथम राष्ट्रपति कौन था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. नेहरू</button>
+    <button onclick="checkAnswer(this, 'B')">B. डॉ. राजेन्द्र प्रसाद</button>
+    <button onclick="checkAnswer(this, 'C')">C. डॉ. अम्बेडकर</button>
+    <button onclick="checkAnswer(this, 'D')">D. पटेल</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>17. लोकसभा का कार्यकाल कितने वर्षों का होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 4 वर्ष</button>
+    <button onclick="checkAnswer(this, 'B')">B. 7 वर्ष</button>
+    <button onclick="checkAnswer(this, 'C')">C. 5 वर्ष</button>
+    <button onclick="checkAnswer(this, 'D')">D. 6 वर्ष</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>18. 'हिन्द स्वराज' नामक पुस्तक किसने लिखी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. बाल गंगाधर तिलक</button>
+    <button onclick="checkAnswer(this, 'B')">B. सुभाष चंद्र बोस</button>
+    <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'D')">D. महात्मा गांधी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>19. भारत की सबसे लंबी नदी कौन सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. गंगा</button>
+    <button onclick="checkAnswer(this, 'B')">B. ब्रह्मपुत्र</button>
+    <button onclick="checkAnswer(this, 'C')">C. यमुना</button>
+    <button onclick="checkAnswer(this, 'D')">D. गोदावरी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>20. 'दीन-ए-इलाही' धर्म किसने चलाया था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. बाबर</button>
+    <button onclick="checkAnswer(this, 'B')">B. अकबर</button>
+    <button onclick="checkAnswer(this, 'C')">C. शाहजहाँ</button>
+    <button onclick="checkAnswer(this, 'D')">D. औरंगजेब</button>
+  </div>
+</div>
+
+<!-- 10 और प्रश्न -->
+
+<div class="question" data-answer="C">
+  <p>21. जलवायु और मौसम में अंतर क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. दोनों समान हैं</button>
+    <button onclick="checkAnswer(this, 'B')">B. मौसम दीर्घकालिक होता है</button>
+    <button onclick="checkAnswer(this, 'C')">C. जलवायु दीर्घकालिक, मौसम अल्पकालिक</button>
+    <button onclick="checkAnswer(this, 'D')">D. मौसम केवल वर्षा से जुड़ा है</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>22. संविधान में कुल कितने अनुच्छेद थे प्रारंभ में?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 395</button>
+    <button onclick="checkAnswer(this, 'B')">B. 450</button>
+    <button onclick="checkAnswer(this, 'C')">C. 380</button>
+    <button onclick="checkAnswer(this, 'D')">D. 410</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>23. 'सविनय अवज्ञा आंदोलन' कब शुरू हुआ था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1919</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1942</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1920</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1930</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>24. भारत का राष्ट्रीय गान किसने लिखा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. रवीन्द्र नाथ त्यागी</button>
+    <button onclick="checkAnswer(this, 'B')">B. बंकिम चंद्र चट्टोपाध्याय</button>
+    <button onclick="checkAnswer(this, 'C')">C. रवीन्द्रनाथ टैगोर</button>
+    <button onclick="checkAnswer(this, 'D')">D. रमानुजन</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>25. संविधान सभा की पहली बैठक कब हुई?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 9 दिसम्बर 1946</button>
+    <button onclick="checkAnswer(this, 'B')">B. 15 अगस्त 1947</button>
+    <button onclick="checkAnswer(this, 'C')">C. 26 जनवरी 1950</button>
+    <button onclick="checkAnswer(this, 'D')">D. 2 अक्टूबर 1947</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>26. भारत का कौन सा पर्वत सबसे ऊँचा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. अरावली</button>
+    <button onclick="checkAnswer(this, 'B')">B. कंचनजंघा</button>
+    <button onclick="checkAnswer(this, 'C')">C. विंध्याचल</button>
+    <button onclick="checkAnswer(this, 'D')">D. सतपुड़ा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>27. राष्ट्रीय आपदा प्रबंधन प्राधिकरण का अध्यक्ष कौन होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. गृहमंत्री</button>
+    <button onclick="checkAnswer(this, 'B')">B. रक्षामंत्री</button>
+    <button onclick="checkAnswer(this, 'C')">C. प्रधानमंत्री</button>
+    <button onclick="checkAnswer(this, 'D')">D. राष्ट्रपति</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>28. 'नीलगिरी की पहाड़ियाँ' कहाँ स्थित हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. हिमालय</button>
+    <button onclick="checkAnswer(this, 'B')">B. राजस्थान</button>
+    <button onclick="checkAnswer(this, 'C')">C. उत्तर प्रदेश</button>
+    <button onclick="checkAnswer(this, 'D')">D. दक्षिण भारत</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>29. 'कृषि' किस क्षेत्र में आती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. तृतीयक क्षेत्र</button>
+    <button onclick="checkAnswer(this, 'B')">B. प्राथमिक क्षेत्र</button>
+    <button onclick="checkAnswer(this, 'C')">C. माध्यमिक क्षेत्र</button>
+    <button onclick="checkAnswer(this, 'D')">D. सेवा क्षेत्र</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>30. 'मानव विकास सूचकांक' (HDI) किस संस्था द्वारा जारी किया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. WTO</button>
+    <button onclick="checkAnswer(this, 'B')">B. IMF</button>
+    <button onclick="checkAnswer(this, 'C')">C. UNDP</button>
+    <button onclick="checkAnswer(this, 'D')">D. WHO</button>
+  </div>
+</div>
+    <div class="question" data-answer="B">
+      <p>31. 1857 की क्रांति किस वर्ष हुई थी?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. 1757</button>
+        <button onclick="checkAnswer(this, 'B')">B. 1857</button>
+        <button onclick="checkAnswer(this, 'C')">C. 1947</button>
+        <button onclick="checkAnswer(this, 'D')">D. 1905</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="C">
+      <p>32. भारत का संविधान कब लागू हुआ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. 15 अगस्त 1947</button>
+        <button onclick="checkAnswer(this, 'B')">B. 2 अक्टूबर 1950</button>
+        <button onclick="checkAnswer(this, 'C')">C. 26 जनवरी 1950</button>
+        <button onclick="checkAnswer(this, 'D')">D. 26 नवंबर 1949</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="D">
+      <p>33. किस अधिनियम ने भारत में ब्रिटिश शासन की नींव रखी?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. भारतीय परिषद अधिनियम 1861</button>
+        <button onclick="checkAnswer(this, 'B')">B. रेग्युलेटिंग एक्ट 1773</button>
+        <button onclick="checkAnswer(this, 'C')">C. पिट्स इंडिया एक्ट 1784</button>
+        <button onclick="checkAnswer(this, 'D')">D. 1858 का भारत शासन अधिनियम</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="A">
+      <p>34. संविधान का निर्माता किसे कहा जाता है?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. डॉ. भीमराव अंबेडकर</button>
+        <button onclick="checkAnswer(this, 'B')">B. महात्मा गांधी</button>
+        <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+        <button onclick="checkAnswer(this, 'D')">D. राजेंद्र प्रसाद</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="B">
+      <p>35. भारत का राष्ट्रीय गान किसने लिखा?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. बंकिम चंद्र चट्टोपाध्याय</button>
+        <button onclick="checkAnswer(this, 'B')">B. रवींद्रनाथ टैगोर</button>
+        <button onclick="checkAnswer(this, 'C')">C. हरिवंश राय बच्चन</button>
+        <button onclick="checkAnswer(this, 'D')">D. पिंगली वेंकय्या</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="A">
+      <p>36. महात्मा गांधी ने किस आंदोलन की शुरुआत की?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. असहयोग आंदोलन</button>
+        <button onclick="checkAnswer(this, 'B')">B. क्रांति आंदोलन</button>
+        <button onclick="checkAnswer(this, 'C')">C. रेड क्रॉस आंदोलन</button>
+        <button onclick="checkAnswer(this, 'D')">D. हिंसात्मक आंदोलन</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="C">
+      <p>37. भारत का पहला प्रधानमंत्री कौन था?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. सुभाष चंद्र बोस</button>
+        <button onclick="checkAnswer(this, 'B')">B. डॉ. राजेंद्र प्रसाद</button>
+        <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+        <button onclick="checkAnswer(this, 'D')">D. लाल बहादुर शास्त्री</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="D">
+      <p>38. भारत में कुल कितने राज्य हैं? (2023 के अनुसार)</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. 27</button>
+        <button onclick="checkAnswer(this, 'B')">B. 28</button>
+        <button onclick="checkAnswer(this, 'C')">C. 29</button>
+        <button onclick="checkAnswer(this, 'D')">D. 28</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="B">
+      <p>39. भारत का उच्चतम न्यायालय कहाँ स्थित है?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. मुंबई</button>
+        <button onclick="checkAnswer(this, 'B')">B. नई दिल्ली</button>
+        <button onclick="checkAnswer(this, 'C')">C. कोलकाता</button>
+        <button onclick="checkAnswer(this, 'D')">D. चेन्नई</button>
+      </div>
+    </div>
+
+    <div class="question" data-answer="A">
+      <p>30. भारतीय संसद कितने सदनों में बंटी है?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, 'A')">A. 2</button>
+        <button onclick="checkAnswer(this, 'B')">B. 3</button>
+        <button onclick="checkAnswer(this, 'C')">C. 1</button>
+        <button onclick="checkAnswer(this, 'D')">D. 4</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function checkAnswer(button, selectedOption) {
+      const questionDiv = button.closest('.question');
+      const correctAnswer = questionDiv.getAttribute('data-answer');
+
+      const buttons = questionDiv.querySelectorAll('button');
+      buttons.forEach(btn => btn.disabled = true);
+
+      if (selectedOption === correctAnswer) {
+        button.classList.add('correct');
+        button.innerHTML += ' <span class="tick">✔</span>';
+      } else {
+        button.classList.add('wrong');
+        button.innerHTML += ' <span class="tick">❌</span>';
+        buttons.forEach(btn => {
+          if (btn.textContent.trim().startsWith(correctAnswer + ".")) {
+            btn.classList.add('correct');
+            btn.innerHTML += ' <span class="tick">✔</span>';
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

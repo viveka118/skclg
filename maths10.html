@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 10 Maths Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef5f9;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    .question {
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      font-size: 25px;
+    }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .options button {
+      flex: 1 1 45%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #f9f9f9;
+      transition: all 0.3s;
+      text-align: left;
+      font-size: 20px;
+    }
+    .options button.correct {
+      background-color: #c8f7c5;
+      border-color: green;
+    }
+    .options button.wrong {
+      background-color: #f7c5c5;
+      border-color: red;
+    }
+    .theory-question {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #2d6cdf;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Class 10 Mathematics Test (MCQ + Theory)</h1>
+
+  <div class="question">
+  <p>1. यदि एक वृत्त की त्रिज्या को दुगुना कर दिया जाए, तो उसका क्षेत्रफल कितना गुना हो जाएगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. दो गुना</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. तीन गुना</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. चार गुना</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. आठ गुना</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>2. दो संख्याएँ 72 और 120 हैं। उनका HCF क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 24</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 12</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 18</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 36</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>3. एक घन का पृष्ठ क्षेत्रफल 600 cm² है। उसकी एक भुजा की लंबाई क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 10 cm</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 10√6 cm</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 12 cm</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 15 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>4. दो संख्याएँ समांतर श्रेणी में हैं जिनका अंतर 5 है और 6 पदों का योग 120 है। पहला पद क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 10</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 5</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 0</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. -5</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. यदि एक त्रिभुज के कोण 2:3:4 के अनुपात में हैं, तो सबसे छोटा कोण क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 40°</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 60°</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 80°</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 20°</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. यदि किसी द्विघात समीकरण के मूल 3 और -4 हैं, तो समीकरण क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. x² + x + 12 = 0</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. x² - x - 12 = 0</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. x² - x + 12 = 0</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. x² + x - 12 = 0</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. किसी शंकु का आधार त्रिज्या 3 cm और ऊँचाई 4 cm है। उसका आयतन होगा:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 36π cm³</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 12π cm³</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 24π cm³</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 18π cm³</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>8. यदि एक समकोण त्रिभुज में दो भुजाएँ 5 cm और 12 cm हैं, तो कर्ण की लंबाई क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 10 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 11 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 13 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 15 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. एक वृत्त का परिमाप 44 cm है, उसकी त्रिज्या कितनी होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 7 cm</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 8 cm</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 6 cm</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 10 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. यदि sinA = 3/5, तो cosA का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 3/4</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 4/3</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. 5/4</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 4/5</button>
+  </div>
+</div>
+  <div class="question">
+    <p>11. यदि किसी त्रिभुज के कोण 60°, 60°, 60° हों, तो यह त्रिभुज है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B', 'A')">A. समद्विबाहु त्रिभुज</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. समभुज त्रिभुज</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">C. स्केलिन त्रिभुज</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">D. समकोण त्रिभुज</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>12. यदि एक समकोण त्रिभुज की लंबाई 3 cm और आधार 4 cm है, तो कर्ण की लंबाई क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 6 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 5.5 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 5 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 4.5 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. यदि किसी वृत्त की त्रिज्या 7 सेमी है, तो उसका क्षेत्रफल होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 144 cm²</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 154 cm²</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 164 cm²</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 147 cm²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. यदि किसी शंकु की ऊँचाई 12 सेमी और त्रिज्या 5 सेमी है, तो उसका वक्र पृष्ठ क्षेत्रफल होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 180π cm²</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 160π cm²</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. 150π cm²</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 65π cm²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. यदि किसी घन का आयतन 343 m³ है, तो उसकी भुजा की लंबाई क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 7 m</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 9 m</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 5 m</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 6 m</button>
+  </div>
+</div>
+<div class="question">
+  <p>16. एक समकोण त्रिभुज में कर्ण की लंबाई 13 cm और एक भुजा की लंबाई 5 cm है, दूसरी भुजा की लंबाई क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 8 cm</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 12 cm</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 10 cm</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 6 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. यदि x² - 5x + 6 = 0, तो x के मूल क्या हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 3 और 3</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 2 और 5</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 2 और 3</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 1 और 6</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. किसी वृत्त की त्रिज्या 7 cm है, उसका क्षेत्रफल क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 154 cm²</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 144 cm²</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 154 cm²</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 49 cm²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. दो संख्याएँ 48 और 180 हैं। उनका HCF क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 12</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 6</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 24</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 36</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. किसी समांतर श्रेणी का 10वाँ पद 50 है और सामान्य अंतर 5 है, तो पहला पद क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 10</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 5</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 15</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 20</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>21. त्रिज्या 3 cm और ऊँचाई 4 cm वाले एक शंकु का आयतन क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 36π cm³</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 12π cm³</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 12π cm³</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 18π cm³</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. यदि दो घटनाएँ A और B स्वतंत्र हैं, तो P(A ∩ B) बराबर होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. P(A) + P(B)</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. P(A) - P(B)</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. P(A)</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. P(A) × P(B)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. यदि किसी त्रिभुज के दो कोण 70° और 60° हैं, तो तीसरा कोण क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 40°</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 50°</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 50°</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 60°</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. यदि sin A = 3/5, तो cos A का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 4/5</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 4/5</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 3/4</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 5/3</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. दो रेखाएँ समान ढाल वाली होती हैं, तो वे...</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. समांतर होती हैं</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. समकोण होती हैं</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. प्रतिच्छेद करती हैं</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. कोई निश्चित संबंध नहीं</button>
+  </div>
+</div>
+<div class="question">
+  <p>26. दो संख्याओं का गुणनफल 540 है और उनका महत्तम समापवर्त्य (HCF) 6 है। उनका लघुत्तम समापवर्त्य (LCM) क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 60</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 90</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 120</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 180</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>27. यदि किसी वर्ग का क्षेत्रफल 484 वर्ग सेमी है, तो उसकी परिधि क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 44 सेमी</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 98 सेमी</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 88 सेमी</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 22 सेमी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>28. 0.333... का भिन्न रूप क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 1/3</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 3/10</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 2/3</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 3/9</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>29. यदि एक वृत्त की त्रिज्या को दुगना कर दिया जाए तो उसका क्षेत्रफल कितना हो जाएगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. दोगुना</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. तीन गुना</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. पाँच गुना</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. चार गुना</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>30. यदि एक घन की भुजा 5 सेमी है, तो उसका पृष्ठीय क्षेत्रफल क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 100 सेमी²</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 125 सेमी²</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 150 सेमी²</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 75 सेमी²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>31. यदि एक रेखा किसी वृत्त को दो अलग-अलग बिंदुओं पर प्रतिच्छेद करती है, तो वह रेखा कहलाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. छेदक</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. स्पर्शरेखा</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. जीवा</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. त्रिज्या</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>32. दो रेखाएं तभी समांतर होती हैं जब:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. वे एक बिंदु पर मिलें</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. वे तिर्यक हों</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. वे एक ही दिशा में हों</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. वे कभी न मिलें</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>33. समीकरण: 2x + 5 = 15 का हल क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 4</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 5</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 6</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 7</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>34. यदि एक समकोण त्रिभुज की एक भुजा 6 सेमी और दूसरी 8 सेमी है, तो कर्ण की लंबाई क्या होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 12 सेमी</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 10 सेमी</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 9 सेमी</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 8 सेमी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. एक संख्यात्मक श्रेणी 2, 4, 8, 16, ___, इसका अगला पद क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 20</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 32</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 24</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 30</button>
+  </div>
+</div>
+<div class="question">
+  <p>36. यदि किसी वृत्त की त्रिज्या 7 सेमी है, तो उसका क्षेत्रफल कितना होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 144 π cm²</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 154 cm²</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 49 π cm²</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 100 cm²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. यदि ax² + bx + c = 0 का विविक्त मूल हो, तो उसके लिए b² - 4ac का मान?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. > 0</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. = 0</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. < 0</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. कोई नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. 2x + 3y = 12 और 4x + 6y = 24 रेखाएँ क्या दर्शाती हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. एक बिंदु पर मिलती हैं</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. समानांतर रेखाएँ</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. अनन्त हल</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. कोई हल नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. एक वृत्त जिसकी त्रिज्या 21 सेमी है, उसकी परिधि कितनी होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 122 cm</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 100 cm</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. 131 cm</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 132 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. यदि किसी त्रिभुज की तीन भुजाएँ 5cm, 12cm और 13cm हैं, तो वह कैसा त्रिभुज है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. समकोण त्रिभुज</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. समद्विबाहु त्रिभुज</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. समभुज त्रिभुज</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. कोई नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>41. यदि एक घन की भुजा 4 सेमी है, तो उसका आयतन क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 16 cm³</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 32 cm³</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 64 cm³</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 128 cm³</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>42. एक संख्‍या है जो 3 से भाग देने पर शेष 1 और 5 से भाग देने पर शेष 4 देती है। वह संख्या कौन सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 19</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 19</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 18</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 20</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>43. यदि sin²θ + cos²θ = ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 1</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 0</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. sinθ</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. cosθ</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>44. √2 का मान लगभग क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 1.2</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 1.3</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 1.41</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 1.5</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>45. एक समकोण त्रिभुज की लंबाई 6cm और आधार 8cm है, तो कर्ण का मापन क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 10cm</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 12cm</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. 9cm</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 10cm</button>
+  </div>
+</div>
+
+  <!-- Theoretical Questions 11 to 60 -->
+  <h2>थ्योरी आधारित प्रश्न (50 कठिन प्रश्न)</h2>
+
+   <div class="theory-question">
+    <p>1. द्विघात समीकरण किसे कहते हैं? उदाहरण सहित समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>2. गणितीय आगमन विधि क्या है? इसे एक उदाहरण के माध्यम से स्पष्ट कीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>3. किसी गुणोत्तर श्रेणी के nवें पद का सूत्र बताइए एवं उसका व्युत्पन्न कीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>4. समांतर श्रेणी का योगफल कैसे निकालते हैं? उदाहरण सहित समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>5. यदि कोई त्रिभुज समान्तर चतुर्भुज में अंतर्निहित हो, तो उसके क्षेत्रफल की गणना कैसे की जाती है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>6. पाईथागोरस प्रमेय को उदाहरण सहित समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>7. एक वृत्त का क्षेत्रफल और परिधि कैसे ज्ञात करते हैं? सूत्र सहित समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>8. शंकु का आयतन और पृष्ठीय क्षेत्रफल ज्ञात करने का सूत्र क्या है? समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>9. त्रिकोणमितीय अनुपातों के परस्पर संबंध स्पष्ट कीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>10. दो वृत्तों के बीच सामान्य स्पर्श रेखा के प्रकार समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>11. रेखीय समीकरणों का ग्राफ द्वारा हल कैसे किया जाता है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>12. वास्तविक संख्याओं के गुण और उनकी प्रमेय क्या हैं?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>13. प्रमेय: यदि दो रेखाएं किसी तृतीय रेखा को समान कोणों पर काटती हैं तो वे आपस में समांतर होती हैं - सिद्ध कीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>14. बीजगणितीय सर्वसमिकाएँ क्या होती हैं? उदाहरण सहित समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>15. ऊँचाई और दूरी से जुड़े प्रश्नों को हल करने के लिए कौन से त्रिकोणमितीय अनुपातों का उपयोग किया जाता है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>16. वर्गमूल निकालने की विधियाँ समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>17. द्विघात समीकरण के मूलों को सूत्र द्वारा कैसे निकाला जाता है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>18. क्षेत्रमिति में वृत्त से संबंधित प्रमुख सूत्र कौन-कौन से हैं?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>19. त्रिभुजों की समानता की शर्तें क्या हैं?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>20. सतह क्षेत्रफल और आयतन की अवधारणा में क्या अंतर है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>21. रेखाओं की युगपतता को किस प्रमेय से सिद्ध किया जाता है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>22. त्रिकोण का क्षेत्रफल आधार और ऊँचाई के द्वारा कैसे निकालते हैं?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>23. समवर्ती रेखाएं किसे कहते हैं? उदाहरण दीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>24. सांख्यिकी में माध्य, माध्यिका और बहुलक के बीच क्या अंतर है?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>25. कोणों के प्रकार और उनके गुण समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>26. व्यावहारिक जीवन में त्रिकोणमिति के अनुप्रयोगों के उदाहरण दीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>27. द्विघात समीकरण को वर्ग पूर्ति विधि से हल करना समझाइए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>28. त्रिकोण के कोणों का योगफल कितने डिग्री होता है? क्यों?</p>
+  </div>
+
+  <div class="theory-question">
+    <p>29. गणितीय मॉडल किसे कहते हैं? किसी एक उदाहरण से स्पष्ट कीजिए।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>30. रेखा और वृत्त के बीच की स्थितियों का वर्णन कीजिए।</p>
+  </div>
+
+
+  <div class="theory-question">
+    <p>31. दो चर वाले रैखिक समीकरण का सामान्य रूप लिखिए तथा उदाहरण दीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>32. यदि किसी रैखिक समीकरण के दो हल समान हों, तो उस स्थिति में वह समीकरण कैसा होगा?</p>
+  </div>
+  <div class="theory-question">
+    <p>33. प्रायिकता क्या है? एक उदाहरण दीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>34. गुणनखंडन विधि से 2x² + 7x + 3 = 0 को हल कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>35. किसी वृत्त की परिधि और क्षेत्रफल के सूत्र लिखिए।</p>
+  </div>
+
+  <script>
+    function checkAnswer(button, correct, given) {
+      const buttons = button.parentElement.querySelectorAll('button');
+      buttons.forEach(btn => {
+        const choice = btn.innerText.trim().charAt(0);
+        if (choice === correct) {
+          btn.classList.add('correct');
+        }
+        if (btn === button && choice !== correct) {
+          btn.classList.add('wrong');
+        }
+        btn.disabled = true;
+      });
+    }
+  </script>
+</body>
+</html>

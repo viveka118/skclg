@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class 12 Hindi Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f5ec;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4a2f1b;
+    }
+    .question p{
+      font-size: 25px;
+    }
+    .question, .theory {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 5px solid #865439;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 20px;
+    }
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 8px;
+      font-size: 20px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #f7f4f0;
+      transition: background 0.3s;
+    }
+    .options button.correct {
+      background-color: #c8f7c5;
+      border-color: green;
+    }
+    .options button.incorrect {
+      background-color: #fbcaca;
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>कक्षा 12 हिंदी </h1>
+
+  <!-- MCQ Section -->
+  <div class="question">
+    <p>1. ‘गोदान’ उपन्यास के लेखक कौन हैं?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B', 'A')">A. फणीश्वर नाथ रेणु</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. मुंशी प्रेमचंद</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">C. यशपाल</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">D. नागार्जुन</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. ‘कबीर’ किस प्रकार की भाषा में काव्य रचना करते थे?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. सधुक्कड़ी</button>
+      <button onclick="checkAnswer(this, 'A', 'B')">B. ब्रज</button>
+      <button onclick="checkAnswer(this, 'A', 'C')">C. अवधी</button>
+      <button onclick="checkAnswer(this, 'A', 'D')">D. खड़ी बोली</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>3. सूरदास किस भक्ति शाखा से जुड़े थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. ज्ञानमार्गी</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. सगुण भक्ति</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. निर्गुण भक्ति</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. शंकर संप्रदाय</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>4. 'पथिक' रचना के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. माखनलाल चतुर्वेदी</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. सुमित्रानंदन पंत</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. निराला</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. 'कबीर' के दोहे किस प्रकार की कविता माने जाते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. खंडकाव्य</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. महाकाव्य</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. गीतिकाव्य</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. नीतिपरक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. 'निराला' किस युग के कवि थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. रीति काल</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. भक्ति काल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. छायावाद</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. उत्तर छायावाद</button>
+  </div>
+</div>
+<div class="question">
+  <p>8. 'मेघदूत' के लेखक कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. कालिदास</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. भवभूति</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. तुलसीदास</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. जयशंकर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. 'साखी' किस प्रकार की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. दोहा</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. नीति काव्य</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. व्यंग्य</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. कहानी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. सूरदास किस भक्ति आंदोलन से जुड़े थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. निर्गुण भक्ति</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. सूफी भक्ति</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. सगुण भक्ति</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. वैष्णव भक्ति</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>11. 'राम के प्रति' कविता के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. हरिवंश राय बच्चन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. अज्ञेय</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. नरेश मेहता</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. 'बिहारी' किस काव्य शैली के कवि थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. रीति काल</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. भक्ति काल</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. आधुनिक काल</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. छायावादी काल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. 'सूर के पद' किस ग्रंथ से लिए गए हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. रामचरितमानस</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. सूरसागर</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. विनय पत्रिका</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. कवितावली</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. 'मुक्तिबोध' किस साहित्यिक शैली से जुड़े हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. छायावाद</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. प्रगतिवाद</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. नई कविता</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. रीतिकाल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. कबीर की भाषा में कौन-सी विशेषता पाई जाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. तर्कशीलता</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. सरलता</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. श्रृंगारिकता</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. मुहावरेदार सधुक्कड़ी</button>
+  </div>
+</div>
+<div class="question">
+  <p>16. 'मैथिलीशरण गुप्त' किस युग के कवि माने जाते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. भक्तिकाल</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. रीतिकाल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. आधुनिक काल</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. अज्ञेयवाद</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. 'राम की शक्ति पूजा' के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. सूर्यकांत त्रिपाठी निराला</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. हरिवंश राय बच्चन</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. माखनलाल चतुर्वेदी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. 'उर्वशी' किस साहित्यकार की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. निराला</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. दिनकर</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. मैथिलीशरण गुप्त</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. 'मधुशाला' किस प्रकार की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. नाटक</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. निबंध</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. कहानी</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. काव्य</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. 'कबीर' की वाणी का संग्रह क्या कहलाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. रामचरितमानस</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. गीतावली</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. बीजक</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. साखी संग्रह</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>21. ‘पंत’ को कौन-सी कविता शैली के लिए जाना जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. वीर रस</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. छायावादी</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. भक्ति रस</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. श्रृंगार रस</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. ‘जयशंकर प्रसाद’ की प्रमुख काव्य कृति कौन-सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. कामायनी</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. अंधायुग</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. यामा</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. चितौड़</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. 'कविता की आत्मा' किसे माना जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. छंद</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. शब्द</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. अलंकार</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. भाव</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. 'गद्य' किसे कहते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. पद्य रचना</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. गीत</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. सामान्य भाषा में लिखी रचना</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. श्लोक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. ‘भारत माता’ कविता के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. माखनलाल चतुर्वेदी</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. निराला</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. मैथिलीशरण गुप्त</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>26. ‘काकोरी कांड’ से संबंधित क्रांतिकारी कौन थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. भगत सिंह</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. चंद्रशेखर आजाद</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. राम प्रसाद बिस्मिल</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. राजगुरु</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>27. 'गोदान' उपन्यास किसने लिखा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. मुंशी प्रेमचंद</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. यशपाल</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. अमृतलाल नागर</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. हरिवंश राय बच्चन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>28. ‘अनामिका’ किस कवि की काव्य कृति है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. निराला</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. दिनकर</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. बच्चन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. अज्ञेय</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>29. 'वीर रस' का प्रमुख उदाहरण किसकी कविता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. बच्चन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. रामधारी सिंह दिनकर</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. प्रसाद</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. निराला</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>30. ‘नीरज’ किस विधा के लिए प्रसिद्ध हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. गीत</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. नाटक</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. उपन्यास</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. आलोचना</button>
+  </div>
+</div>
+<div class="question">
+  <p>31. 'आत्मकथ्य' किस रचना में प्रमुख रूप से मिलता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. सूरदास के पद</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. आत्मकथ्य</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. गोदान</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. पथ के साथी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>32. 'सरोज-स्मृति' कविता किसकी रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. सूर्यकांत त्रिपाठी निराला</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. हरिवंश राय बच्चन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>33. ‘कुरुक्षेत्र’ किस विधा की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. उपन्यास</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. कविता</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. निबंध</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. आत्मकथा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>34. ‘गोदान’ उपन्यास में होरी का चरित्र किसका प्रतीक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. शहरी वर्ग</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ग्रामीण किसान</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. क्रांतिकारी वर्ग</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. मजदूर वर्ग</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. 'पथ के साथी' रचना के लेखक कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. अज्ञेय</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. फणीश्वर नाथ रेणु</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. हरिवंश राय बच्चन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. भगवत रावत</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>36. 'अमृताय गाथा' किसकी रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. राही मासूम रज़ा</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. श्रीलाल शुक्ल</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. नरेश मेहता</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. धर्मवीर भारती</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. ‘गोदान’ में धनिया किसका प्रतीक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. सामाजिक विरोध</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. राजनीतिक चेतना</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. ग्रामीण महिला शक्ति</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. धार्मिक रूढ़ि</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. 'कबीर' किस प्रकार की रचनाएँ अधिक लिखते थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. साखी और पद</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. कविता</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. कहानी</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. नाटक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. 'भारत माता' शीर्षक कविता किसकी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. निराला</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. सुभद्राकुमारी चौहान</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. 'पथ के साथी' किस शैली में लिखी गई है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. आलोचनात्मक</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. व्यंग्यात्मक</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. आत्मकथात्मक</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. ऐतिहासिक</button>
+  </div>
+</div>
+<div class="question">
+  <p>41. ‘राम के प्रति’ कविता के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. नरेश मेहता</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. तुलसीदास</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. दिनकर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>42. 'नागार्जुन' का असली नाम क्या था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. बैद्यनाथ मिश्र</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. हरिवंश राय</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. सुमित्रानंदन</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. जयशंकर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>43. ‘साखी’ किस प्रकार की कविता होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. वीर रस प्रधान</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. श्रृंगार रस प्रधान</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. नीति और उपदेश प्रधान</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. हास्य रस प्रधान</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>44. 'मेरे संग की औरतें' किस विधा की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. कविता</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. उपन्यास</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. कहानी</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. आत्मकथात्मक निबंध</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>45. 'बिहारी' की भाषा क्या थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. खड़ी बोली</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ब्रज</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. अवधी</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. मैथिली</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>46. 'गोदान' उपन्यास में किस किसान की कथा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. होरी</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. भोला</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. घीसू</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. बुधिया</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>47. 'ध्रुवस्वामिनी' किसकी काव्य रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. महादेवी वर्मा</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. भारतेंदु</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. सूर्यकांत त्रिपाठी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>48. 'गीतांजलि' पुस्तक के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. सुमित्रानंदन पंत</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. रवींद्रनाथ टैगोर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>49. निम्नलिखित में से किस लेखक का संबंध प्रगतिवादी विचारधारा से है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. तुलसीदास</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. प्रेमचंद</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. बिहारी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>50. ‘साहित्य का समाजशास्त्र’ पुस्तक किसने लिखी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. रामविलास शर्मा</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. नामवर सिंह</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. राहुल सांकृत्यायन</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. महावीर प्रसाद द्विवेदी</button>
+  </div>
+</div>
+  <!-- Theory Section -->
+  <h2>🖊 दीर्घ उत्तरीय प्रश्न (Theory Questions)</h2>
+
+  <div class="theory">1. प्रेमचंद के उपन्यासों में यथार्थवाद के तत्वों की विवेचना कीजिए।</div>
+  <div class="theory">2. भारतेंदु हरिश्चंद्र के नाटक 'अंधेर नगरी' की विशेषताएँ लिखिए।</div>
+  <div class="theory">3. ‘मेरे संग की औरतें’ पाठ के आधार पर स्त्री संघर्ष का वर्णन कीजिए।</div>
+  <div class="theory">4. 'साकेत' महाकाव्य के आधार पर मैथिलीशरण गुप्त की राष्ट्रीय चेतना पर प्रकाश डालिए।</div>
+  <div class="theory">5. ‘जलियाँवाला बाग’ घटना पर आधारित लेख में लेखक की संवेदना का चित्रण कीजिए।</div>
+  <div class="theory">6. कबीर के दोहे किस प्रकार समाज में नैतिक मूल्यों की स्थापना करते हैं? उदाहरण सहित स्पष्ट कीजिए।</div>
+<div class="theory">7. सूरदास के पदों में भक्ति भावना का वर्णन कीजिए।</div>
+<div class="theory">8. तुलसीदास के काव्य में राम के आदर्श व्यक्तित्व की झलक दिखाइए।</div>
+<div class="theory">9. 'मेघ आए' कविता में कवि ने किस प्रकार मानवीय संवेदनाओं को प्रकृति से जोड़ा है? व्याख्या कीजिए।</div>
+<div class="theory">10. 'आमंत्रण' कविता में राष्ट्रप्रेम की भावना का वर्णन कीजिए।</div>
+<div class="theory">11. 'नमक' पाठ में लेखक ने भारतीय स्वतंत्रता संग्राम को किस प्रकार से चित्रित किया है?</div>
+<div class="theory">12. 'पतंग' कहानी के माध्यम से लेखक ने बाल मनोविज्ञान को किस रूप में प्रस्तुत किया है?</div>
+<div class="theory">13. 'शिरीष के फूल' कहानी का मुख्य संदेश क्या है?</div>
+<div class="theory">14. 'बाजार दर्शन' पाठ में लेखक की व्यंग्य दृष्टि का उदाहरण दीजिए।</div>
+<div class="theory">15. 'कवि के प्रति' कविता में कवि की कौन सी जिम्मेदारियाँ दर्शायी गई हैं?</div>
+<div class="theory">16. 'उपभोक्तावाद की संस्कृति' पाठ के माध्यम से लेखक का मुख्य संदेश क्या है?</div>
+<div class="theory">17. सूरदास के काव्य की भाषा-शैली पर प्रकाश डालिए।</div>
+<div class="theory">18. कबीर की कविता में रहस्यवाद की प्रमुख विशेषताएँ लिखिए।</div>
+<div class="theory">19. तुलसीदास के साहित्य में आदर्श समाज की कल्पना पर टिप्पणी कीजिए।</div>
+<div class="theory">20. 'जुलूस' कहानी में सामाजिक संघर्ष की स्थिति को स्पष्ट कीजिए।</div>
+<div class="theory">21. 'भारत माता' कविता में देशभक्ति की भावना कैसे व्यक्त हुई है?</div>
+<div class="theory">22. 'कवि' कविता के अनुसार एक सच्चे कवि में क्या गुण होने चाहिए?</div>
+<div class="theory">23. 'बाजार दर्शन' पाठ में उपभोक्तावादी संस्कृति की आलोचना किस रूप में की गई है?</div>
+<div class="theory">24. 'शिरीष के फूल' में नारी चेतना को किस प्रकार चित्रित किया गया है?</div>
+<div class="theory">25. 'नमक' पाठ से महात्मा गांधी के सिद्धांतों का वर्णन कीजिए।</div>
+<div class="theory">26. 'मेघ आए' कविता में प्रकृति चित्रण पर टिप्पणी कीजिए।</div>
+<div class="theory">27. 'उपभोक्तावाद की संस्कृति' पाठ के संदर्भ में वर्तमान समाज की स्थिति पर विचार कीजिए।</div>
+<div class="theory">28. सूरदास और कबीर के काव्य की तुलना कीजिए।</div>
+<div class="theory">29. 'पतंग' कहानी का चरित्र-विश्लेषण कीजिए।</div>
+<div class="theory">30. 'आमंत्रण' कविता के माध्यम से आत्मबल और राष्ट्रप्रेम की भावना की व्याख्या कीजिए।</div>
+<div class="theory">31. कबीर की भाषा की विशेषताएँ क्या हैं?</div>
+<div class="theory">32. 'तुलसीदास' के राम भक्ति का स्वरूप कैसा है?</div>
+<div class="theory">33. सूरदास के पदों में वात्सल्य रस का वर्णन कीजिए।</div>
+<div class="theory">34. 'कवि के प्रति' कविता में व्यक्त संदेश पर विचार लिखिए।</div>
+<div class="theory">35. 'बाजार दर्शन' पाठ में लेखक ने किस प्रकार समाज की विडंबनाओं को चित्रित किया है?</div>
+<div class="theory">36. 'नमक' पाठ में लेखक की भाषा शैली का विश्लेषण कीजिए।</div>
+<div class="theory">37. 'शिरीष के फूल' कहानी में प्रतीकों का प्रयोग कैसे हुआ है?</div>
+<div class="theory">38. कबीर और तुलसी की सामाजिक दृष्टि में क्या अंतर है?</div>
+<div class="theory">39. 'आमंत्रण' कविता में प्रयुक्त प्रतीकों का विवेचन कीजिए।</div>
+<div class="theory">40. 'मेघ आए' कविता में कवि की मनोव्यथा को उजागर कीजिए।</div>
+<div class="theory">41. 'कवि' कविता में कवि की आत्ममंथन प्रक्रिया को समझाइए।</div>
+<div class="theory">42. कबीर के दोहों में समकालीन समाज की समस्याओं पर दृष्टिपात कीजिए।</div>
+<div class="theory">43. 'पतंग' कहानी के माध्यम से बालक के मनोविज्ञान को कैसे समझा जा सकता है?</div>
+<div class="theory">44. 'शिरीष के फूल' कहानी में स्त्री पात्र की भूमिका का विश्लेषण कीजिए।</div>
+<div class="theory">45. 'तुलसीदास' के काव्य में नीति और मर्यादा का समन्वय कैसे हुआ है?</div>
+<div class="theory">46. सूरदास के साहित्य में ब्रज भाषा की भूमिका स्पष्ट कीजिए।</div>
+<div class="theory">47. 'आमंत्रण' कविता में प्रयुक्त भाषा शैली पर टिप्पणी कीजिए।</div>
+<div class="theory">48. 'बाजार दर्शन' पाठ की मुख्य व्यंग्यात्मक विशेषताएँ लिखिए।</div>
+<div class="theory">49. 'मेघ आए' कविता का शीर्षक किस प्रकार उपयुक्त है?</div>
+<div class="theory">50. <strong>साहित्यिक परिचय:</strong> कबीरदास – जीवन, रचनाएँ, काव्य-शैली और प्रमुख विचार।</div>
+
+  <script>
+    function checkAnswer(btn, correct, chosen) {
+      const buttons = btn.parentElement.querySelectorAll("button");
+      buttons.forEach(button => {
+        button.disabled = true;
+        const option = button.textContent.trim().charAt(0);
+        if (option === correct) {
+          button.classList.add("correct");
+        } else if (option === chosen) {
+          button.classList.add("incorrect");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

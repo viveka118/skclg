@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 9 Hindi Test - UP Board</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+   
+    .question {
+      background: #ffffff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .question p {
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #e0e0e0;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .options button.correct {
+      background-color: #c8e6c9;
+      color: green;
+    }
+
+    .options button.wrong {
+      background-color: #ffcdd2;
+      color: red;
+    }
+
+    .theory-section {
+      margin-top: 40px;
+    }
+
+    .theory-section h2 {
+      text-align: center;
+      color: #374151;
+    }
+
+    .theory-question {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="question" data-answer="A">
+  <p>1. 'रैदास' के पदों में किस भावना की प्रधानता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. भक्ति</button>
+    <button onclick="checkAnswer(this, 'B')">B. वीर रस</button>
+    <button onclick="checkAnswer(this, 'C')">C. श्रृंगार</button>
+    <button onclick="checkAnswer(this, 'D')">D. करुणा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>2. 'एक फूल की चाह' कविता में फूल किस बात का प्रतीक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. शक्ति</button>
+    <button onclick="checkAnswer(this, 'B')">B. ज्ञान</button>
+    <button onclick="checkAnswer(this, 'C')">C. संघर्ष</button>
+    <button onclick="checkAnswer(this, 'D')">D. त्याग और सेवा</button>
+  </div>
+</div>
+  <!-- Objective Questions -->
+   <div class="question" data-answer="C">
+  <p>3. 'कैदी और कोकिला' के लेखक कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सुभद्राकुमारी चौहान</button>
+    <button onclick="checkAnswer(this, 'B')">B. रामधारी सिंह दिनकर</button>
+    <button onclick="checkAnswer(this, 'C')">C. माखनलाल चतुर्वेदी</button>
+    <button onclick="checkAnswer(this, 'D')">D. जयशंकर प्रसाद</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>4. 'मेरे संग की औरतें' किसकी रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. मन्नू भंडारी</button>
+    <button onclick="checkAnswer(this, 'B')">B. अमृता प्रीतम</button>
+    <button onclick="checkAnswer(this, 'C')">C. महादेवी वर्मा</button>
+    <button onclick="checkAnswer(this, 'D')">D. शिवानी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>5. 'रैदास के पद' किस प्रकार की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. गद्य</button>
+    <button onclick="checkAnswer(this, 'B')">B. आत्मकथा</button>
+    <button onclick="checkAnswer(this, 'C')">C. जीवनी</button>
+    <button onclick="checkAnswer(this, 'D')">D. पद्य</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>6. 'संगति का प्रभाव' पाठ में कौन-से पशु का वर्णन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. बिल्ली</button>
+    <button onclick="checkAnswer(this, 'B')">B. कुत्ता</button>
+    <button onclick="checkAnswer(this, 'C')">C. हाथी</button>
+    <button onclick="checkAnswer(this, 'D')">D. सिंह</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>7. 'एक फूल की चाह' कविता में कवि ने किस भावना को दर्शाया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. घृणा</button>
+    <button onclick="checkAnswer(this, 'B')">B. डर</button>
+    <button onclick="checkAnswer(this, 'C')">C. बलिदान और देशभक्ति</button>
+    <button onclick="checkAnswer(this, 'D')">D. क्रोध</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>8. 'भारत माता' का चित्र किस रूप में प्रस्तुत किया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. देवी रूप</button>
+    <button onclick="checkAnswer(this, 'B')">B. रानी</button>
+    <button onclick="checkAnswer(this, 'C')">C. स्वतंत्रता सेनानी</button>
+    <button onclick="checkAnswer(this, 'D')">D. आम महिला</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>9. 'स्वतंत्रता की ओर' पाठ में किस आंदोलन का उल्लेख है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1857 की क्रांति</button>
+    <button onclick="checkAnswer(this, 'B')">B. भारत छोड़ो आंदोलन</button>
+    <button onclick="checkAnswer(this, 'C')">C. जलियांवाला बाग</button>
+    <button onclick="checkAnswer(this, 'D')">D. असहयोग आंदोलन</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>10. 'यह धन्य मेरा देश' कविता में देश की किन विशेषताओं का वर्णन किया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. राजनीति</button>
+    <button onclick="checkAnswer(this, 'B')">B. संस्कृति और गौरव</button>
+    <button onclick="checkAnswer(this, 'C')">C. संघर्ष</button>
+    <button onclick="checkAnswer(this, 'D')">D. प्राकृतिक दृश्य</button>
+  </div>
+</div>
+
+<!-- Continue for 11 to 30 in the same format -->
+
+<!-- Example for Question 11 -->
+<div class="question" data-answer="A">
+  <p>11. 'धरती की पुकार' पाठ में लेखक ने किसका संदेश दिया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. पर्यावरण संरक्षण</button>
+    <button onclick="checkAnswer(this, 'B')">B. तकनीकी विकास</button>
+    <button onclick="checkAnswer(this, 'C')">C. युद्ध की आवश्यकता</button>
+    <button onclick="checkAnswer(this, 'D')">D. आर्थिक सुधार</button>
+  </div>
+</div>
+<div class="question" data-answer="C">
+  <p>13. 'रैदास' किस जाति से संबंधित थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. ब्राह्मण</button>
+    <button onclick="checkAnswer(this, 'B')">B. क्षत्रिय</button>
+    <button onclick="checkAnswer(this, 'C')">C. चर्मकार</button>
+    <button onclick="checkAnswer(this, 'D')">D. वैश्य</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>14. 'वाख' किस भाषा का साहित्यिक रूप है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कश्मीरी</button>
+    <button onclick="checkAnswer(this, 'B')">B. पंजाबी</button>
+    <button onclick="checkAnswer(this, 'C')">C. अवधी</button>
+    <button onclick="checkAnswer(this, 'D')">D. ब्रज</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>15. 'सुभाषित' किसे कहा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कहानी</button>
+    <button onclick="checkAnswer(this, 'B')">B. गीत</button>
+    <button onclick="checkAnswer(this, 'C')">C. आत्मकथा</button>
+    <button onclick="checkAnswer(this, 'D')">D. अच्छे विचार</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>16. 'भीष्म साहनी' किस विधा के प्रसिद्ध लेखक हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कविता</button>
+    <button onclick="checkAnswer(this, 'B')">B. कहानी</button>
+    <button onclick="checkAnswer(this, 'C')">C. संस्मरण</button>
+    <button onclick="checkAnswer(this, 'D')">D. आत्मकथा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>17. 'संत रविदास' का प्रमुख संदेश क्या था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. ज्ञान प्राप्त करना</button>
+    <button onclick="checkAnswer(this, 'B')">B. युद्ध करना</button>
+    <button onclick="checkAnswer(this, 'C')">C. समानता और भक्ति</button>
+    <button onclick="checkAnswer(this, 'D')">D. व्यापार करना</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>18. 'मुझे जन्म लेना पड़ेगा' पाठ का लेखक कौन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. नरेश मेहता</button>
+    <button onclick="checkAnswer(this, 'B')">B. सुभाषचंद्र बोस</button>
+    <button onclick="checkAnswer(this, 'C')">C. महात्मा गांधी</button>
+    <button onclick="checkAnswer(this, 'D')">D. निराला</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>19. 'तीसरी कसम के शिल्पकार' कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. प्रेमचंद</button>
+    <button onclick="checkAnswer(this, 'B')">B. हरिशंकर परसाई</button>
+    <button onclick="checkAnswer(this, 'C')">C. बालकृष्ण भट्ट</button>
+    <button onclick="checkAnswer(this, 'D')">D. फणीश्वरनाथ रेणु</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>20. ‘बालगोबिन भगत’ की प्रमुख विशेषता क्या थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. व्यवसाय</button>
+    <button onclick="checkAnswer(this, 'B')">B. वीरता</button>
+    <button onclick="checkAnswer(this, 'C')">C. भक्ति और त्याग</button>
+    <button onclick="checkAnswer(this, 'D')">D. राजनीति</button>
+  </div>
+</div>
+
+<!-- 21 to 40 -->
+
+<div class="question" data-answer="B">
+  <p>21. 'तोप' कविता किसने लिखी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'B')">B. केदारनाथ अग्रवाल</button>
+    <button onclick="checkAnswer(this, 'C')">C. सूर्यकांत त्रिपाठी</button>
+    <button onclick="checkAnswer(this, 'D')">D. दिनकर</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>22. 'गिल्लू' रचना किसकी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. महादेवी शर्मा</button>
+    <button onclick="checkAnswer(this, 'B')">B. सुभद्राकुमारी</button>
+    <button onclick="checkAnswer(this, 'C')">C. महादेवी वर्मा</button>
+    <button onclick="checkAnswer(this, 'D')">D. यशपाल</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>23. 'तितली और कली' पाठ में तितली किसका प्रतीक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. स्वतंत्रता</button>
+    <button onclick="checkAnswer(this, 'B')">B. बंधन</button>
+    <button onclick="checkAnswer(this, 'C')">C. धन</button>
+    <button onclick="checkAnswer(this, 'D')">D. शिक्षा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>24. ‘माँ’ कविता के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. रामधारी सिंह दिनकर</button>
+    <button onclick="checkAnswer(this, 'B')">B. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'C')">C. सुभद्राकुमारी चौहान</button>
+    <button onclick="checkAnswer(this, 'D')">D. मैथिलीशरण गुप्त</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>25. 'राहुल' किसका पुत्र था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. अर्जुन</button>
+    <button onclick="checkAnswer(this, 'B')">B. भीम</button>
+    <button onclick="checkAnswer(this, 'C')">C. बुद्ध</button>
+    <button onclick="checkAnswer(this, 'D')">D. कणाद</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>26. 'वीर तुम बढ़े चलो' किसकी रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. रामधारी सिंह दिनकर</button>
+    <button onclick="checkAnswer(this, 'B')">B. हरिवंश राय बच्चन</button>
+    <button onclick="checkAnswer(this, 'C')">C. सुमित्रानंदन पंत</button>
+    <button onclick="checkAnswer(this, 'D')">D. निराला</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>27. 'प्रेमचंद' का वास्तविक नाम क्या था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. धनपत सिंह</button>
+    <button onclick="checkAnswer(this, 'B')">B. धनपत राय</button>
+    <button onclick="checkAnswer(this, 'C')">C. प्रेमनाथ वर्मा</button>
+    <button onclick="checkAnswer(this, 'D')">D. रामनाथ</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>28. 'विद्यापति' किस भाषा के कवि थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. ब्रज</button>
+    <button onclick="checkAnswer(this, 'B')">B. अवधी</button>
+    <button onclick="checkAnswer(this, 'C')">C. हिंदी</button>
+    <button onclick="checkAnswer(this, 'D')">D. मैथिली</button>
+  </div>
+</div>
+  <div class="question" data-answer="A">
+    <p>29. 'दो बैलों की कथा' के लेखक कौन हैं?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. प्रेमचंद</button>
+      <button onclick="checkAnswer(this, 'B')">B. रामधारी सिंह दिनकर</button>
+      <button onclick="checkAnswer(this, 'C')">C. मैथिलीशरण गुप्त</button>
+      <button onclick="checkAnswer(this, 'D')">D. हरिवंश राय बच्चन</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>30. 'साखी' किस काव्य रूप का उदाहरण है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. कहानी</button>
+      <button onclick="checkAnswer(this, 'B')">B. नीतिकाव्य</button>
+      <button onclick="checkAnswer(this, 'C')">C. आत्मकथा</button>
+      <button onclick="checkAnswer(this, 'D')">D. नाटक</button>
+    </div>
+  </div>
+<!-- Question 1 -->
+<div class="question" data-answer="A">
+  <p>31. 'साखी' किस कवि द्वारा रचित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कबीर</button>
+    <button onclick="checkAnswer(this, 'B')">B. तुलसीदास</button>
+    <button onclick="checkAnswer(this, 'C')">C. रहीम</button>
+    <button onclick="checkAnswer(this, 'D')">D. सूरदास</button>
+  </div>
+</div>
+
+<!-- Question 2 -->
+<div class="question" data-answer="B">
+  <p>32. 'साखी' किस काव्य रूप का उदाहरण है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कहानी</button>
+    <button onclick="checkAnswer(this, 'B')">B. नीतिकाव्य</button>
+    <button onclick="checkAnswer(this, 'C')">C. आत्मकथा</button>
+    <button onclick="checkAnswer(this, 'D')">D. नाटक</button>
+  </div>
+</div>
+
+<!-- Question 3 -->
+<div class="question" data-answer="C">
+  <p>33. कबीर किस भक्तिमार्ग से संबंधित हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सगुण भक्ति</button>
+    <button onclick="checkAnswer(this, 'B')">B. तांत्रिक मार्ग</button>
+    <button onclick="checkAnswer(this, 'C')">C. निर्गुण भक्ति</button>
+    <button onclick="checkAnswer(this, 'D')">D. कर्म मार्ग</button>
+  </div>
+</div>
+
+<!-- Question 4 -->
+<div class="question" data-answer="D">
+  <p>34. 'वाख' किस भाषा से लिया गया शब्द है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. हिंदी</button>
+    <button onclick="checkAnswer(this, 'B')">B. उर्दू</button>
+    <button onclick="checkAnswer(this, 'C')">C. संस्कृत</button>
+    <button onclick="checkAnswer(this, 'D')">D. कश्मीरी</button>
+  </div>
+</div>
+
+<!-- Question 5 -->
+<div class="question" data-answer="B">
+  <p>35. 'प्रार्थना' पाठ में किसका वर्णन किया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. युद्ध का</button>
+    <button onclick="checkAnswer(this, 'B')">B. ईश्वर के प्रति श्रद्धा</button>
+    <button onclick="checkAnswer(this, 'C')">C. शिक्षा का</button>
+    <button onclick="checkAnswer(this, 'D')">D. प्रकृति का</button>
+  </div>
+</div>
+
+<!-- Question 6 -->
+<div class="question" data-answer="A">
+  <p>36. 'पानी के प्रबंधक' पाठ में किस समस्या पर ज़ोर दिया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. जल संकट</button>
+    <button onclick="checkAnswer(this, 'B')">B. प्रदूषण</button>
+    <button onclick="checkAnswer(this, 'C')">C. भूखमरी</button>
+    <button onclick="checkAnswer(this, 'D')">D. शिक्षा</button>
+  </div>
+</div>
+
+<!-- Question 7 -->
+<div class="question" data-answer="C">
+  <p>37. 'दोहे' किस छंद में लिखे जाते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. चौपाई</button>
+    <button onclick="checkAnswer(this, 'B')">B. रोला</button>
+    <button onclick="checkAnswer(this, 'C')">C. दोहा</button>
+    <button onclick="checkAnswer(this, 'D')">D. सवैया</button>
+  </div>
+</div>
+
+<!-- Question 8 -->
+<div class="question" data-answer="B">
+  <p>38. 'राम-लक्ष्मण-परशुराम संवाद' किस ग्रंथ से लिया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. वेद</button>
+    <button onclick="checkAnswer(this, 'B')">B. रामचरितमानस</button>
+    <button onclick="checkAnswer(this, 'C')">C. महाभारत</button>
+    <button onclick="checkAnswer(this, 'D')">D. गीता</button>
+  </div>
+</div>
+
+<!-- Question 9 -->
+<div class="question" data-answer="A">
+  <p>39. 'रामचरितमानस' के रचयिता कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. तुलसीदास</button>
+    <button onclick="checkAnswer(this, 'B')">B. सूरदास</button>
+    <button onclick="checkAnswer(this, 'C')">C. कबीर</button>
+    <button onclick="checkAnswer(this, 'D')">D. रहीम</button>
+  </div>
+</div>
+
+<!-- Question 10 -->
+<div class="question" data-answer="D">
+  <p>40. 'एक फूल की चाह' कविता के कवि कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. हरिवंश राय बच्चन</button>
+    <button onclick="checkAnswer(this, 'B')">B. अज्ञेय</button>
+    <button onclick="checkAnswer(this, 'C')">C. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'D')">D. माखनलाल चतुर्वेदी</button>
+  </div>
+</div>
+
+ <div class="theory-question">
+  <p>1. 'एक फूल की चाह' कविता में कवि द्वारा फूल को किस प्रतीक के रूप में प्रस्तुत किया गया है?</p>
+</div>
+
+<div class="theory-question">
+  <p>2. 'मेरे संग की औरतें' पाठ में स्त्रियों के संघर्ष और आत्मसम्मान को किस प्रकार दर्शाया गया है?</p>
+</div>
+
+<div class="theory-question">
+  <p>3. कबीर के दोहों में सामाजिक समरसता और आडंबर विरोध का क्या संदेश मिलता है?</p>
+</div>
+
+<div class="theory-question">
+  <p>4. 'तुम कब जाओगे अतिथि' पाठ व्यंग्य के माध्यम से क्या सीख देता है?</p>
+</div>
+
+<div class="theory-question">
+  <p>5. 'धरती की पुकार' पाठ में लेखक ने किस प्राकृतिक समस्या को उजागर किया है और इसका समाधान क्या बताया है?</p>
+</div>
+
+<div class="theory-question">
+  <p>6. 'राम-लक्ष्मण-परशुराम संवाद' नाटक में परशुराम के क्रोध और लक्ष्मण की वाकपटुता का वर्णन कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>7. 'विटामिन M' पाठ के माध्यम से लेखक कौन सी सामाजिक सच्चाई को उजागर करता है?</p>
+</div>
+
+<div class="theory-question">
+  <p>8. 'एक फूल की चाह' कविता में फूल को लेकर कवि की दृष्टि को स्पष्ट कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>9. 'तोप' कविता के माध्यम से कवि ने युद्ध की किस विडंबना को उजागर किया है?</p>
+</div>
+
+<div class="theory-question">
+  <p>10. 'पत्र लेखन' के आधार पर किसी सामाजिक समस्या पर पत्र लिखने का महत्व स्पष्ट कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>11. 'साखी' में कबीर का क्या दृष्टिकोण है आत्मज्ञान के संबंध में?</p>
+</div>
+
+<div class="theory-question">
+  <p>12. 'अतीत में दबे पाँव' पाठ में लेखक ने किस ऐतिहासिक संदर्भ का उल्लेख किया है?</p>
+</div>
+
+<div class="theory-question">
+  <p>13. 'जल ही जीवन है' निबंध का सारांश अपने शब्दों में लिखिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>14. 'नौबतखाने में इबादत' पाठ में लेखक की धार्मिक सहिष्णुता किस प्रकार उभर कर आती है?</p>
+</div>
+
+<div class="theory-question">
+  <p>15. 'सपनों के से दिन' कहानी में स्वतंत्रता संग्राम की कौन सी झलक मिलती है?</p>
+</div>
+  <script>
+    function checkAnswer(button, selected) {
+      const parent = button.closest(".question");
+      const correct = parent.getAttribute("data-answer");
+
+      const allButtons = parent.querySelectorAll("button");
+      allButtons.forEach(btn => btn.disabled = true);
+
+      if (selected === correct) {
+        button.classList.add("correct");
+      } else {
+        button.classList.add("wrong");
+        allButtons.forEach(btn => {
+          if (btn.textContent.startsWith(correct)) {
+            btn.classList.add("correct");
+          }
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

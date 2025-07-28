@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Result Declared - Notice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .notice-box {
+      background: #ffffff;
+      color: #333;
+      max-width: 600px;
+      width: 100%;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .notice-box h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+
+    .notice-box p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0077b6;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #023e8a;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      .notice-box {
+        padding: 25px 20px;
+      }
+
+      .notice-box h1 {
+        font-size: 26px;
+      }
+
+      .notice-box p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice-box">
+    <h1>📢 Result Declared!</h1>
+    <p>
+      Dear Students and Parents,<br><br>
+      The final examination results for the academic session 2024-25 have been officially declared.<br>
+      You can now view and download your result from the portal.<br><br>
+      Congratulations to all the successful students!
+    </p>
+    <a href="result.html" class="btn">🔍 View Result</a>
+  </div>
+
+</body>
+</html>

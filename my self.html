@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivekanand's Personal Profile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #800080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    .profile-box {
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .profile-box img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #800080;
+    }
+
+    .profile-box h3 {
+      margin: 15px 0 10px;
+      color: #800080;
+    }
+
+    .profile-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .slider {
+      text-align: center;
+      padding: 40px 10px;
+      background: #fefefe;
+    }
+
+    .slider img {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #800080;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #formMsg {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #800080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer div {
+      margin-top: 15px;
+    }
+
+    footer div a img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    footer div a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Our Profile Page</h1>
+</header>
+
+<section class="profile-section">
+  <div class="profile-box">
+    <img src="ss.jpg" alt="Vivekanand">
+    <h3>Vivekanand</h3>
+    <p>I am Vivekanand, a passionate student and coder who enjoys building apps, websites, and exploring new technologies. My dedication toward learning helps me grow every day.</p>
+    <p>Whether it's academic goals or real-world coding challenges, I believe in consistency and smart effort. I'm always ready to help others and learn from experiences.</p>
+  </div>
+  <div class="profile-box">
+    <img src="friend.jpg" alt="Rahul Kumar">
+    <h3>Rahul Kumar</h3>
+    <p>He is my best friend and tech partner in most of the projects. His creativity, support, and teamwork make learning more interesting and joyful every day.</p>
+    <p>From school events to study sessions, we have walked the path of knowledge together. His presence always brings motivation and confidence.</p>
+  </div>
+</section>
+
+<section class="slider">
+  <h2>Our Gallery</h2>
+  <img id="sliderImage" src="img1.jpg" alt="Gallery Image">
+</section>
+
+<form name="submit-to-google-sheet" id="contactForm">
+  <h2>Contact Us</h2>
+  <input type="text" name="Name" placeholder="Your Name" required />
+  <input type="email" name="Email" placeholder="Your Email" required />
+  <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+  <p id="formMsg"></p>
+</form>
+
+<footer>
+  <h2>Developed by Vivekanand</h2>
+  <p>Email: vivekanand00440@gmail.com | Phone: ‪+91 8303606978‬</p>
+  <p>Location: Bhanauri Belsara, Kaundhiyara, Prayagraj - 212306</p>
+
+  <!-- Social Icons -->
+  <div>
+    <a href="https://instagram.com/vivekanand_roy_184" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/918303606978" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+</footer>
+
+<script>
+  // Slider Script
+  const sliderImages = [
+    "sk.jpg", "q1.jpg", "q2.jpg", "q3.jpg", "q4.jpg", "q5.jpg", "q15.jpg"
+  ];
+  let I = 0;
+  const slider = document.getElementById("sliderImage");
+
+  setInterval(() => {
+    I = (I + 1) % sliderImages.length;
+    slider.src = sliderImages[I];
+  }, 3000);
+
+  // Contact Form Script
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwYxfVcQWWijkie88DmYS3pUbf5B-6Y8qEwVKebnf7Zic32vmAhRGRKVg1NiNadpJMfgA/exec";
+  const form = document.forms["submit-to-google-sheet"];
+  const msg = document.getElementById("formMsg");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "✅ Message sent successfully!";
+        msg.style.color = "green";
+        form.reset();
+      })
+      .catch(error => {
+        msg.innerHTML = "❌ Failed to send message.";
+        msg.style.color = "red";
+        console.error("Error!", error.message);
+      });
+  });
+</script>
+
+</body>
+</html>

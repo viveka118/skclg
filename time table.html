@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Date & Day Wise Class Time Table</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .scroll-table {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1000px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #007acc;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      th, td {
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+
+    .download-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background-color: #005e99;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Time Table</h1>
+
+  <div class="scroll-table" id="tableContent">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Day</th>
+          <th>Class 1</th>
+          <th>Class 2</th>
+          <th>Class 3</th>
+          <th>Class 4</th>
+          <th>Class 5</th>
+          <th>Class 6</th>
+          <th>Class 7</th>
+          <th>Class 8</th>
+          <th>Class 9</th>
+          <th>Class 10</th>
+          <th>Class 11</th>
+          <th>Class 12</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>23-06-2025</td>
+          <td>Monday</td>
+          <td>Math</td>
+          <td></td>
+          <td>Science</td>
+          <td></td>
+          <td>English</td>
+          <td></td>
+          <td>GK</td>
+          <td></td>
+          <td>Physics</td>
+          <td></td>
+          <td></td>
+          <td>Chemistry</td>
+        </tr>
+        <tr>
+          <td>24-06-2025</td>
+          <td>Tuesday</td>
+          <td></td>
+          <td>Hindi</td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td>Science</td>
+          <td></td>
+          <td>English</td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>25-06-2025</td>
+          <td>Wednesday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>26-06-2025</td>
+          <td>Thurday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>28-06-2025</td>
+          <td>Frieday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>29-06-2025</td>
+          <td>Saturday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>30-06-2025</td>
+          <td>Sunday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>01-07-2025</td>
+          <td>Monday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>02-07-2025</td>
+          <td>Tuesday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>23-07-2025</td>
+          <td>Wednesday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Hindi</td>
+          <td></td>
+          <td></td>
+          <td>Math</td>
+          <td></td>
+          <td></td>
+          <td>Biology</td>
+          <td>Chemistry</td>
+          <td>Physics</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="download-btn" onclick="downloadPDF()">Download Time Table</button>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById("tableContent");
+      const opt = {
+        margin:       0.5,
+        filename:     'Class_Time_Table.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a3', orientation: 'landscape' }
+      };
+      html2pdf().from(element).set(opt).save();
+    }
+  </script>
+
+</body>
+</html>

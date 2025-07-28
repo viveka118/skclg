@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class 12 Chemistry Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef5f9;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #2e5f8a;
+      text-align: center;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .question p {
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.3s;
+      font-size: 20px;
+    }
+    .options button.correct {
+      background-color: #d4edda;
+      border-color: #28a745;
+      color: #155724;
+    }
+    .options button.incorrect {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+      color: #721c24;
+    }
+    .options button::after {
+      content: '✓';
+      float: right;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+    .options button.correct::after {
+      display: inline;
+    }
+    .theory {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .theory h2 {
+      color: #1e3d59;
+    }
+    .theory ol li {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Class 12 Chemistry Quiz (UP Board)</h1>
+
+<!-- MCQ Questions -->
+<div id="quiz">
+  <div class="question">
+    <p>1. H<sub>2</sub>O का IUPAC नाम क्या है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B', 'A')">A. हाइड्रोजन ऑक्साइड</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. ऑक्सीडेन</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">C. डाइहाइड्रोजन मोनोऑक्साइड</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">D. हाइड्रोजन डाइऑक्साइड</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. NaCl में कौन-सा बॉन्ड होता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. आयनिक</button>
+      <button onclick="checkAnswer(this, 'A', 'B')">B. सहसंयोजक</button>
+      <button onclick="checkAnswer(this, 'A', 'C')">C. धात्विक</button>
+      <button onclick="checkAnswer(this, 'A', 'D')">D. हाइड्रोजन</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. CH<sub>4</sub> में कौन-सा हाइब्रिडाइजेशन होता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C', 'A')">A. sp</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">B. sp<sup>2</sup></button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. sp<sup>3</sup></button>
+      <button onclick="checkAnswer(this, 'C', 'D')">D. sp<sup>3</sup>d</button>
+    </div>
+  <div class="question">
+    <p>4. निम्नलिखित में से कौन-सा यौगिक एक कार्बोक्सिलिक अम्ल है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C. CH3COOH')">A. CH3OH</button>
+      <button onclick="checkAnswer(this, 'C. CH3COOH')">B. C2H5OH</button>
+      <button onclick="checkAnswer(this, 'C. CH3COOH')">C. CH3COOH</button>
+      <button onclick="checkAnswer(this, 'C. CH3COOH')">D. CH4</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>5. हाइड्रोजन बंधन किसमें पाया जाता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A. H2O')">A. H2O</button>
+      <button onclick="checkAnswer(this, 'A. H2O')">B. CO2</button>
+      <button onclick="checkAnswer(this, 'A. H2O')">C. CH4</button>
+      <button onclick="checkAnswer(this, 'A. H2O')">D. NaCl</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>6. फिनोल को कौन-सा अभिक्रियक कार्बोक्सिलिक अम्ल में परिवर्तित करता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B. CO2 और NaOH')">A. HCl</button>
+      <button onclick="checkAnswer(this, 'B. CO2 और NaOH')">B. CO2 और NaOH</button>
+      <button onclick="checkAnswer(this, 'B. CO2 और NaOH')">C. Br2</button>
+      <button onclick="checkAnswer(this, 'B. CO2 और NaOH')">D. Cl2</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>7. IUPAC नाम में प्राथमिकता किसको दी जाती है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'D. कार्बोक्सिलिक अम्ल')">A. ऐल्कोहल</button>
+      <button onclick="checkAnswer(this, 'D. कार्बोक्सिलिक अम्ल')">B. कीटोन</button>
+      <button onclick="checkAnswer(this, 'D. कार्बोक्सिलिक अम्ल')">C. एल्डिहाइड</button>
+      <button onclick="checkAnswer(this, 'D. कार्बोक्सिलिक अम्ल')">D. कार्बोक्सिलिक अम्ल</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>8. निम्न में से कौन-सा यौगिक सुगंधित है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C. बेंजीन')">A. इथेन</button>
+      <button onclick="checkAnswer(this, 'C. बेंजीन')">B. प्रोपेन</button>
+      <button onclick="checkAnswer(this, 'C. बेंजीन')">C. बेंजीन</button>
+      <button onclick="checkAnswer(this, 'C. बेंजीन')">D. ब्यूटेन</button>
+    </div>
+  </div>
+
+
+<div class="question">
+    <p>9. निम्न में से कौन-सा समूह समावयवी (isomeric) यौगिक है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C')">A. CH₄ और C₂H₆</button>
+      <button onclick="checkAnswer(this, 'C')">B. C₂H₂ और C₄H₁₀</button>
+      <button onclick="checkAnswer(this, 'C')">C. C₂H₆O और CH₃OCH₃</button>
+      <button onclick="checkAnswer(this, 'C')">D. CH₄ और CH₃OH</button>
+    </div>
+  </div>
+
+  <!-- Question 12 -->
+  <div class="question">
+    <p>10. IUPAC नाम '2-ब्यूटीन' का संरचना सूत्र क्या होगा?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B')">A. CH₃CH=CH₂</button>
+      <button onclick="checkAnswer(this, 'B')">B. CH₃C≡CCH₃</button>
+      <button onclick="checkAnswer(this, 'B')">C. CH₃CH=CHCH₃</button>
+      <button onclick="checkAnswer(this, 'B')">D. CH₂=CHCH₂CH₃</button>
+    </div>
+  </div>
+
+  <!-- Question 13 -->
+  <div class="question">
+    <p>11. निम्नलिखित में से कौन-सा यौगिक प्राथमिक ऐल्कोहॉल है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. CH₃CH₂OH</button>
+      <button onclick="checkAnswer(this, 'A')">B. (CH₃)₂CHOH</button>
+      <button onclick="checkAnswer(this, 'A')">C. CH₃OH</button>
+      <button onclick="checkAnswer(this, 'A')">D. सभी</button>
+    </div>
+  </div>
+
+  <!-- Question 14 -->
+  <div class="question">
+    <p>12. C₂H₅Br को NaOH के साथ गर्म करने पर प्राप्त उत्पाद है:</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C')">A. C₂H₆</button>
+      <button onclick="checkAnswer(this, 'C')">B. C₂H₄</button>
+      <button onclick="checkAnswer(this, 'C')">C. C₂H₅OH</button>
+      <button onclick="checkAnswer(this, 'C')">D. CH₃OH</button>
+    </div>
+  </div>
+
+  <!-- Question 15 -->
+  <div class="question">
+    <p>13. 'इथेनॉल' का IUPAC नाम क्या है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. एथेनॉल</button>
+      <button onclick="checkAnswer(this, 'A')">B. एथिल एल्कोहॉल</button>
+      <button onclick="checkAnswer(this, 'A')">C. मिथाइल एल्कोहॉल</button>
+      <button onclick="checkAnswer(this, 'A')">D. मेथेनॉल</button>
+    </div>
+  </div>
+  <!-- Question 14 -->
+<div class="question">
+  <p>14. 'CH₃COOH' यौगिक का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'B')">B. एथेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'B')">C. एथिल अमाइन</button>
+    <button onclick="checkAnswer(this, 'B')">D. एथेन</button>
+  </div>
+</div>
+
+<!-- Question 15 -->
+<div class="question">
+  <p>15. 'CH₃CH₂CH₃' का IUPAC नाम क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. ब्यूटेन</button>
+    <button onclick="checkAnswer(this, 'C')">B. मेथेन</button>
+    <button onclick="checkAnswer(this, 'C')">C. प्रोपेन</button>
+    <button onclick="checkAnswer(this, 'C')">D. एथेन</button>
+  </div>
+</div>
+
+<!-- Question 16 -->
+<div class="question">
+  <p>16. 'CH₃CH₂OH' किसका IUPAC नाम है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'A')">B. मेथेनॉल</button>
+    <button onclick="checkAnswer(this, 'A')">C. प्रोपेनॉल</button>
+    <button onclick="checkAnswer(this, 'A')">D. ब्यूटेनॉल</button>
+  </div>
+</div>
+
+<!-- Question 17 -->
+<div class="question">
+  <p>17. 'CH₃CH₂COOH' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. एथेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'B')">B. प्रोपेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'B')">C. ब्यूटेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'B')">D. मिथेनॉइक अम्ल</button>
+  </div>
+</div>
+
+<!-- Question 18 -->
+<div class="question">
+  <p>18. 'C₂H₅Br' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. एथिल ब्रोमाइड</button>
+    <button onclick="checkAnswer(this, 'C')">B. मेथिल ब्रोमाइड</button>
+    <button onclick="checkAnswer(this, 'C')">C. ब्रोमोएथेन</button>
+    <button onclick="checkAnswer(this, 'C')">D. ब्यूटो ब्रोमाइड</button>
+  </div>
+</div>
+
+<!-- Question 19 -->
+<div class="question">
+  <p>19. 'CH₃COCH₃' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. एसीटिक एसिड</button>
+    <button onclick="checkAnswer(this, 'D')">B. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'D')">C. ब्यूटेनॉल</button>
+    <button onclick="checkAnswer(this, 'D')">D. प्रोपेनोन</button>
+  </div>
+</div>
+
+<!-- Question 20 -->
+<div class="question">
+  <p>20. 'HCOOH' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. मिथेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'A')">B. एथेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'A')">C. फॉर्मिक एसिड</button>
+    <button onclick="checkAnswer(this, 'A')">D. एसिटिक एसिड</button>
+  </div>
+</div>
+
+<!-- Question 21 -->
+<div class="question">
+  <p>21. 'CH₃CH₂NH₂' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. एथेनाइल अमीन</button>
+    <button onclick="checkAnswer(this, 'B')">B. एथेनामीन</button>
+    <button onclick="checkAnswer(this, 'B')">C. मिथेनामीन</button>
+    <button onclick="checkAnswer(this, 'B')">D. प्रोपेनामीन</button>
+  </div>
+</div>
+
+<!-- Question 22 -->
+<div class="question">
+  <p>22. 'C₆H₅OH' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. फिनोल</button>
+    <button onclick="checkAnswer(this, 'C')">B. बेंजीन</button>
+    <button onclick="checkAnswer(this, 'C')">C. फीनोल</button>
+    <button onclick="checkAnswer(this, 'C')">D. हाइड्रॉक्सीबेंजीन</button>
+  </div>
+</div>
+
+<!-- Question 23 -->
+<div class="question">
+  <p>23. 'CH₃OCH₃' यौगिक का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. डाइमेथाइल अल्कोहॉल</button>
+    <button onclick="checkAnswer(this, 'D')">B. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'D')">C. मिथेनॉल</button>
+    <button onclick="checkAnswer(this, 'D')">D. डाइमेथाइल ईथर</button>
+  </div>
+</div>
+
+<!-- Question 24 -->
+<div class="question">
+  <p>24. 'C₂H₂' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. एथाइन</button>
+    <button onclick="checkAnswer(this, 'A')">B. एथेन</button>
+    <button onclick="checkAnswer(this, 'A')">C. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'A')">D. एथिनॉल</button>
+  </div>
+</div>
+
+<!-- Question 25 -->
+<div class="question">
+  <p>25. 'CH₄' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. मीथेन</button>
+    <button onclick="checkAnswer(this, 'A')">B. एथेन</button>
+    <button onclick="checkAnswer(this, 'A')">C. प्रोपेन</button>
+    <button onclick="checkAnswer(this, 'A')">D. ब्यूटेन</button>
+  </div>
+</div>
+
+<!-- Question 26 -->
+<div class="question">
+  <p>26. 'C₃H₆' यौगिक का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. प्रोपेन</button>
+    <button onclick="checkAnswer(this, 'B')">B. प्रोपीन</button>
+    <button onclick="checkAnswer(this, 'B')">C. प्रोपानॉल</button>
+    <button onclick="checkAnswer(this, 'B')">D. प्रोपेनॉल</button>
+  </div>
+</div>
+
+<!-- Question 27 -->
+<div class="question">
+  <p>27. 'C₄H₁₀' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. मिथेन</button>
+    <button onclick="checkAnswer(this, 'D')">B. प्रोपेन</button>
+    <button onclick="checkAnswer(this, 'D')">C. एथेन</button>
+    <button onclick="checkAnswer(this, 'D')">D. ब्यूटेन</button>
+  </div>
+</div>
+
+<!-- Question 28 -->
+<div class="question">
+  <p>28. 'C₂H₅COOH' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. प्रोपेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'A')">B. एथेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'A')">C. मिथेनॉइक अम्ल</button>
+    <button onclick="checkAnswer(this, 'A')">D. ब्यूटेनॉइक अम्ल</button>
+  </div>
+</div>
+
+<!-- Question 29 -->
+<div class="question">
+  <p>29. 'CH₃CH₂Cl' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. एथाइल क्लोराइड</button>
+    <button onclick="checkAnswer(this, 'C')">B. मेथिल क्लोराइड</button>
+    <button onclick="checkAnswer(this, 'C')">C. क्लोरोएथेन</button>
+    <button onclick="checkAnswer(this, 'C')">D. क्लोरोप्रोपेन</button>
+  </div>
+</div>
+
+<!-- Question 30 -->
+<div class="question">
+  <p>30. 'CH₃CHO' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'D')">B. एसीटिक एसिड</button>
+    <button onclick="checkAnswer(this, 'D')">C. प्रोपेनॉल</button>
+    <button onclick="checkAnswer(this, 'D')">D. एथेनल</button>
+  </div>
+</div>
+
+<!-- Question 31 -->
+<div class="question">
+  <p>31. 'C₆H₆' यौगिक का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. बेंजीन</button>
+    <button onclick="checkAnswer(this, 'A')">B. फिनोल</button>
+    <button onclick="checkAnswer(this, 'A')">C. टोल्यून</button>
+    <button onclick="checkAnswer(this, 'A')">D. ब्यूटेन</button>
+  </div>
+</div>
+
+<!-- Question 32 -->
+<div class="question">
+  <p>32. 'CH₃CH₂CH₂OH' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. ब्यूटेनॉल</button>
+    <button onclick="checkAnswer(this, 'B')">B. प्रोपेनॉल</button>
+    <button onclick="checkAnswer(this, 'B')">C. एथेनॉल</button>
+    <button onclick="checkAnswer(this, 'B')">D. मिथेनॉल</button>
+  </div>
+</div>
+
+<!-- Question 33 -->
+<div class="question">
+  <p>33. 'CH₃CH₂COCH₃' का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. ब्यूटेनॉल</button>
+    <button onclick="checkAnswer(this, 'C')">B. ब्यूटेनल</button>
+    <button onclick="checkAnswer(this, 'C')">C. ब्यूटेनोन</button>
+    <button onclick="checkAnswer(this, 'C')">D. ब्यूटेनिक एसिड</button>
+  </div>
+</div>
+  </div><div class="question">
+  <p>34. निम्नलिखित में से कौन-सा एल्कोहल प्राथमिक एल्कोहल है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. टर्शियरी ब्यूटाइल एल्कोहल</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. प्रोपेन-1-ऑल</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. सेकेंडरी ब्यूटाइल एल्कोहल</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. मेथाइल एल्कोहल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. CH₃CH₂CH₂OH का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. प्रोपीनॉल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. इथेनॉल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. प्रोपेन-1-ऑल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. ब्यूटेनॉल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>36. एल्डिहाइड में कौन-सा कार्यात्मक समूह होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. –CHO</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. –OH</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. –COOH</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. –CO–</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. IUPAC नामकरण में मुख्य श्रृंखला का चयन किस आधार पर होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. सबसे लंबी श्रृंखला जो शाखाओं से मुक्त हो</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. सबसे लंबी श्रृंखला जिसमें अधिकतम हाइड्रोजन हों</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. सबसे छोटी श्रृंखला जिसमें कोई शाखा न हो</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. सबसे लंबी श्रृंखला जिसमें अधिक कार्यात्मक समूह हों</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. C₂H₅Cl किस प्रकार का यौगिक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. हेलोएल्केन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. एल्डिहाइड</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. कीटोन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. अम्ल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. एल्कीन का सामान्य सूत्र क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. CₙH₂ₙ₊₂</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. CₙH₂ₙ</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. CₙH₂ₙ₋₂</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. CₙHₙ</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. बेंजीन का IUPAC नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. साइक्लोहेक्साट्राइन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. फिनाइल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. बेंजीन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. एरोमेटिक हाइड्रोकार्बन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>41. निम्न में से कौन-सी अभिक्रिया एल्डोल संलयन का उदाहरण है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. एस्टरिफिकेशन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. न्यूक्लियोफिलिक उपस्थापन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. विस्थापन अभिक्रिया</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. एल्डिहाइड का क्षारीय माध्यम में संलयन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>42. टॉलेंस अभिकर्मक किस यौगिक की पहचान में प्रयोग होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. एल्डिहाइड</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. एल्कोहल</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. कीटोन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. अमीन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>43. जब मिथाइल क्लोराइड को KOH की जलीय विलयन में गर्म किया जाता है, तो उत्पाद होता है:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. मिथेन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. मेथनॉल</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. इथेन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. एथेनॉल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>44. CH₃COOH का IUPAC नाम है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. इथेनॉलिक एसिड</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. ऐसिटिक एसिड</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. मिथेनॉइक एसिड</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. एथेनॉइक एसिड</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>45. कौन-सा यौगिक कीटोन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. CH₃CHO</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. HCHO</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. CH₃COCH₃</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. CH₃OH</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>46. बेंजीन में कितने π-बॉन्ड होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. 2</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 3</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. 4</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. 1</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>47. इथेनॉल से इथीन प्राप्त करने के लिए कौन-सी क्रिया की जाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. जल वियोजन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. ऑक्सीकरण</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. उपस्थापन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. संघटन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>48. एस्टर का हाइड्रोलिसिस किसके द्वारा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. ऑक्सीजन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. क्लोरीन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. हीलियम</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. जल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>49. अल्कोहल + कार्बोक्सिलिक अम्ल →?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. कीटोन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. एल्डिहाइड</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. एस्टर</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. अमीन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>50. C₆H₆ का सामान्य नाम है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. बेंजीन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. हेक्सीन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. हेक्सेन</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. नाफ्थालीन</button>
+  </div>
+</div>
+
+</div>
+
+<!-- Theory Section -->
+<div class="theory">
+  <h2>थ्योरी प्रश्न (Theory Questions)</h2>
+  <ol>
+    <li>IUPAC नामकरण क्या है? उदाहरण सहित समझाइए।</li>
+    <li>कोवलेंट और आयनिक बॉन्ड में क्या अंतर होता है?</li>
+    <li>CH<sub>4</sub> अणु की संरचना और हाइब्रिडाइजेशन का वर्णन करें।</li>
+    <li>कार्बनिक यौगिकों के समावयवता (isomerism) के प्रकार बताइए।</li>
+    <li>एथेनॉल और एथेनॉलिक एसिड में क्या अंतर होता है?</li>
+    <li>‘रेडॉक्स अभिक्रिया’ को परिभाषित कीजिए। एक उदाहरण दीजिए।</li>
+    <li>पिरियॉडिक टेबल के समूह और आवर्त में क्या अंतर होता है?</li>
+    <li>pH स्केल क्या है और इसका महत्व क्या है?</li>
+    <li>साबुन और डिटर्जेंट में रासायनिक दृष्टि से क्या अंतर होता है?</li>
+    <li>कोलिज़न थ्योरी और एक्टिवेशन एनर्जी को समझाइए।</li>
+    <li>कार्बनिक यौगिकों के समावयवता (Isomerism) के प्रकार बताइए।</li>
+  <li>IUPAC नामकरण के नियमों को विस्तार से समझाइए।</li>
+  <li>अल्केन्स और अल्काइन्स में क्या अंतर होता है?</li>
+  <li>कोलिगेटिव गुण क्या हैं? उदाहरण सहित समझाइए।</li>
+  <li>रेडॉक्स अभिक्रियाओं को समझाइए।</li>
+  <li>गैस नियमों को विस्तार से समझाइए।</li>
+  <li>समानुपाती नियम (Law of Multiple Proportions) क्या है?</li>
+  <li>हाइड्रोजन बॉन्डिंग क्या है और इसका महत्व क्या है?</li>
+  <li>एसिड और क्षार के आधुनिक सिद्धांत को समझाइए।</li>
+  <li>pH मान क्या होता है और इसे कैसे मापा जाता है?</li>
+  <li>रासायनिक संतुलन क्या होता है? ली-शेटलियर का सिद्धांत समझाइए।</li>
+  <li>ऑर्बिटल संकल्पना को समझाइए।</li>
+  <li>मोल संकल्पना को परिभाषित कीजिए।</li>
+  <li>इलेक्ट्रॉनिक संरचना क्या है? उदाहरण सहित समझाइए।</li>
+  <li>धात्विक बंध और कोवेलेन्ट बंध में अंतर बताइए।</li>
+  <li>द्रव्यमान संरक्षण का नियम समझाइए।</li>
+  <li>उष्मागतिकी के नियमों को संक्षेप में समझाइए।</li>
+  <li>रासायनिक गतिविज्ञान क्या है?</li>
+  <li>ऑक्साइड के प्रकार और उनके गुण बताइए।</li>
+  <li>कोलेराइड, सल्फेट, और नाइट्रेट के परीक्षण बताइए।</li>
+  <li>धातु और अधातु में अंतर बताइए।</li>
+  <li>कोलोइड्स क्या होते हैं? इनका वर्गीकरण कीजिए।</li>
+  <li>एंजाइम क्या होते हैं और उनका कार्य क्या होता है?</li>
+  <li>प्रोटीन और एमिनो अम्ल में क्या संबंध होता है?</li>
+  <li>वसा और कार्बोहाइड्रेट में अंतर बताइए।</li>
+  <li>कृत्रिम रेशों के उदाहरण दीजिए।</li>
+  <li>साबुन और डिटर्जेंट में अंतर बताइए।</li>
+  <li>औषधियों की रासायनिक प्रकृति को समझाइए।</li>
+  <li>रसायन और दैनिक जीवन में उनका उपयोग बताइए।</li>
+  <li>कार्बन चक्र को समझाइए।</li>
+  <li>ईंधनों के प्रकारों को समझाइए।</li>
+  <li>कृत्रिम खादों के प्रकार और उनके उपयोग बताइए।</li>
+  <li>ग्रीन केमिस्ट्री क्या है?</li>
+  <li>साबुन बनाने की प्रक्रिया क्या है?</li>
+  <li>वर्णक्रमीय विश्लेषण क्या है?</li>
+  <li>वाष्प दबाव क्या होता है?</li>
+  <li>रासायनिक बंध के प्रकारों को समझाइए।</li>
+  <li>हाइब्रिडाइजेशन को समझाइए।</li>
+  <li>पॉलिमर क्या होते हैं? उनके प्रकार बताइए।</li>
+  <li>विलयन की सांद्रता मापने की विधियाँ बताइए।</li>
+  <li>विद्युत अपघटन क्या है?</li>
+  <li>विद्युत रसायनिकी के प्रयोग बताइए।</li>
+  <li>धातु अपवहन की विधि क्या है?</li>
+  <li>उच्च अणु भार यौगिक क्या होते हैं?</li>
+  <li>सामान्य धातुओं की रासायनिक प्रतिक्रियाएँ बताइए।</li>
+  <li>रासायनिक सूत्र लिखने के नियम बताइए।</li>
+  <li>समीकरण संतुलन के नियम समझाइए।</li>
+  <li>फोटोकैमिस्ट्री क्या है?</li>
+  <li>रेडियोधर्मिता के सिद्धांत को समझाइए।</li>
+  <li>रेडियोधर्मी तत्वों के उपयोग बताइए।</li>
+  <li>नाभिकीय संलयन और विखंडन में अंतर बताइए।</li>
+  <li>ऑक्सीकरण संख्या निर्धारण की विधि बताइए।</li>
+  <li>टाइंडल प्रभाव क्या है?</li>
+  <li>साल्वेशन और हाइड्रेशन में अंतर बताइए।</li>
+  <li>इलेक्ट्रोलाइट्स के प्रकारों को समझाइए।</li>
+  <li>नाभिकीय रासायनिकी क्या है?</li>
+  <li>उष्मीय अपघटन क्या होता है?</li>
+  <li>जैव अणुओं के प्रकार बताइए।</li>
+  <li>एन्टीबायोटिक और एनाल्जेसिक में अंतर बताइए।</li>
+  <li>बायोमॉलेक्यूल्स के उदाहरण दीजिए।</li>
+  <li>केमिकल काइनेटिक्स में अणु सिद्धांत को समझाइए।</li>
+  <li>हाफ लाइफ अवधारणा को समझाइए।</li>
+  <li>क्रिस्टलीय और अमोर्फस ठोस में अंतर बताइए।</li>
+  <li>विलयन का वाष्प दाब कम होना क्या दर्शाता है?</li>
+  <li>गैसों का ग्रैहम का नियम समझाइए।</li>
+  <li>फेराडे का नियम और इसका उपयोग समझाइए।</li>
+  <li>धातु के शुद्धिकरण की विधियाँ बताइए।</li>
+  <li>हीलियम और हाइड्रोजन गैसों के उपयोग बताइए।</li>
+  <li>खारे पानी को मीठा बनाने की विधियाँ बताइए।</li>
+  <li>पानी की कठोरता को हटाने की विधि बताइए।</li>
+  <li>पीरियोडिक टेबल के समूह और आवर्त बताइए।</li>
+  <li>क्लोरीन और फ्लोरीन में रासायनिक भिन्नता बताइए।</li>
+  <li>किसी तत्व का इलेक्ट्रॉनिक विन्यास कैसे ज्ञात करें?</li>
+  <li>बॉइल का नियम और इसका उपयोग बताइए।</li>
+  <li>रेडॉक्स रिएक्शन में बैलेंसिंग कैसे करें?</li>
+  <li>कोर्डिनेशन कंपाउंड क्या होते हैं?</li>
+  <li>लेविस अम्ल और क्षार के उदाहरण बताइए।</li>
+  <li>पानी का रासायनिक विश्लेषण कैसे किया जाता है?</li>
+  <li>क्रिस्टलीकरण विधि को समझाइए।</li>
+  <li>प्राकृतिक गैस और कृत्रिम गैस में अंतर बताइए।</li>
+  <li>फ्लेम टेस्ट के प्रयोग और उनका महत्व बताइए।</li>
+  <li>कार्बनिक अभिक्रियाओं के प्रकार बताइए।</li>
+  <li>एस्थरिफिकेशन प्रक्रिया क्या है?</li>
+  <li>पॉलीमराइजेशन की प्रक्रिया को समझाइए।</li>
+  <li>रासायनिक बंध में सहसंयोजकता क्या होती है?</li>
+  <li>जैव रासायनिकी का महत्व बताइए।</li>
+  <li>विटामिन्स के प्रकार और उनके कार्य बताइए।</li>
+  <li>अम्ल और क्षार के बीच होने वाली अभिक्रिया समझाइए।</li>
+  <li>क्रिया की गति को प्रभावित करने वाले कारक बताइए।</li>
+  <li>रासायनिक ऊष्मा परिवर्तन को समझाइए।</li>
+  <li>गैसों की संपीड़नीयता को समझाइए।</li>
+  <li>उष्मा क्षमता और विशिष्ट उष्मा का अंतर समझाइए।</li>
+  <li>रेडिकल के प्रकार और उनके उदाहरण दीजिए।</li>
+  <li>अणु के आकार का निर्धारण किस प्रकार किया जाता है?</li>
+  <li>हाइड्रोकार्बन्स के वर्गीकरण को समझाइए।</li>
+  <li>थर्मोडायनेमिक्स का प्रथम नियम क्या कहता है?</li>
+  <li>फिजिकल और केमिकल परिवर्तन में अंतर बताइए।</li>
+  <li>वातावरणीय रसायनिकी का महत्व बताइए।</li>
+  <li>एनर्जी लेवल और उप-स्तर में क्या अंतर होता है?</li>
+  <li>नाइट्रोजन चक्र को समझाइए।</li>
+  <li>रेडॉक्स अभिक्रिया के अनुप्रयोग बताइए।</li>
+
+  </ol>
+</div>
+
+<script>
+function checkAnswer(button, correct, selected) {
+  const buttons = button.parentElement.querySelectorAll("button");
+  buttons.forEach(btn => {
+    btn.disabled = true;
+    const choice = btn.innerText.trim().charAt(0);
+    if (choice === correct) {
+      btn.classList.add("correct");
+    } else if (choice === selected) {
+      btn.classList.add("incorrect");
+    }
+  });
+}
+</script>
+
+</body>
+</html>

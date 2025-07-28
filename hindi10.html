@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 10 Hindi Quiz</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+       font-size: 25px;
+    }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .options button {
+      flex: 1 1 calc(50% - 10px);
+      font-size: 20px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+    .options button.correct {
+      background-color: #c8e6c9;
+      border-color: green;
+    }
+    .options button.wrong {
+      background-color: #ffcdd2;
+      border-color: red;
+    }
+    .theory-question {
+      background: #fff;
+      padding: 15px;
+      margin-top: 15px;
+      border-left: 5px solid #2196f3;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>कक्षा 10 - हिंदी (UP Board) - वस्तुनिष्ठ प्रश्न</h2>
+    
+  <div class="question">
+    <p>1. 'साखी' किस काव्य रूप से संबंधित है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B')">A. दोहा</button>
+      <button onclick="checkAnswer(this, 'B')">B. साखी</button>
+      <button onclick="checkAnswer(this, 'B')">C. चौपाई</button>
+      <button onclick="checkAnswer(this, 'B')">D. श्लोक</button>
+    </div>
+  </div>
+
+
+  <div class="question">
+    <p>2. कबीरदास ने किस प्रकार की भाषा का प्रयोग किया है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C')">A. संस्कृत</button>
+      <button onclick="checkAnswer(this, 'C')">B. फारसी</button>
+      <button onclick="checkAnswer(this, 'C')">C. साधुक्कड़ी</button>
+      <button onclick="checkAnswer(this, 'C')">D. ब्रज</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. 'मनुष्यता' पाठ के लेखक कौन हैं?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. जैनेंद्र कुमार</button>
+      <button onclick="checkAnswer(this, 'A')">B. प्रेमचंद</button>
+      <button onclick="checkAnswer(this, 'A')">C. जयशंकर प्रसाद</button>
+      <button onclick="checkAnswer(this, 'A')">D. रामधारी सिंह दिनकर</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>4. 'साना-साना हाथ जोड़ि' किसकी यात्रा-वृत्तांत है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. यतीन्द्र मिश्र</button>
+    <button onclick="checkAnswer(this, 'C')">B. रामविलास शर्मा</button>
+    <button onclick="checkAnswer(this, 'C')">C. मृणाल पांडे</button>
+    <button onclick="checkAnswer(this, 'C')">D. नंदकिशोर आचार्य</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. 'मनुष्यता' पाठ में लेखक ने किस गुण को सबसे महत्वपूर्ण बताया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. बहादुरी</button>
+    <button onclick="checkAnswer(this, 'B')">B. दया</button>
+    <button onclick="checkAnswer(this, 'B')">C. बुद्धिमानी</button>
+    <button onclick="checkAnswer(this, 'B')">D. अनुशासन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. 'नेताजी का चश्मा' किस लेखक की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सुभाष चंद्र बोस</button>
+    <button onclick="checkAnswer(this, 'A')">B. शरद जोशी</button>
+    <button onclick="checkAnswer(this, 'A')">C. हरिशंकर परसाई</button>
+    <button onclick="checkAnswer(this, 'A')">D. प्रेमचंद</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. ‘सपनों के-से दिन’ किस रचनाकार की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. माखनलाल चतुर्वेदी</button>
+    <button onclick="checkAnswer(this, 'D')">B. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'D')">C. सुमित्रानंदन पंत</button>
+    <button onclick="checkAnswer(this, 'D')">D. धर्मवीर भारती</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>8. 'पत्र लेखन' में कौन-सा पत्र अनौपचारिक माना जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. प्रधानाचार्य को पत्र</button>
+    <button onclick="checkAnswer(this, 'B')">B. मित्र को पत्र</button>
+    <button onclick="checkAnswer(this, 'B')">C. कार्यालय को पत्र</button>
+    <button onclick="checkAnswer(this, 'B')">D. संपादक को पत्र</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. 'तीसरी कसम के शिल्पकार शैलेन्द्र' पाठ में ‘तीसरी कसम’ क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. एक कविता</button>
+    <button onclick="checkAnswer(this, 'C')">B. एक उपन्यास</button>
+    <button onclick="checkAnswer(this, 'C')">C. एक फ़िल्म</button>
+    <button onclick="checkAnswer(this, 'C')">D. एक कहानी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. 'नेताजी का चश्मा' में चश्मा किसका प्रतीक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. शक्ति</button>
+    <button onclick="checkAnswer(this, 'D')">B. सच्चाई</button>
+    <button onclick="checkAnswer(this, 'D')">C. वीरता</button>
+    <button onclick="checkAnswer(this, 'D')">D. ईमानदारी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>11. 'पुस्तकें जो अमर हैं' पाठ के लेखक कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. हजारी प्रसाद द्विवेदी</button>
+    <button onclick="checkAnswer(this, 'B')">B. महावीर प्रसाद द्विवेदी</button>
+    <button onclick="checkAnswer(this, 'C')">C. रामधारी सिंह दिनकर</button>
+    <button onclick="checkAnswer(this, 'D')">D. राहुल सांकृत्यायन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. 'बड़े भाई साहब' पाठ के मुख्य पात्र कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. लेखक और उनके चाचा</button>
+    <button onclick="checkAnswer(this, 'B')">B. लेखक और उनके बड़े भाई</button>
+    <button onclick="checkAnswer(this, 'C')">C. लेखक और उनके मित्र</button>
+    <button onclick="checkAnswer(this, 'D')">D. लेखक और उनके पिता</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. 'बड़े भाई साहब' पाठ के लेखक कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. बालकृष्ण भट्ट</button>
+    <button onclick="checkAnswer(this, 'B')">B. जयशंकर प्रसाद</button>
+    <button onclick="checkAnswer(this, 'C')">C. प्रेमचंद</button>
+    <button onclick="checkAnswer(this, 'D')">D. हरिशंकर परसाई</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. 'साक्षी रहा है इतिहास' किस प्रकार का पाठ है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कहानी</button>
+    <button onclick="checkAnswer(this, 'B')">B. निबंध</button>
+    <button onclick="checkAnswer(this, 'C')">C. यात्रा वृतांत</button>
+    <button onclick="checkAnswer(this, 'D')">D. आत्मकथा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. 'नेताजी का चश्मा' पाठ में नेताजी का चरित्र कैसा दिखाया गया है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सख्त</button>
+    <button onclick="checkAnswer(this, 'B')">B. दयालु</button>
+    <button onclick="checkAnswer(this, 'C')">C. भ्रष्ट</button>
+    <button onclick="checkAnswer(this, 'D')">D. लालची</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>16. 'नेताजी का चश्मा' पाठ के लेखक कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सुभाष चंद्र बोस</button>
+    <button onclick="checkAnswer(this, 'B')">B. हरिशंकर परसाई</button>
+    <button onclick="checkAnswer(this, 'C')">C. बालकृष्ण भट्ट</button>
+    <button onclick="checkAnswer(this, 'D')">D. जयशंकर प्रसाद</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. 'मानवता' कविता के कवि कौन हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. रामधारी सिंह दिनकर</button>
+    <button onclick="checkAnswer(this, 'B')">B. हरिवंश राय बच्चन</button>
+    <button onclick="checkAnswer(this, 'C')">C. मैथिलीशरण गुप्त</button>
+    <button onclick="checkAnswer(this, 'D')">D. सुभद्राकुमारी चौहान</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. 'चंद्रगुप्त और चाणक्य' किस प्रकार की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. कविता</button>
+    <button onclick="checkAnswer(this, 'B')">B. उपन्यास</button>
+    <button onclick="checkAnswer(this, 'C')">C. नाटक</button>
+    <button onclick="checkAnswer(this, 'D')">D. जीवनी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. 'अमिट छाप' किस लेखक की रचना है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. श्रीलाल शुक्ल</button>
+    <button onclick="checkAnswer(this, 'B')">B. बालकृष्ण भट्ट</button>
+    <button onclick="checkAnswer(this, 'C')">C. भगवतशरण उपाध्याय</button>
+    <button onclick="checkAnswer(this, 'D')">D. जयशंकर प्रसाद</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. 'तुलसीदास' पाठ में तुलसीदास जी की किस विशेषता का वर्णन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. वीरता</button>
+    <button onclick="checkAnswer(this, 'B')">B. तपस्या</button>
+    <button onclick="checkAnswer(this, 'C')">C. भक्ति एवं साहित्य-सेवा</button>
+    <button onclick="checkAnswer(this, 'D')">D. बुद्धिमानी</button>
+  </div>
+</div>
+
+  <h2>कक्षा 10 - हिंदी (UP Board) - थ्योरी प्रश्न</h2>
+
+  <div class="theory-question">
+    <p>1. कबीर की भाषा की विशेषताओं का वर्णन कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>2. 'साखी' और 'सबद' में अंतर स्पष्ट कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>3. 'मनुष्यता' पाठ के माध्यम से लेखक ने क्या सन्देश दिया है?</p>
+  </div>
+  <div class="theory-question">
+    <p>4. 'बड़े भाई साहब' कहानी में शिक्षा का वास्तविक उद्देश्य क्या बताया गया है?</p>
+  </div>
+  <div class="theory-question">
+    <p>5. 'पढ़िए न मन से पढ़िए' का आशय स्पष्ट कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>6. तुलसीदास के काव्य की भाषा की विशेषताएँ बताइए।</p>
+  </div>
+  <div class="theory-question">
+    <p>7. सूरदास की कविता में भक्ति भावना कैसे व्यक्त हुई है?</p>
+  </div>
+  <div class="theory-question">
+    <p>8. 'एही ठैयाँ झुलनी हेरानी हो राम!' कविता का आशय स्पष्ट कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>9. 'आलो आंधारि' आत्मकथा में लेखिका के संघर्षों का वर्णन कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>10. 'जयशंकर प्रसाद' की भाषा शैली की प्रमुख विशेषताएँ बताइए।</p>
+  </div>
+  <div class="theory-question">
+    <p>11. 'संसार में सबसे बड़ी चीज मनुष्यता है' — इस कथन पर विचार कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>12. 'दोहे' और 'चौपाई' में अंतर स्पष्ट कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>13. 'पत्र लेखन' की विधाओं का परिचय दीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>14. 'रामचरितमानस' का हिन्दी साहित्य में स्थान स्पष्ट कीजिए।</p>
+  </div>
+  <div class="theory-question">
+    <p>15. कक्षा 10 के किसी एक काव्यपाठ का सप्रसंग व्याख्या कीजिए।</p>
+  </div>
+
+  <script>
+    function checkAnswer(button, correct) {
+      const buttons = button.parentElement.querySelectorAll("button");
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent.trim().startsWith(correct)) {
+          btn.classList.add("correct");
+        } else {
+          if (btn === button) {
+            btn.classList.add("wrong");
+          }
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

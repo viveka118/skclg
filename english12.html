@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class 11 English Grammar Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .question p {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #eaeaea;
+      width: 100%;
+      text-align: left;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .options button.correct {
+      background-color: #a4dfa0;
+      border-color: rgb(130, 175, 130);
+    }
+    .options button.incorrect {
+      background-color: #d67a7a;
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Class 11 English Grammar Quiz (MCQs)</h1>
+
+  <div class="question">
+    <p>1. Choose the correct form of the verb: He ______ to school every day.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. goes</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. go</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. gone</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. going</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. Identify the adjective in the sentence: She wore a beautiful dress.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. wore</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. beautiful</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. she</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. dress</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. Fill in the blank: I have lived in this city ______ 2010.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. for</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. since</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. from</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. at</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>4. What type of sentence is this: "Please open the window."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Interrogative</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Exclamatory</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Imperative</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Assertive</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>5. Choose the correct passive voice: "They are watching a movie."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. A movie watched by them.</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. A movie has been watched by them.</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. A movie was watched by them.</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. A movie is being watched by them.</button>
+    </div>
+  </div>
+  <div class="question">
+    <p>6. What is the noun in the sentence: "Honesty is the best policy."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. Honesty</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. is</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. best</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. the</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>7. Fill in the blank: She is afraid _____ dogs.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. with</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. by</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. of</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. from</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>8. Choose the correct indirect speech: He said, "I am tired."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. He says that he was tired.</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. He said that he was tired.</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. He told he is tired.</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. He was saying he tired.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>9. Identify the adverb: "She sings beautifully."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. sings</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. she</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. beautifully</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. none</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>10. What is the correct tense: "She has been reading for two hours."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. Present Perfect</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. Past Continuous</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. Future Perfect Continuous</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. Present Perfect Continuous</button>
+    </div>
+  </div>
+  <div class="question">
+    <p>11. Choose the correct article: He bought ___ umbrella.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. a</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. an</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. the</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. no article</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>12. What is the pronoun in the sentence: "They are playing cricket."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. They</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. are</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. playing</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. cricket</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>13. Fill in the blank with a conjunction: He is poor _____ honest.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. or</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. because</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. so</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. but</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>14. Identify the preposition: "The book is on the table."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. book</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. on</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. table</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. is</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>15. Choose the correct spelling:</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Accomodate</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Acommodate</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Accommodate</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Accomadate</button>
+    </div>
+  </div>
+  <div class="question">
+    <p>16. What is the correct tense: "He had finished his work before I came."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Past Continuous</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Present Perfect</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Past Perfect</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Future Perfect</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>17. Choose the correct verb form: She ____ to the market every Sunday.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. goes</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. go</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. going</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. gone</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>18. Identify the interjection: "Wow! That’s amazing."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. Wow</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. That’s</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. amazing</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. none</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>19. Change into passive voice: "She writes a letter."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. A letter is being written by her.</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. A letter is written by her.</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. A letter was written by her.</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. A letter has been written by her.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>20. Choose the correct conjunction: He is tall ____ weak.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. or</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. so</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. but</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. because</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>21. What is the correct reported speech: He said, "I will help you."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. He said that I would help you.</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. He said he helps me.</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. He says he will help me.</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. He said that he would help me.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>22. Fill in the blank with correct preposition: She is good ___ mathematics.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. at</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. in</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. at</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. of</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>23. Identify the correct sentence.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. He don’t like coffee.</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. He doesn’t likes coffee.</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. He don’t likes coffee.</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. He doesn’t like coffee.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>24. Fill in the blank: I prefer tea ____ coffee.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. to</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. than</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. from</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. over</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>25. What is the adjective: "The tall boy ran fast."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. boy</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. tall</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. ran</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. fast</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>26. Choose the correct form of verb: She _____ already left.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. is</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. has</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. has</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. was</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>27. What is the opposite of “generous”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. Kind</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. Honest</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. Noble</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. Stingy</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>28. Choose the correct indirect speech: She said, "I am cooking."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. She said that she was cooking.</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. She said that she was cooking.</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. She said she cooked.</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. She was cooking she said.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>29. What type of noun is “team”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Proper Noun</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Abstract Noun</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Collective Noun</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Material Noun</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>30. Identify the adverb: "He drives very carefully."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. drives</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. very</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. He</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. carefully</button>
+    </div>
+  </div>
+  <div class="question">
+    <p>31. Choose the correct sentence.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. I am agree with you.</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. I agreeing with you.</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. I agree with you.</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. I am agreed with you.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>32. What is the part of speech of the word “quickly”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. Adjective</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. Noun</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. Pronoun</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. Adverb</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>33. Choose the correct question tag: You are coming, _____?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. aren’t you</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. aren’t you?</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. is it?</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. do you?</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>34. What is the plural of “mouse”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. mice</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. mouses</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. mousees</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. meese</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>35. Choose the correctly punctuated sentence.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. whats your name?</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Whats your name?</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. What's your name?</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Whats your name.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>36. Choose the correct passive form: They will complete the work.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. The work will be completed by them.</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. The work will be completed by them.</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. The work has been completed by them.</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. The work is completed by them.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>37. Identify the kind of sentence: “How beautiful the painting is!”</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Imperative</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Assertive</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Exclamatory</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Interrogative</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>38. Fill in the blank: Neither Ramesh nor Suresh ____ guilty.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. are</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. being</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. have</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. is</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>39. Choose the correct spelling:</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. Refference</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. Reference</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. Referrence</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. Referance</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>40. What is the synonym of “Brave”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Coward</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Foolish</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Courageous</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Weak</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>41. What is the antonym of “Victory”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. Lose</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. Lost</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. Vanish</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. Defeat</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>42. What kind of noun is “honesty”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. Common noun</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. Collective noun</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. Abstract noun</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. Proper noun</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>43. Choose the correct preposition: He lives _____ Delhi.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. in</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. at</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. on</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. into</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>44. What is the feminine of “nephew”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. brother</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. niece</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. aunt</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. cousin</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>45. Choose the correct sentence.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. She do not likes tea.</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. She doesn't liking tea.</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. She doesn’t like tea.</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. She not like tea.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>46. What is the verb in the sentence: "Birds fly in the sky."</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. birds</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. fly</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. sky</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. in</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>47. Choose the correct conjunction: He ran fast _____ he missed the train.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'D')">A. and</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">B. but</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">C. so</button>
+      <button onclick="checkAnswer(this, 'D', 'D')">D. yet</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>48. What is the superlative form of “good”?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. goodest</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. more good</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. best</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. better</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>49. Choose the correct sentence.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. He has a car.</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. He have a car.</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. He haves a car.</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. He having a car.</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>50. What is the correct form: She _____ to the gym every morning.</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'B')">A. go</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. goes</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">C. going</button>
+      <button onclick="checkAnswer(this, 'D', 'B')">D. gone</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>51. Choose the correct passive voice: "They will complete the work."</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. The work will completed by them.</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. The work is completed by them.</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. The work will be completed by them.</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. They has completed the work.</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>52. Choose the correctly punctuated sentence:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. He said, "I am busy".</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. He said, "I am busy."</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. He said "I am busy."</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. He said, I am busy.</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>53. Select the correct reported speech: She said, "I am reading."</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. She said that she was reading.</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. She said that I was reading.</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. She said that she is reading.</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. She says that she was reading.</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>54. Choose the correct form: I prefer tea ____ coffee.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. for</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. than</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. to</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. with</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>55. Identify the correct sentence:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. She do not like sweets.</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. She don't likes sweets.</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. She doesn't likes sweets.</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. She doesn’t like sweets.</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>56. Which is an abstract noun?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. Honesty</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. Table</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. Pen</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. Chair</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>57. Choose the correct preposition: He is good ____ mathematics.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. at</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. in</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. on</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. with</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>58. Identify the part of speech for the underlined word: She quickly ran home.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. Noun</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. Adjective</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. Verb</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. Adverb</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>59. Select the correctly spelled word:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. Accommodation</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. Acommodation</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. Accomodation</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. Acomodation</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>60. Choose the correct synonym of “Brave”:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. Foolish</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. Lazy</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. Courageous</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. Silent</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>61. What type of sentence is this? "Shut the door."</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. Declarative</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. Imperative</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. Interrogative</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. Exclamatory</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>62. Identify the tense: He had been working for two hours.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. Present perfect</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. Future continuous</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. Past perfect</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. Past perfect continuous</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>63. Fill in the blank: If I ____ a bird, I would fly.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. were</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. am</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. was</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. be</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>64. Choose the correct article: He is ____ honest man.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. a</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. an</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. the</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. none</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>65. What is the opposite of “Generous”?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. Kind</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. Rich</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. Clever</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. Stingy</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>66. What is the noun form of “Decide”?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. Deciding</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. Decisive</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. Decision</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. Decide</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>67. Which word is a conjunction?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. But</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. Fast</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. Kind</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. Run</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>68. Identify the verb in the sentence: She plays well.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. Well</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. Plays</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. She</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. None</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>69. Which is the correct form: He is the ____ boy in the class.</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. intelligent</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. more intelligent</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. most intelligent</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. most intelligent</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>70. Which sentence is in future tense?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. She will go to school tomorrow.</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. She went to school.</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. She is going to school.</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. She was going to school.</button>
+  </div>
+</div>
+
+  <script>
+    function checkAnswer(btn, selected, correct) {
+      const allBtns = btn.parentElement.querySelectorAll("button");
+      allBtns.forEach(b => {
+        b.disabled = true;
+        const value = b.textContent.trim().charAt(0);
+        if (value === correct) {
+          b.classList.add("correct");
+        }
+        if (value === selected && value !== correct) {
+          b.classList.add("incorrect");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

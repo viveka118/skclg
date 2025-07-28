@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SK Inter College</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Header Start -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.jpg" alt="SK Inter College Logo">
+        <h1>SK Inter College</h1>
+      </div>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Notice.html">Notice</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="my self.html">About Developer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header End -->
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+  </script>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S K Inter College</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #e4eaf3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background: url('sk.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    .banner h1 {
+      color: rgb(19, 5, 2);
+      font-size: 3rem;
+      padding: 20px 30px;
+      border-radius: 15px;
+      text-align: center;
+      background: none;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .principal-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .principal-section img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .principal-text {
+      flex: 1;
+    }
+
+    .principal-text h2 {
+      color: #1e90ff;
+      margin-bottom: 10px;
+    }
+
+    .principal-text p {
+      margin-bottom: 10px;
+    }
+
+    .thought {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #1e90ff;
+      padding-left: 10px;
+    }
+
+    .achievements h2,
+    .facilities h2 {
+      color: #1e90ff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      font-style: italic;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 2rem;
+      }
+
+      .principal-section {
+        flex-direction: column;
+      }
+
+      .principal-section img {
+        width: 220px; /* Mobile par badi image dikhane ke liye */
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <h1>Welcome to S K Inter College</h1>
+  </div>
+
+  <!-- Principal Section -->
+  <div class="section principal-section">
+    <img src="principal.jpg" alt="Principal Photo">
+    <div class="principal-text">
+      <h2>Principal: Narendr Kumar Patel</h2>
+      <h3>B.A., B.ed</h3>
+      <p>Dr. Narendr Kumar Patel has been guiding the institution with vision and dedication for over 20 years, nurturing thousands of students into responsible citizens.</p>
+      <p class="thought">"The aim of education is not just knowledge, but building character and values."</p>
+    </div>
+  </div>
+
+  <!-- Achievements Section -->
+  <div class="section achievements">
+    <h2>Why Choose S K Inter College?</h2>
+    <ul>
+      <li>Consistently excellent academic results</li>
+      <li>Experienced and dedicated teaching staff</li>
+      <li>Smart classrooms and fully equipped labs</li>
+      <li>Well-stocked library and peaceful campus</li>
+      <li>Regular sports, arts, and cultural activities</li>
+      <li>Strong focus on discipline and moral values</li>
+    </ul>
+  </div>
+
+  <!-- Facilities Section -->
+  <div class="section facilities">
+    <h2>Our Campus & Facilities</h2>
+    <ul>
+      <li>Clean and green campus with CCTV surveillance</li>
+      <li>Separate labs for Physics, Chemistry, and Biology</li>
+      <li>Computer lab with high-speed internet</li>
+      <li>Playgrounds and sports gear for physical development</li>
+      <li>Regular health checkups and hygiene programs</li>
+      <li>24x7 power backup and purified drinking water</li>
+    </ul>
+  </div>
+
+  <!-- Inspirational Quote -->
+  <div class="quote">
+    "A place where knowledge meets wisdom, and dreams turn into reality."
+  </div>
+
+<br><br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    footer {
+      background: linear-gradient(to right, #002244, #005f73);
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, .footer-column a {
+      font-size: 15px;
+      color: #eee;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+      color: #FFD700;
+    }
+
+    .footer-social {
+      margin-top: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About School -->
+      <div class="footer-column">
+        <h3>SK Inter College</h3>
+        <p>Bari Bajhiya Kaundhiyara<br> Prayagraj, Uttar Pradesh, 212306</p>
+        <p>Email: vivekanand00440@gmail.com</p>
+        <p>Phone: ‪+91 8303606978‬</p>
+        <div class="footersocial">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3><br>
+        <a href="#">Home</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="admission.html">Admission</a><br>
+        <a href="notice.html">Notice</a><br>
+        <a href="gallery.html">Gallery</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Important Info -->
+      <div class="footer-column">
+        <h3>Information</h3><br>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a><br>
+        <a href="faqs.html">FAQs</a><br>
+        <a href="portal.html">Student Portal</a><br>
+        <a href="sign.html">Students Sign up</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>

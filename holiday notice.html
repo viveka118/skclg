@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Holiday Notice - SK Inter College</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #fff3e0);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      color: #004d40;
+    }
+
+    .holiday-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .holiday-card {
+      background: #ffffff;
+      border-left: 5px solid #009688;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .holiday-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .holiday-date {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00796b;
+    }
+
+    .holiday-name {
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    SK Inter College - Holiday Notice
+  </header>
+
+  <main>
+    <h2>2025 Holiday Calendar</h2>
+    <div class="holiday-list">
+      <div class="holiday-card">
+        <div class="holiday-date">01 Jan 2025</div>
+        <div class="holiday-name">New Year's Day</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">26 Jan 2025</div>
+        <div class="holiday-name">Republic Day</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">17 Mar 2025</div>
+        <div class="holiday-name">Holi</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">18 Apr 2025</div>
+        <div class="holiday-name">Good Friday</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">14 Apr 2025</div>
+        <div class="holiday-name">Ambedkar Jayanti</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">15 Aug 2025</div>
+        <div class="holiday-name">Independence Day</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">02 Oct 2025</div>
+        <div class="holiday-name">Gandhi Jayanti</div>
+      </div>
+      <div class="holiday-card">
+        <div class="holiday-date">25 Dec 2025</div>
+        <div class="holiday-name">Christmas Day</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+   ||    S K Inter Collage Bari Bajhiya Kaundhiyara Prayagraj     ||
+  </footer>
+
+</body>
+</html>

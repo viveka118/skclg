@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 12 Maths Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f6ff;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a237e;
+    }
+
+    .question {
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .question p {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .options button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+      background: #f0f0f0;
+      cursor: pointer;
+      font-size: 21px;
+      transition: background 0.3s;
+    }
+
+    .options button:hover {
+      background: #e0e0ff;
+    }
+
+    .correct {
+      background-color: #c8e6c9 !important;
+      border-color: #388e3c !important;
+    }
+
+    .incorrect {
+      background-color: #ffcdd2 !important;
+      border-color: #d32f2f !important;
+    }
+
+    .theory {
+      background: #fff3e0;
+      border-left: 5px solid #ff9800;
+      margin: 15px 0;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Class 12 Maths Quiz (UP Board NCERT Based)</h1>
+
+  <!-- MCQ Questions -->
+  <div class="question">
+    <p>1. यदि दो संख्याओं का योग 10 है और उनका गुणनफल 21 है, तो संख्याएँ क्या हैं?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C', 'A')">A. 5 और 5</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">B. 4 और 6</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. 3 और 7</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">D. 2 और 8</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. √3 और √2 का योग क्या है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B', 'A')">A. √6</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. √3 + √2</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">C. 5</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">D. √5</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>3. यदि ax² + bx + c = 0 की एक मूल x = 2 है, तो a(2)² + b(2) + c का मान होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 0</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 1</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 2</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 4</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>4. यदि A और B दो घटनाएँ हों और P(A) = 0.5, P(B) = 0.6 तथा A और B स्वतंत्र घटनाएँ हों, तो P(A ∩ B) = ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 0.1</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 0.5</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 0.3</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 0.8</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. ∫x dx का समाकलन होगा:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. x</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. x²/2 + C</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. ln|x|</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 1/x</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. दो रेखाएँ समतल में समान्तर होंगी यदि उनका ढाल (slope) क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. समान्तर रेखाएँ नहीं होतीं</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. ढाल का गुणनफल -1 हो</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. एक रेखा लंबवत हो</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. दोनों की ढाल समान हो</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. यदि log(ab) = log a + log b हो, तो इसे क्या कहते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. संकेत नियम</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. जोड़ नियम</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. लघुगणक का गुणा नियम</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. भाग नियम</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>8. कोण θ के लिए sin²θ + cos²θ का मान क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 1</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 0</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 2</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. θ</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. 3x² - 2x + 1 को पूर्ण वर्ग में बदलने पर परिणाम क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. (x - 1)²</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. कोई पूर्ण वर्ग नहीं</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. (x + 1)²</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. (x - 0.5)²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. निम्नलिखित में से कौन-सा एक सर्वांगसम फलन (bijective function) है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. f(x) = x²</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. f(x) = |x|</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. f(x) = ln x</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. f(x) = x³</button>
+  </div>
+</div>
+<div class="question">
+  <p>11. यदि एक वृत्त की त्रिज्या 7 सेमी हो, तो उसका क्षेत्रफल क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 154 सेमी²</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 144 सेमी²</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 154π सेमी²</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 49π सेमी²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. यदि A = {1, 2, 3} और B = {4, 5}, तो A × B में कुल अवयव होंगे:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 5</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 3</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. 2</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 6</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. यदि f(x) = x² + 2x + 1 हो, तो f(–1) का मान क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 0</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 2</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. –1</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 1</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. यदि sin²θ + cos²θ = ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 2</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 1</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 0</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. sinθ</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. समीकरण x² – 5x + 6 = 0 के मूल क्या हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 2, –3</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 3, –2</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. –2, –3</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 2, 3</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>16. यदि log₁₀(100) = x, तो x का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 0</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 10</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 2</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 1</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. निम्न में से कौन एक निरंतर फलन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. x²</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. |x|</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 1/x</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. signum(x)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. यदि कोण A = 30°, तो cos A का मान होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 1/2</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. √2/2</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. √3/2</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 0</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. यदि a > b > 0 हो, तो √a – √b का मान:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. ऋणात्मक</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. धनात्मक</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 0</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 1</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. यदि tan A = 1, तो कोण A का मान होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 45°</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 60°</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 30°</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 90°</button>
+  </div>
+</div>
+<div class="question">
+  <p>21. यदि f(x) = x² + 3x + 2 हो, तो f(–1) का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 4</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 0</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 0</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 2</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. यदि cos²θ – sin²θ = 1, तो θ का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 0°</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 45°</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 90°</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 60°</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. यदि एक रेखा का ढाल 1 है, तो वह किस कोण पर झुकी होगी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 30°</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 45°</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 60°</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 90°</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. एक वृत्त की परिधि का सूत्र क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. πr²</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 2r</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. πd²</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 2πr</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. यदि a + b = 10 और ab = 21, तो a² + b² का मान क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 58</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 62</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 58</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 50</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>26. कोण π/3 का कोसेकेंट मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 2/√3</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 2</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. √2</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 1/2</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>27. यदि A और B दो घटनाएँ हैं तथा P(A) = 0.6, P(B) = 0.5 और A तथा B स्वतंत्र हैं, तो P(A ∩ B) क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 1.1</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 0.1</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 0.3</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 0.9</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>28. एक बेलन की आयतन का सूत्र क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. πr²</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. πr²h</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 2πrh</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. πrh²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>29. यदि A = {1, 2, 3}, B = {3, 4, 5}, तो A ∩ B क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. {1, 2}</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. {4, 5}</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. {3}</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. {1, 3, 5}</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>30. यदि किसी रेखा की समीकरण 3x + 4y = 12 हो, तो इसका x-अवरोधक (intercept) क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 4</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 3</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 12</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 0</button>
+  </div>
+</div>
+<div class="question">
+  <p>31. यदि \( A = \begin{bmatrix} 2 & 3 \\ 0 & 1 \end{bmatrix} \), तो A का व्युत्क्रम क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. \(\begin{bmatrix} 1 & -3 \\ 0 & 2 \end{bmatrix}\)</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. \(\begin{bmatrix} 1/2 & -3 \\ 0 & 1 \end{bmatrix}\)</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. \(\begin{bmatrix} 1/2 & -3/2 \\ 0 & 1 \end{bmatrix}\)</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. उपरोक्त में से कोई नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>32. निम्न में से कौनसा फलन अवकलनीय नहीं है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. \( f(x) = x^2 \)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. \( f(x) = |x| \)</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. \( f(x) = \sin x \)</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. \( f(x) = e^x \)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>33. यदि \( y = \log(\sin x) \), तो \(\frac{dy}{dx}\) क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. \( \cot x \)</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. \( \sec x \)</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. \( \csc x \)</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. \( \tan x \)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>34. ∫sec x dx का पूर्णांक क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. \( \log(\cos x) + C \)</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. \( \tan x + C \)</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. \( \sec x + C \)</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. \( \log|\sec x + \tan x| + C \)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. यदि एक रेखा, वृत्त \( x^2 + y^2 = 9 \) को स्पर्श करती है, तो उस रेखा की लंबाई क्या हो सकती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 0</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 3</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 6</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 9</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>36. \( \frac{dy}{dx} = x^2 + y^2 \) एक किस प्रकार का अवकल समीकरण है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. रैखिक</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. समांतर</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. द्वितीय क्रम</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. गैर-रैखिक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. निम्नलिखित में से कौनसा संबंध प्रत्यावर्ती होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. ≤</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. > </button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. =</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. सभी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. यदि \( A = \{1, 2, 3\}, B = \{4, 5\} \), तो A × B में कुल अवयव होंगे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 2</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 5</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 6</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 8</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. किसी पंक्ति के संयोजन की संख्या क्या होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. \( _nC_r \)</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. \( _nP_r \)</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. \( r^n \)</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. \( n^r \)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. यदि एक त्रिज्या 5 cm वाला गोला हो, तो उसका आयतन कितना होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. \( \frac{4}{3}π × 5^3 \)</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. \( π × 5^2 \)</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. \( 4π × 5^2 \)</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. A विकल्प सही है</button>
+  </div>
+</div>
+<div class="question">
+  <p>41. यदि f(x) = sin⁻¹(x) + cos⁻¹(x) हो, तो f(1/2) का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. π/4</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. π</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. π/2</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. π/3</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>42. यदि A = [ [1, 2], [3, 4] ], तो A⁻¹ क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. [ [-2, 1], [1.5, -0.5] ]</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. [ [4, -3], [-2, 1] ]</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. [ [1, 0], [0, 1] ]</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. A का व्युत्क्रम संभव नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>43. समीकरण x² - 5x + 6 = 0 के मूलों का योग और गुणनफल क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. योग = 6, गुणनफल = -5</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. योग = 5, गुणनफल = 6</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. योग = -5, गुणनफल = 6</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. योग = 2, गुणनफल = 3</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>44. यदि dy/dx = eˣ और y(0) = 1, तो y का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. y = eˣ + 1</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. y = eˣ - 1</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. y = eˣ</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. y = ln(x)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>45. यदि एक प्रगति का तीसरा पद 10 और पाँचवाँ पद 18 है, तो पहले पद और सामान्य अंतर का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. a = 5, d = 3</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. a = 4, d = 3</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. a = 6, d = 2</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. a = 2, d = 4</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>46. यदि z = 3 + 4i हो, तो |z| का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 7</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 5</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 25</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 1</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>47. यदि एक वृत्त की परिधि 44 cm है, तो उसका त्रिज्या क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 5 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 6 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 7 cm</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 8 cm</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>48. ∫x² dx का मान क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. (x³)/3 + C</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. x³ + C</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 2x</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. x + C</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>49. यदि दो संख्याओं का अनुपात 3:4 है और उनका योग 56 है, तो बड़ी संख्या क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. 24</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. 28</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. 30</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. 32</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>50. एक कोने से 60° के कोण पर एक बाण फेंका गया। यदि वह 20 m/s की गति से चलता है, तो अधिकतम ऊँचाई कितनी होगी? (g = 10 m/s²)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. 15 m</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 15√3 m</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. 20 m</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. 30 m</button>
+  </div>
+</div>
+  <!-- Theory Questions -->
+  <div class="theory">1. रैखिक समीकरणों की युग्म प्रणाली को हल करने के विभिन्न विधियों को उदाहरण सहित समझाइए।</div>
+  <div class="theory">2. किसी त्रिज्या r के वृत्त का क्षेत्रफल और परिमाप ज्ञात करने का सूत्र लिखिए।</div>
+  <div class="theory">3. मैट्रिक्स और सारणिक में अंतर को स्पष्ट कीजिए।</div>
+  <div class="theory">4. अवकलन की परिभाषा दीजिए एवं किसी एक फलन का अवकलन कीजिए।</div>
+  <div class="theory">5. सीमा और सततता में क्या अंतर है? उदाहरण सहित समझाइए।</div>
+  <div class="theory">6. रैखिक समीकरणों की युग्म प्रणाली को चित्रात्मक विधि द्वारा हल करने की प्रक्रिया समझाइए।</div>
+
+<div class="theory">7. समीकरणों की उपपत्तिजन्य विधि से हल निकालने की विधि को उदाहरण सहित स्पष्ट कीजिए।</div>
+
+<div class="theory">8. समीकरण 3x + 4y = 10 और 2x – y = 5 को प्रतिस्थापन विधि से हल कीजिए।</div>
+
+<div class="theory">9. रैखिक असमिकाओं के युग्म को ग्राफ द्वारा हल करने की विधि समझाइए।</div>
+
+<div class="theory">10. रैखिक प्रोग्रामन क्या है? इसका दैनिक जीवन में उपयोग समझाइए।</div>
+
+<div class="theory">11. दो चर वाले रैखिक प्रोग्रामन की समस्याओं को हल करने की विधियाँ समझाइए।</div>
+
+<div class="theory">12. द्विघात समीकरण क्या है? इसका ग्राफ किस प्रकार का होता है? उदाहरण सहित स्पष्ट कीजिए।</div>
+
+<div class="theory">13. द्विघात समीकरणों को पूर्ण वर्ग विधि द्वारा हल करना समझाइए।</div>
+
+<div class="theory">14. एक गोले और एक समतल के मध्य की न्यूनतम दूरी ज्ञात करने की विधि समझाइए।</div>
+
+<div class="theory">15. व्युत्क्रम फलन किसे कहते हैं? उदाहरण सहित समझाइए।</div>
+
+<div class="theory">16. आव्यूह क्या होता है? 2 × 2 और 3 × 3 आव्यूहों की गुणा को उदाहरण सहित समझाइए।</div>
+
+<div class="theory">17. आव्यूहों की संक्रियाएँ क्या होती हैं? उपयुक्त उदाहरणों द्वारा स्पष्ट कीजिए।</div>
+
+<div class="theory">18. एकक आव्यूह, शून्य आव्यूह एवं व्युत्क्रम आव्यूह को उदाहरण सहित समझाइए।</div>
+
+<div class="theory">19. समांतर श्रेणी क्या होती है? इसका सामान्य पद एवं योगफल का सूत्र सिद्ध कीजिए।</div>
+
+<div class="theory">20. क्रमचय और संचय में अंतर को स्पष्ट कीजिए।</div>
+
+<div class="theory">21. कोई वस्तु कितने प्रकार से पुनरावृत्तियों सहित व्यवस्थित की जा सकती है? समझाइए।</div>
+
+<div class="theory">22. द्विपद प्रमेय क्या है? इसे सिद्ध कीजिए।</div>
+
+<div class="theory">23. बाइनॉमियल प्रमेय के उपयोग से (x + y)^n के किसी पद का ज्ञात करने का नियम समझाइए।</div>
+
+<div class="theory">24. सांख्यिकी में माध्य, माध्यिका, बहुलक की परिभाषा एवं उनकी गणना की विधि लिखिए।</div>
+
+<div class="theory">25. रेखीय प्रतिगमन क्या है? इसे उदाहरण सहित समझाइए।</div>
+
+<div class="theory">26. संभाव्यता क्या है? समभाव घटनाओं के लिए मूल सूत्र लिखिए।</div>
+
+<div class="theory">27. एक बिंदु और एक रेखा के बीच की दूरी ज्ञात करने की विधि को समझाइए।</div>
+
+<div class="theory">28. तीन बिंदुओं के कोलिनियर होने की शर्त को सिद्ध कीजिए।</div>
+
+<div class="theory">29. कोणीय गुणांक क्या है? दो रेखाओं के बीच के कोण की गणना कैसे करते हैं?</div>
+
+<div class="theory">30. वृत्त की सामान्य समीकरण को व्युत्पन्न कीजिए।</div>
+
+<div class="theory">31. प्रायिकता वितरण किसे कहते हैं? इसका उपयोग समझाइए।</div>
+
+<div class="theory">32. परिसीमा (Limit) की परिभाषा एवं सीमा के नियमों को उदाहरण सहित स्पष्ट कीजिए।</div>
+
+<div class="theory">33. अवकलन के भौतिक और ज्यामितीय अर्थ को समझाइए।</div>
+
+<div class="theory">34. अवकलन के नियम – योग, गुणनफल और भाग के लिए – उदाहरण सहित समझाइए।</div>
+
+<div class="theory">35. अवकल्य फलनों के अनुप्रयोगों को समझाइए (जैसे अधिकतम-न्यूनतम समस्याएँ)।</div>
+
+<div class="theory">36. समाकलन किसे कहते हैं? यह अवकलन का व्युत्क्रम कैसे है?</div>
+
+<div class="theory">37. अपवर्त्य समाकलनों को हल करने की विधियाँ समझाइए।</div>
+
+<div class="theory">38. समाकलनों के अनुप्रयोग — क्षेत्रफल निकालने की विधियाँ समझाइए।</div>
+
+<div class="theory">39. विभेदन समीकरण क्या होता है? सरलतम रूप का उदाहरण सहित हल कीजिए।</div>
+
+<div class="theory">40. वृत्त की त्रिज्या ज्ञात करने के लिए समाकलन का प्रयोग समझाइए।</div>
+
+<div class="theory">41. रेखा खंड AB को m:n के अनुपात में विभाजित करने का सूत्र सिद्ध कीजिए।</div>
+
+<div class="theory">42. त्रिज्या और केंद्र ज्ञात हो तो वृत्त की समीकरण कैसे लिखते हैं?</div>
+
+<div class="theory">43. दो वृत्तों की स्थिति का निर्धारण करने के लिए कौन-से कारक उत्तरदायी होते हैं?</div>
+
+<div class="theory">44. कोणों की त्रिकोणमितीय अनुपातों की परिभाषाएँ समझाइए।</div>
+
+<div class="theory">45. त्रिकोणमितीय प्रमेय – जैसे sin²θ + cos²θ = 1 – को सिद्ध कीजिए।</div>
+
+<div class="theory">46. अवकलन के प्रयोग से गति और त्वरण की समस्याओं को हल करना समझाइए।</div>
+
+<div class="theory">47. कार्य और समय की समस्याओं को रैखिक समीकरण द्वारा हल करना समझाइए।</div>
+
+<div class="theory">48. युग्म रैखिक समीकरणों का मैट्रिक्स पद्धति से हल करना समझाइए।</div>
+
+<div class="theory">49. गणितीय आगमन की विधि को उदाहरण सहित सिद्ध कीजिए।</div>
+
+<div class="theory">50. सरल और चक्रवृद्धि ब्याज की गणना के सूत्रों में क्या अंतर है? समझाइए।</div>
+  <script>
+    function checkAnswer(button, correctOption, selectedOption) {
+      const buttons = button.parentElement.querySelectorAll('button');
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        const opt = btn.innerText.charAt(0);
+        if (opt === correctOption) btn.classList.add('correct');
+        else if (opt === selectedOption) btn.classList.add('incorrect');
+      });
+    }
+  </script>
+</body>
+</html>

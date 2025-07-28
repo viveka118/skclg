@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cultural Events | SK Inter College</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9fbff;
+      color: #333;
+    }
+
+    header {
+      background-color: #800080;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      color: #800080;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #800080;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .image-banner {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .image-banner img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #800080;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .intro h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SK Inter College – Cultural Events</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="intro">
+      <h2>Celebrating Talent, Culture & Traditions</h2>
+      <p>
+        At SK Inter College, we believe that education is not just academics — it's also about nurturing creativity, confidence, and expression. Our cultural events give students the stage to showcase their hidden talents and enjoy diverse traditions together.
+      </p>
+    </div>
+
+    <div class="features">
+
+      <div class="card">
+        <h3>💃 Dance Performances</h3>
+        <p>
+          Students perform classical, folk, and contemporary dance forms in annual fests and inter-school competitions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎭 Dramas & Skits</h3>
+        <p>
+          Our school organizes stage plays, historical dramas, and social awareness skits to develop acting and communication skills.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎨 Art & Craft Exhibitions</h3>
+        <p>
+          From handmade paintings to model displays, art exhibitions showcase the creative genius of our students.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎤 Music & Singing</h3>
+        <p>
+          Group songs, solo singing, instrumental performances — our music club is full of melody and talent.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🧘 Yoga & Cultural Days</h3>
+        <p>
+          We celebrate Yoga Day, Independence Day, Saraswati Puja, and more to stay rooted in Indian culture and values.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏆 Competitions & Awards</h3>
+        <p>
+          Talent hunts, quizzes, debates, mehendi, rangoli, and poetry contests keep students actively involved year-round.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="image-banner">
+      <img src="q15.jpg" alt="Cultural Events Photo" id="eventImage">
+    </div>
+
+    <!-- Modal for full-screen image -->
+    <div id="imgModalContainer" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+
+  </div>
+
+  <footer>
+    || S K Inter College ||
+  </footer>
+
+  <script>
+    const modal = document.getElementById("imgModalContainer");
+    const img = document.getElementById("eventImage");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close");
+
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    modal.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

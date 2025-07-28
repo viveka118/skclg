@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 8 Computer Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3;
+      padding: 20px;
+    }
+    .question-box {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      font-size: 20px;
+    }
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .option {
+      padding: 8px 12px;
+      background: #f4f4f4;
+      border-radius: 6px;
+      margin: 6px 0;
+      cursor: pointer;
+      transition: 0.3s;
+      position: relative;
+    }
+    .option:hover {
+      background: #ddd;
+    }
+    .option.correct {
+      background: #c8f7c5;
+      border-left: 5px solid green;
+    }
+    .option.incorrect {
+      background: #f8d7da;
+      border-left: 5px solid red;
+    }
+    .option.correct::after {
+      content: '✔';
+      position: absolute;
+      right: 10px;
+    }
+    .option.incorrect::after {
+      content: '❌';
+      position: absolute;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>कक्षा 8 - कंप्यूटर  (60 प्रश्न)</h2>
+  <div id="quiz-container"></div>
+
+  <script>
+    const quizData = [
+      { question: "1. कंप्यूटर का जनक किसे कहा जाता है?", options: ["चार्ल्स बैबेज", "अल्बर्ट आइंस्टीन", "आइजैक न्यूटन", "एडिसन"], answer: "चार्ल्स बैबेज" },
+      { question: "2. CPU का फुल फॉर्म क्या है?", options: ["Central Process Unit", "Control Process Unit", "Central Processing Unit", "Computer Processing Unit"], answer: "Central Processing Unit" },
+      { question: "3. कंप्यूटर में डेटा अस्थायी रूप से कहां संग्रहित होता है?", options: ["ROM", "RAM", "Hard Disk", "Pendrive"], answer: "RAM" },
+      { question: "4. इनमें से कौन इनपुट डिवाइस है?", options: ["Printer", "Monitor", "Scanner", "Speaker"], answer: "Scanner" },
+      { question: "5. हार्ड डिस्क किस प्रकार की डिवाइस है?", options: ["इनपुट", "प्रोसेसिंग", "स्टोरेज", "आउटपुट"], answer: "स्टोरेज" },
+      { question: "6. सॉफ्टवेयर का उदाहरण क्या है?", options: ["CPU", "RAM", "MS Word", "Mouse"], answer: "MS Word" },
+      { question: "7. Windows किस प्रकार का सॉफ़्टवेयर है?", options: ["एप्लिकेशन सॉफ़्टवेयर", "ऑपरेटिंग सिस्टम", "गेम सॉफ़्टवेयर", "यूज़रसॉफ्टवेयर"], answer: "ऑपरेटिंग सिस्टम" },
+      { question: "8. इनमें से कौन आउटपुट डिवाइस है?", options: ["Keyboard", "Mouse", "Speaker", "Scanner"], answer: "Speaker" },
+      { question: "9. कंप्यूटर में सबसे छोटी डेटा यूनिट क्या होती है?", options: ["Byte", "Bit", "KB", "MB"], answer: "Bit" },
+      { question: "10. कंप्यूटर भाषा कौन-सी होती है?", options: ["हिंदी", "अंग्रेज़ी", "बाइनरी", "फ्रेंच"], answer: "बाइनरी" },
+      { question: "11. ROM का फुल फॉर्म क्या है?", options: ["Random Only Memory", "Read Only Memory", "Run Only Memory", "Read On Memory"], answer: "Read Only Memory" },
+      { question: "12. कंप्यूटर नेटवर्क क्या है?", options: ["कंप्यूटरों को जोड़ना", "प्रिंटर चलाना", "सिर्फ इंटरनेट चलाना", "कीबोर्ड जोड़ना"], answer: "कंप्यूटरों को जोड़ना" },
+      { question: "13. ईमेल का उपयोग किसके लिए होता है?", options: ["खेलने के लिए", "संगीत सुनने के लिए", "संदेश भेजने के लिए", "फिल्म देखने के लिए"], answer: "संदेश भेजने के लिए" },
+      { question: "14. वेबसाइट देखने के लिए किसका उपयोग होता है?", options: ["MS Paint", "Calculator", "Browser", "Notepad"], answer: "Browser" },
+      { question: "15. URL का फुल फॉर्म क्या है?", options: ["Uniform Resource Locator", "Unique Resource Locator", "Universal Resource Login", "User Resource Link"], answer: "Uniform Resource Locator" },
+      { question: "16. इनमें से कौन एप्लिकेशन सॉफ़्टवेयर नहीं है?", options: ["MS Excel", "MS Word", "Windows", "Photoshop"], answer: "Windows" },
+      { question: "17. कंप्यूटर की स्पीड को किसमें मापा जाता है?", options: ["Kg", "Mbps", "GHz", "Pixel"], answer: "GHz" },
+      { question: "18. कंप्यूटर का मुख्य भाग कौन-सा है?", options: ["CPU", "Mouse", "Keyboard", "Printer"], answer: "CPU" },
+      { question: "19. कंप्यूटर में टच स्क्रीन किस डिवाइस का उदाहरण है?", options: ["इनपुट", "आउटपुट", "इनपुट व आउटपुट", "स्टोरेज"], answer: "इनपुट व आउटपुट" },
+      { question: "20. इंटरनेट का जनक किसे कहा जाता है?", options: ["टिम बर्नर्स ली", "विंटन सर्फ", "चार्ल्स बैबेज", "डेनिस रिची"], answer: "विंटन सर्फ" },
+      { question: "21. ALU क्या करता है?", options: ["डेटा संग्रहित करता है", "गणनाएं करता है", "प्रिंट करता है", "इनपुट लेता है"], answer: "गणनाएं करता है" },
+      { question: "22. फाइल सेव करने के लिए किस शॉर्टकट का प्रयोग करते हैं?", options: ["Ctrl + C", "Ctrl + V", "Ctrl + S", "Ctrl + P"], answer: "Ctrl + S" },
+      { question: "23. कंप्यूटर का दिमाग किसे कहा जाता है?", options: ["माउस", "कीबोर्ड", "CPU", "हार्ड डिस्क"], answer: "CPU" },
+      { question: "24. MS Word का उपयोग किस लिए होता है?", options: ["चित्र बनाने के लिए", "डॉक्युमेंट लिखने के लिए", "गणना के लिए", "वीडियो चलाने के लिए"], answer: "डॉक्युमेंट लिखने के लिए" },
+      { question: "25. Bluetooth का उपयोग किस लिए होता है?", options: ["नेटवर्किंग", "फाइल शेयर", "प्रिंटिंग", "स्कैनिंग"], answer: "फाइल शेयर" },
+      { question: "26. Ctrl + P का उपयोग किसके लिए होता है?", options: ["Print करने के लिए", "Paste करने के लिए", "Power ऑन करने के लिए", "प्रोग्राम बंद करने के लिए"], answer: "Print करने के लिए" },
+      { question: "27. Computer viruses से सुरक्षा के लिए किसका उपयोग होता है?", options: ["Firewall", "Paint", "Notepad", "MS Word"], answer: "Firewall" },
+      { question: "28. USB का फुल फॉर्म क्या है?", options: ["Universal Storage Bus", "Universal Serial Bus", "Unlimited Serial Bus", "Unified Storage Box"], answer: "Universal Serial Bus" },
+      { question: "29. गूगल क्या है?", options: ["ब्राउज़र", "सर्च इंजन", "एप्लिकेशन", "वेबसाइट"], answer: "सर्च इंजन" },
+      { question: "30. कंप्यूटर को किसके द्वारा नियंत्रित किया जाता है?", options: ["यूज़र", "सॉफ्टवेयर", "हार्डवेयर", "CPU"], answer: "सॉफ्टवेयर" },
+       { question: "31. कंप्यूटर की फुल फॉर्म क्या है?", options: ["Commonly Operated Machine", "Computer Operated Machine", "Common Operating Machine Particularly Used for Technical and Educational Research", "Central Machine Processing Unit"], answer: "Common Operating Machine Particularly Used for Technical and Educational Research" },
+  { question: "32. कंप्यूटर हार्डवेयर क्या है?", options: ["इंटरनेट", "ब्राउज़र", "CPU", "वर्ड फाइल"], answer: "CPU" },
+  { question: "33. कंप्यूटर सॉफ्टवेयर किसे कहते हैं?", options: ["हार्ड डिस्क", "माउस", "MS Excel", "कीबोर्ड"], answer: "MS Excel" },
+  { question: "34. कंप्यूटर के कितने प्रकार हैं?", options: ["3", "2", "5", "4"], answer: "4" },
+  { question: "35. मॉडेम किसके लिए उपयोग होता है?", options: ["स्क्रीन बढ़ाने", "इंटरनेट कनेक्शन", "कीबोर्ड कनेक्शन", "प्रिंटर जोड़ने"], answer: "इंटरनेट कनेक्शन" },
+  { question: "36. पहला इलेक्ट्रॉनिक कंप्यूटर कौन था?", options: ["ENIAC", "MAC", "IBM", "DELL"], answer: "ENIAC" },
+  { question: "37. कंप्यूटर में उपयोग होने वाली मुख्य भाषा कौन सी है?", options: ["C", "Java", "Python", "Binary"], answer: "Binary" },
+  { question: "38. RAM क्या करती है?", options: ["डेटा स्थायी संग्रहित", "डाटा अस्थायी संग्रहित", "प्रिंटिंग", "इनपुट लेती है"], answer: "डाटा अस्थायी संग्रहित" },
+  { question: "39. कंप्यूटर बूटिंग का क्या मतलब है?", options: ["शटडाउन करना", "स्टार्ट करना", "स्क्रीन बंद करना", "इंटरनेट चालू करना"], answer: "स्टार्ट करना" },
+  { question: "40. Ctrl + Z का कार्य क्या है?", options: ["Redo", "Paste", "Undo", "Delete"], answer: "Undo" },
+  { question: "41. कंप्यूटर नेटवर्किंग क्या है?", options: ["इंटरनेट बनाना", "प्रिंटर जोड़ना", "कंप्यूटरों को जोड़ना", "स्क्रीन बदलना"], answer: "कंप्यूटरों को जोड़ना" },
+  { question: "42. IP Address का उपयोग किसमें होता है?", options: ["वर्ड फाइल", "नेटवर्क पहचान", "ऑडियो प्ले", "पेंटिंग में"], answer: "नेटवर्क पहचान" },
+  { question: "43. OCR का मतलब क्या है?", options: ["Only Character Reading", "Optical Character Recognition", "Open Computer Response", "Output Code Record"], answer: "Optical Character Recognition" },
+  { question: "44. डिजिटल घड़ी किसका उदाहरण है?", options: ["ऑनलाइन", "एनालॉग", "डिजिटल डिवाइस", "मेकेनिकल"], answer: "डिजिटल डिवाइस" },
+  { question: "45. HTML का उपयोग किसके लिए होता है?", options: ["डॉक्युमेंट बनाना", "वेबसाइट बनाना", "गाना सुनना", "वीडियो एडिटिंग"], answer: "वेबसाइट बनाना" },
+  { question: "46. USB क्या है?", options: ["यूजर सिस्टम बॉक्स", "यूनिवर्सल सीरियल बस", "यूनिफाइड स्टोरेज बॉक्स", "यूज़ एंड स्टोरेज बटन"], answer: "यूनिवर्सल सीरियल बस" },
+  { question: "47. एक कंप्यूटर सिस्टम के प्रमुख घटक क्या हैं?", options: ["इंटरनेट, वायर", "सॉफ्टवेयर, हार्डवेयर", "माउस, कीबोर्ड", "RAM, ROM"], answer: "सॉफ्टवेयर, हार्डवेयर" },
+  { question: "48. MS Excel में कॉलम को क्या कहते हैं?", options: ["संख्या", "अक्षर (A, B, C)", "पंक्ति", "सेल"], answer: "अक्षर (A, B, C)" },
+  { question: "49. कंप्यूटर को कौन नियंत्रित करता है?", options: ["CPU", "यूज़र", "RAM", "ROM"], answer: "यूज़र" },
+  { question: "50. कंप्यूटर का कौन सा भाग गणनाएं करता है?", options: ["ALU", "CU", "RAM", "ROM"], answer: "ALU" },
+  { question: "51. स्प्रेडशीट का प्रयोग होता है?", options: ["डॉक्युमेंट टाइपिंग", "गणना", "चित्र बनाना", "वीडियो देखना"], answer: "गणना" },
+  { question: "52. Computer program क्या होता है?", options: ["एक हार्डवेयर", "डेटा", "निर्देशों का समूह", "CPU का भाग"], answer: "निर्देशों का समूह" },
+  { question: "53. कंप्यूटर में फ़ाइल सेव करने के लिए किसे दबाते हैं?", options: ["Ctrl + A", "Ctrl + X", "Ctrl + S", "Ctrl + D"], answer: "Ctrl + S" },
+  { question: "54. कंप्यूटर प्रिंटर क्या है?", options: ["इनपुट डिवाइस", "स्टोरेज डिवाइस", "ऑउटपुट डिवाइस", "प्रोसेसर"], answer: "ऑउटपुट डिवाइस" },
+  { question: "55. माइक्रोसॉफ्ट का संस्थापक कौन है?", options: ["स्टीव जॉब्स", "एलन ट्यूरिंग", "बिल गेट्स", "मार्क जुकरबर्ग"], answer: "बिल गेट्स" },
+  { question: "56. सबसे तेज़ मेमोरी कौन सी होती है?", options: ["RAM", "Cache", "Hard Disk", "CD"], answer: "Cache" },
+  { question: "57. कंप्यूटर का उपयोग कौन कर सकता है?", options: ["केवल इंजीनियर", "कोई भी व्यक्ति", "केवल बच्चे", "सिर्फ वैज्ञानिक"], answer: "कोई भी व्यक्ति" },
+  { question: "58. कंप्यूटर में डाटा किसमें संग्रह होता है?", options: ["RAM", "CD", "Hard Disk", "Monitor"], answer: "Hard Disk" },
+  { question: "59. नेटवर्क टोपोलॉजी क्या होती है?", options: ["नेटवर्क के प्रकार", "डेटा संग्रहण", "यूजर नाम", "ईमेल सेवा"], answer: "नेटवर्क के प्रकार" },
+  { question: "60. साइबर क्राइम का मतलब क्या होता है?", options: ["ऑनलाइन गेम", "हैकिंग और ऑनलाइन अपराध", "नेटवर्क कनेक्ट", "ईमेल भेजना"], answer: "हैकिंग और ऑनलाइन अपराध" },
+
+    ];
+
+    const quizContainer = document.getElementById("quiz-container");
+
+    quizData.forEach((q, index) => {
+      const box = document.createElement("div");
+      box.className = "question-box";
+
+      const ques = document.createElement("div");
+      ques.className = "question";
+      ques.innerText = q.question;
+      box.appendChild(ques);
+
+      q.options.forEach(opt => {
+        const optBtn = document.createElement("div");
+        optBtn.className = "option";
+        optBtn.innerText = opt;
+
+        optBtn.addEventListener("click", function () {
+          const allOptions = box.querySelectorAll(".option");
+          allOptions.forEach(btn => {
+            btn.style.pointerEvents = "none"; // disable all
+            if (btn.innerText === q.answer) {
+              btn.classList.add("correct");
+            }
+          });
+
+          if (opt !== q.answer) {
+            optBtn.classList.add("incorrect");
+          }
+        });
+
+        box.appendChild(optBtn);
+      });
+
+      quizContainer.appendChild(box);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 11 Maths Quiz</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      margin: 20px;
+      padding: 20px;
+    }
+    h1 {
+      color: #2a4d69;
+      text-align: center;
+    }
+    p{
+      font-size: 21px;
+    }
+    .question {
+      background: #ffffff;
+      border-left: 5px solid #2a4d69;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .options button {
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+      background-color: #e0ecf8;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 23px;
+      text-align: left;
+    }
+    .options button.correct {
+      background-color: #c8e6c9;
+    }
+    .options button.incorrect {
+      background-color: #ffcdd2;
+    }
+    .theory-section {
+      margin-top: 40px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>कक्षा 11 गणित क्विज़</h1>
+
+<!-- Optional Questions -->
+<div class="question">
+  <p>1. यदि \\( f(x) = x^2 \\) है, तो \\( f'(x) \\) क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. 2x²</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. 2x</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. x</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. x²</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>2. ∫ x dx का हल क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. x²/2 + C</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. x² + C</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. ln(x)</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. 1/x + C</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>3. यदि \\( \frac{d}{dx} (\sin x) = ? \\)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. cos x</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. -sin x</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. cos x</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. -cos x</button>
+  </div>
+</div>
+<div class="question">
+  <p>4. \\( \frac{d}{dx} (x^3 + 3x^2 + x) = ? \\)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. \\(3x^2 + 2x\\)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. \\(3x^2 + 6x + 1\\)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. \\(x^2 + 3x\\)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. \\(3x^2 + x\\)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. \\( \int x^2 dx = ? \\)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'C')">A. \\(2x + C\\)</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">B. \\(x^3 + C\\)</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. \\( \frac{x^3}{3} + C \\)</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">D. \\(3x^2 + C\\)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. \\( \frac{d}{dx}(\cos x) = ? \\)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'D')">A. cos x</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">B. sin x</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">C. -cos x</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. -sin x</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. \\( \int \sin x \, dx = ? \\)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'B')">A. \\( \cos x + C \\)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. \\( -\cos x + C \\)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">C. \\( -\sin x + C \\)</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">D. \\( \tan x + C \\)</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>8. यदि \\( y = \tan x \\), तो \\( \frac{dy}{dx} = ? \\)</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. \\( \sec^2 x \\)</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">B. \\( \csc^2 x \\)</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">C. \\( \tan x \\)</button>
+    <button onclick="checkAnswer(this, 'A', 'A')">D. \\( \sec x \tan x \\)</button>
+  </div>
+</div>
+<!-- Theory Questions -->
+<div class="theory-section">
+  <h2>📝 सिद्धांत प्रश्न (Theory Questions)</h2>
+  <ol>
+    <li>समाकलन की परिभाषा दीजिए और इसका एक उदाहरण दीजिए।</li>
+    <li>अवकलन और समाकलन में अंतर स्पष्ट कीजिए।</li>
+    <li>यदि \\( y = x^3 + 2x \\), तो \\( \frac{dy}{dx} \\) ज्ञात कीजिए।</li>
+    <li>\\( ∫ \frac{1}{x} dx \\) हल कीजिए।</li>
+    <li>\\( ∫ e^x dx \\) का हल कीजिए।</li>
+    <li>गुणनफल के नियम से अवकलन समझाइए।</li>
+    <li>श्रृंखला का योगफल निकालने की विधि बताइए।</li>
+    <li>किसी फलन की अवकलनीयता के शर्तें क्या होती हैं?</li>
+    <li>\\( \frac{d}{dx} (\tan x) \\) ज्ञात कीजिए।</li>
+    <li>रेखीय समीकरण और द्विघात समीकरण में क्या अंतर है?</li>
+    <li>\\( \lim_{x \to 0} \frac{\sin x}{x} \\) का मान क्या होगा?</li>
+    <li>प्राकृतिक लघुगणक (ln) की परिभाषा दीजिए।</li>
+    <li>\\( \int \cos x dx \\) हल कीजिए।</li>
+    <li>मूल्यवान फलन (Absolute Value Function) को समझाइए।</li>
+    <li>\\( \int x^2 dx \\) का हल कीजिए।</li>
+  </ol>
+</div>
+
+<script>
+function checkAnswer(button, correctOption, userOption) {
+  const buttons = button.parentElement.querySelectorAll('button');
+  buttons.forEach(btn => {
+    const optionText = btn.innerText.trim().charAt(0);
+    if (optionText === correctOption) {
+      btn.classList.add("correct");
+    } else {
+      btn.classList.add("incorrect");
+    }
+    btn.disabled = true;
+  });
+}
+</script>
+
+</body>
+</html>

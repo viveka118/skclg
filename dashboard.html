@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎓 Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      font-size: 36px;
+      color: #0077b6;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      color: #0077b6;
+      margin-top: 15px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      color: #0077b6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 14px;
+      background-color: #0077b6;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 28px;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>🎓 Welcome to Student Dashboard</header>
+
+<section class="dashboard">
+  <a class="card" href="profile.html">
+    <div class="icon">👤</div>
+    <h3>My Profile</h3>
+    <p>View and edit your personal information</p>
+  </a>
+
+  <a class="card" href="fee managment.html">
+    <div class="icon">📅</div>
+    <h3>Fees Managment</h3>
+    <p>Check your monthly and yearly fees</p>
+  </a>
+
+  <a class="card" href="test.html">
+    <div class="icon">📊</div>
+    <h3>Test</h3>
+    <p>"Simple tests. Smart minds. For every student from class 8 to 12 " </p>
+  </a>
+
+  <a class="card" href="materials.html">
+    <div class="icon">📁</div>
+    <h3>Study Materials</h3>
+    <p>Download syllabus, homework, and notes</p>
+  </a>
+
+  <a class="card" href="announcement.html">
+    <div class="icon">📢</div>
+    <h3>Notices</h3>
+    <p>Read latest updates and announcements</p>
+  </a>
+
+  <a class="card" href="school contact.html">
+    <div class="icon">📞</div>
+    <h3>Contact School</h3>
+    <p>Reach out to admin for help or support</p>
+  </a>
+</section>
+
+<footer>
+||     S K Inter Collage Bari Bajhiya Kaundhiyara Prayagraj      ||
+</footer>
+
+</body>
+</html>

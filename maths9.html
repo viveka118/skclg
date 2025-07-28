@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class 9 Maths Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 26px;
+    }
+    .question h3 {
+      margin-top: 0;
+    }
+    .options label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .options input[type="radio"] {
+      display: none;
+    }
+    .correct {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #28a745;
+    }
+    .wrong {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #dc3545;
+    }
+    .theory-section {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .theory-section h2 {
+      color: #2c3e50;
+    }
+    .theory-question {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>कक्षा 9 गणित प्रश्नोत्तरी</h1>
+
+  <!-- 10 MCQ QUESTIONS -->
+  <div class="question">
+    <h3>1. एक त्रिभुज के कोण 40°, 60°, और ____ हैं। तीसरा कोण कितना होगा?</h3>
+    <div class="options">
+      <label><input type="radio" name="q1" onclick="checkAnswer(this, 'C')"> A) 70°</label>
+      <label><input type="radio" name="q1" onclick="checkAnswer(this, 'C')"> B) 100°</label>
+      <label><input type="radio" name="q1" onclick="checkAnswer(this, 'C')"> C) 80°</label>
+      <label><input type="radio" name="q1" onclick="checkAnswer(this, 'C')"> D) 60°</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>2. 𝑥² - 5𝑥 + 6 = 0 के मूल क्या हैं?</h3>
+    <div class="options">
+      <label><input type="radio" name="q2" onclick="checkAnswer(this, 'B')"> A) 3 और 5</label>
+      <label><input type="radio" name="q2" onclick="checkAnswer(this, 'B')"> B) 2 और 3</label>
+      <label><input type="radio" name="q2" onclick="checkAnswer(this, 'B')"> C) 1 और 6</label>
+      <label><input type="radio" name="q2" onclick="checkAnswer(this, 'B')"> D) 4 और 2</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>3. किसी वर्ग की भुजा 10 cm है, उसका क्षेत्रफल क्या होगा?</h3>
+    <div class="options">
+      <label><input type="radio" name="q3" onclick="checkAnswer(this, 'A')"> A) 100 cm²</label>
+      <label><input type="radio" name="q3" onclick="checkAnswer(this, 'A')"> B) 20 cm²</label>
+      <label><input type="radio" name="q3" onclick="checkAnswer(this, 'A')"> C) 200 cm²</label>
+      <label><input type="radio" name="q3" onclick="checkAnswer(this, 'A')"> D) 50 cm²</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>4. यदि a = 2 और b = 3, तो a² + b² का मान क्या होगा?</h3>
+    <div class="options">
+      <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> A) 10</label>
+      <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> B) 12</label>
+      <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> C) 13</label>
+      <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> D) 4 + 9 = 13</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>5. किसी वृत्त की त्रिज्या 7 cm है, परिधि क्या होगी? (π = 22/7)</h3>
+    <div class="options">
+      <label><input type="radio" name="q5" onclick="checkAnswer(this, 'C')"> A) 154 cm</label>
+      <label><input type="radio" name="q5" onclick="checkAnswer(this, 'C')"> B) 100 cm</label>
+      <label><input type="radio" name="q5" onclick="checkAnswer(this, 'C')"> C) 44 cm</label>
+      <label><input type="radio" name="q5" onclick="checkAnswer(this, 'C')"> D) 49 cm</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>6. √144 का मान क्या होगा?</h3>
+    <div class="options">
+      <label><input type="radio" name="q6" onclick="checkAnswer(this, 'A')"> A) 12</label>
+      <label><input type="radio" name="q6" onclick="checkAnswer(this, 'A')"> B) 14</label>
+      <label><input type="radio" name="q6" onclick="checkAnswer(this, 'A')"> C) 10</label>
+      <label><input type="radio" name="q6" onclick="checkAnswer(this, 'A')"> D) 16</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>7. एक आयत की लंबाई 8 cm और चौड़ाई 3 cm है, उसका क्षेत्रफल क्या होगा?</h3>
+    <div class="options">
+      <label><input type="radio" name="q7" onclick="checkAnswer(this, 'B')"> A) 24 m²</label>
+      <label><input type="radio" name="q7" onclick="checkAnswer(this, 'B')"> B) 24 cm²</label>
+      <label><input type="radio" name="q7" onclick="checkAnswer(this, 'B')"> C) 20 cm²</label>
+      <label><input type="radio" name="q7" onclick="checkAnswer(this, 'B')"> D) 11 cm²</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>8. यदि एक संख्या का वर्ग 49 है, वह संख्या क्या हो सकती है?</h3>
+    <div class="options">
+      <label><input type="radio" name="q8" onclick="checkAnswer(this, 'C')"> A) 5</label>
+      <label><input type="radio" name="q8" onclick="checkAnswer(this, 'C')"> B) 6</label>
+      <label><input type="radio" name="q8" onclick="checkAnswer(this, 'C')"> C) 7</label>
+      <label><input type="radio" name="q8" onclick="checkAnswer(this, 'C')"> D) 8</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>9. दो संख्याओं का औसत 15 है, यदि एक संख्या 10 है, तो दूसरी संख्या क्या होगी?</h3>
+    <div class="options">
+      <label><input type="radio" name="q9" onclick="checkAnswer(this, 'D')"> A) 25</label>
+      <label><input type="radio" name="q9" onclick="checkAnswer(this, 'D')"> B) 18</label>
+      <label><input type="radio" name="q9" onclick="checkAnswer(this, 'D')"> C) 10</label>
+      <label><input type="radio" name="q9" onclick="checkAnswer(this, 'D')"> D) 20</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h3>10. किसी संख्याओं का LCM और HCF दोनों 12 हो सकता है?</h3>
+    <div class="options">
+      <label><input type="radio" name="q10" onclick="checkAnswer(this, 'A')"> A) हाँ</label>
+      <label><input type="radio" name="q10" onclick="checkAnswer(this, 'A')"> B) नहीं</label>
+      <label><input type="radio" name="q10" onclick="checkAnswer(this, 'A')"> C) केवल सम संख्याओं के लिए</label>
+      <label><input type="radio" name="q10" onclick="checkAnswer(this, 'A')"> D) केवल विषम संख्याओं के लिए</label>
+    </div>
+  </div>
+  <div class="question">
+  <h3>11. एक कोण जो 90° से कम होता है, वह क्या कहलाता है?</h3>
+  <div class="options">
+    <label><input type="radio" name="q1" onclick="checkAnswer(this, 'B')"> A) समकोण</label>
+    <label><input type="radio" name="q1" onclick="checkAnswer(this, 'B')"> B) न्यूनकोण</label>
+    <label><input type="radio" name="q1" onclick="checkAnswer(this, 'B')"> C) अधिककोण</label>
+    <label><input type="radio" name="q1" onclick="checkAnswer(this, 'B')"> D) पूर्ण कोण</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>12. यदि एक त्रिभुज के कोण 60°, 60°, और 60° हैं, तो वह कौन-सा त्रिभुज है?</h3>
+  <div class="options">
+    <label><input type="radio" name="q2" onclick="checkAnswer(this, 'A')"> A) समद्विबाहु त्रिभुज</label>
+    <label><input type="radio" name="q2" onclick="checkAnswer(this, 'A')"> B) समकोण त्रिभुज</label>
+    <label><input type="radio" name="q2" onclick="checkAnswer(this, 'A')"> C) विषमबाहु त्रिभुज</label>
+    <label><input type="radio" name="q2" onclick="checkAnswer(this, 'A')"> D) समबाहु त्रिभुज</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>13. किसी वृत्त की त्रिज्या 14 cm है, तो उसका व्यास क्या होगा?</h3>
+  <div class="options">
+    <label><input type="radio" name="q3" onclick="checkAnswer(this, 'C')"> A) 24 cm</label>
+    <label><input type="radio" name="q3" onclick="checkAnswer(this, 'C')"> B) 18 cm</label>
+    <label><input type="radio" name="q3" onclick="checkAnswer(this, 'C')"> C) 28 cm</label>
+    <label><input type="radio" name="q3" onclick="checkAnswer(this, 'C')"> D) 7 cm</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>14. यदि x² = 49, तो x का मान क्या होगा?</h3>
+  <div class="options">
+    <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> A) 5</label>
+    <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> B) 6</label>
+    <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> C) 0</label>
+    <label><input type="radio" name="q4" onclick="checkAnswer(this, 'D')"> D) ±7</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>15. 3² + 4² = ?</h3>
+  <div class="options">
+    <label><input type="radio" name="q5" onclick="checkAnswer(this, 'A')"> A) 25</label>
+    <label><input type="radio" name="q5" onclick="checkAnswer(this, 'A')"> B) 12</label>
+    <label><input type="radio" name="q5" onclick="checkAnswer(this, 'A')"> C) 20</label>
+    <label><input type="radio" name="q5" onclick="checkAnswer(this, 'A')"> D) 15</label>
+  </div>
+</div>
+<div class="question">
+  <p>16. किसी त्रिभुज की दो भुजाएँ 7 cm और 10 cm हैं। तीसरी भुजा की न्यूनतम माप क्या हो सकती है?</p>
+  <div class="options">
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> A) 3 cm</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> B) 2 cm</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> C) 4 cm</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> D) 5 cm</label>
+  </div>
+</div>
+<div class="question">
+  <p>17. यदि (x + 3)(x – 4) = 0, तो x का मान क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'A')"> A) –3, 4</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'A')"> B) 3, –4</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'A')"> C) 3, 4</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'A')"> D) –3, –4</label>
+  </div>
+</div>
+<div class="question">
+  <p>18.  √81 का मान क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'B')"> A) 8</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'B')"> B) 9</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'B')"> C) 10</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'B')"> D) 11</label>
+  </div>
+</div>
+<div class="question">
+  <p>19. यदि एक घन की भुजा 5 cm है, तो उसका आयतन क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'D')"> A) 50 cm³</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'D')"> B) 100 cm³</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'D')"> C) 125 cm³</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'D')"> D) 125 cm³</label>
+  </div>
+</div>
+<div class="question">
+  <p>20. एक कोण 90° से कम है, तो वह कोण कैसा कहलाता है?</p>
+  <div class="options">
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'A')"> A) न्यूनकोण (Acute Angle)</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'A')"> B) समकोण</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'A')"> C) अधिककोण</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'A')"> D) पूरक कोण</label>
+  </div>
+</div>
+<div class="question">
+  <p>21. एक संख्या का 25% उसके 1/4 के बराबर है। वह संख्या क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'D')"> A. 50</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'D')"> B. 100</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'D')"> C. 150</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'D')"> D. कोई भी संख्या</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. यदि एक त्रिभुज की दो भुजाएँ 5 cm और 7 cm हैं तथा उसके बीच का कोण 90° है, तो तीसरी भुजा कितनी होगी?</p>
+  <div class="options">
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'C')"> A. 10 cm</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'C')"> B. 11 cm</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'C')"> C. √74 cm</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'C')"> D. 12 cm</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. यदि x² - 6x + 9 = 0, तो x का मान क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> A. 3</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> B. -3</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> C. 0</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> D. 9</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. यदि एक समचतुर्भुज का विकर्ण 6 cm और 8 cm है, तो उसका क्षेत्रफल क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'B')"> A. 12 cm²</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'B')"> B. 24 cm²</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'B')"> C. 48 cm²</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'B')"> D. 18 cm²</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. यदि sin A = 3/5, और कोण A एक तीव्र कोण है, तो cos A का मान क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'C')"> A. 3/4</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'C')"> B. 4/5</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'C')"> C. 4/5</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'C')"> D. 5/3</label>
+  </div>
+</div>
+<div class="question">
+  <p><b>Q26.</b> यदि x + 1/x = 5 हो, तो x² + 1/x² का मान क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> A) 21</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> B) 25</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> C) 23</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> D) 19</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q27.</b> यदि एक त्रिभुज के कोण 2x, 3x और 4x हैं, तो x का मान क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> A) 10°</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> B) 20°</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> C) 30°</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> D) 40°</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q28.</b> यदि √5 एक अपरिमेय संख्या है, तो 2√5 क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> A) अपरिमेय</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> B) परिमेय</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> C) पूर्णांक</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> D) प्राकृतिक संख्या</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q29.</b> यदि एक संख्या को 5 से गुणा करके 20 घटाया जाए तो परिणाम 40 आता है, संख्या क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> A) 10</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> B) 12</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> C) 12</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> D) 15</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q30.</b> यदि दो संख्याओं का योग 30 और अंतर 4 है, तो उन संख्याओं का गुणनफल क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> A) 100</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> B) 106</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> C) 108</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> D) 221</label>
+  </div>
+</div>
+<div class="question">
+  <p><b>Q31.</b> यदि x + 1/x = 5 हो, तो x² + 1/x² का मान क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> A) 21</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> B) 25</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> C) 23</label>
+    <label><input type="radio" name="q11" onclick="checkAnswer(this, 'C')"> D) 19</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q32.</b> यदि एक त्रिभुज के कोण 2x, 3x और 4x हैं, तो x का मान क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> A) 10°</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> B) 20°</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> C) 30°</label>
+    <label><input type="radio" name="q12" onclick="checkAnswer(this, 'B')"> D) 40°</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q33.</b> यदि √5 एक अपरिमेय संख्या है, तो 2√5 क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> A) अपरिमेय</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> B) परिमेय</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> C) पूर्णांक</label>
+    <label><input type="radio" name="q13" onclick="checkAnswer(this, 'A')"> D) प्राकृतिक संख्या</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q34.</b> यदि एक संख्या को 5 से गुणा करके 20 घटाया जाए तो परिणाम 40 आता है, संख्या क्या है?</p>
+  <div class="options">
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> A) 10</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> B) 12</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> C) 12</label>
+    <label><input type="radio" name="q14" onclick="checkAnswer(this, 'C')"> D) 15</label>
+  </div>
+</div>
+
+<div class="question">
+  <p><b>Q35.</b> यदि दो संख्याओं का योग 30 और अंतर 4 है, तो उन संख्याओं का गुणनफल क्या होगा?</p>
+  <div class="options">
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> A) 100</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> B) 106</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> C) 108</label>
+    <label><input type="radio" name="q15" onclick="checkAnswer(this, 'D')"> D) 221</label>
+  </div>
+</div>
+
+
+  <!-- THEORY QUESTIONS -->
+  <div class="theory-section">
+    <h2>थ्योरी प्रश्न (---: केवल उत्तर लिखें :---)</h2>
+    <div class="theory-question">1. रैखिक समीकरण क्या होता है? उदाहरण दीजिए।</div>
+    <div class="theory-question">2. त्रिभुज की समरूपता को परिभाषित कीजिए।</div>
+    <div class="theory-question">3. किसी वर्ग के विकर्ण की लंबाई ज्ञात करने का सूत्र बताइए।</div>
+    <div class="theory-question">4. गुणनखंड विधि से x² + 7x + 10 को हल कीजिए।</div>
+    <div class="theory-question">5. समांतर श्रेणी का सामान्य पद ज्ञात करने का सूत्र लिखिए।</div>
+    <div class="theory-question">6. यदि दो त्रिकोणों के क्षेत्रफल बराबर हैं तो उनके कौन से गुण समान होंगे?</div>
+    <div class="theory-question">7. यदि sin A = 3/5 हो, तो cos A और tan A ज्ञात कीजिए।</div>
+    <div class="theory-question">8. पाईथागोरस प्रमेय को उदाहरण सहित समझाइए।</div>
+    <div class="theory-question">9. किसी वृत्त का क्षेत्रफल और परिधि निकालने के सूत्र क्या हैं?</div>
+    <div class="theory-question">10. बहुपद और एकघात बहुपद में अंतर समझाइए।</div>
+    <div class="theory-question">11. दो चरों वाले रैखिक समीकरण का चित्र कैसे बनाते हैं?</div>
+    <div class="theory-question">12. यदि a² + b² = c² हो, तो यह किस प्रकार का त्रिभुज होगा?</div>
+    <div class="theory-question">13. वर्गमूल ज्ञात करने की विधि बताइए।</div>
+    <div class="theory-question">14. समांतर चतुर्भुज की परिभाषा व गुण लिखिए।</div>
+    <div class="theory-question">15. त्रिकोणमिति में sin, cos, tan के अनुपातों को समझाइए।</div>
+  </div>
+
+  <script>
+    function checkAnswer(input, correctOption) {
+      const labels = input.closest('.options').querySelectorAll('label');
+      labels.forEach(label => {
+        const option = label.innerText.trim().charAt(0);
+        label.classList.remove('correct', 'wrong');
+        if (option === correctOption) {
+          label.classList.add('correct');
+        } else if (label.querySelector('input').checked) {
+          label.classList.add('wrong');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

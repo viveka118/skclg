@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQs - Student Help Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      padding: 30px 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .faq {
+      background: white;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.07);
+    }
+    .faq-question {
+      padding: 15px 20px;
+      font-size: 17px;
+      font-weight: bold;
+      background: #0077b6;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px 8px 0 0;
+    }
+    .faq-answer {
+      padding: 15px 20px;
+      display: none;
+      font-size: 16px;
+      background: #fefefe;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📚 Frequently Asked Questions (FAQs)</h1>
+
+<div class="faq-container">
+
+  <div class="faq">
+    <div class="faq-question">📅 Admission kab start hote hain?</div>
+    <div class="faq-answer">Admission har saal April se start hote hain. Online aur offline dono mode available hain.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">⏰ School timing kya hai?</div>
+    <div class="faq-answer">School timing 8:00 AM se 2:00 PM tak hai (Monday to Saturday).</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">🎓 Admission ke liye kya documents chahiye?</div>
+    <div class="faq-answer">Photo, Aadhar card, Transfer Certificate (agar class 6+), aur previous mark sheet.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">💼 Uniform compulsory hai kya?</div>
+    <div class="faq-answer">Haan, uniform sabhi students ke liye compulsory hai Monday to Saturday.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">💰 Fees kis mode se pay kar sakte hain?</div>
+    <div class="faq-answer">Aap Cash, UPI, Google Pay ya Online Bank Transfer se fees pay kar sakte hain.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">🔁 Password bhool gaya ho to kya karein?</div>
+    <div class="faq-answer">Login page par "Forgot Password" option par click karein. Aapka password email ke madhyam se prapt hoga.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">📁 Study Material kaise milega?</div>
+    <div class="faq-answer">Dashboard ke "Download Section" me aapko sabhi PDF files aur assignments milenge.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">📊 Result kab aur kaise declare hota hai?</div>
+    <div class="faq-answer">Result exam ke 10-15 din baad portal par update kiya jata hai. Aap dashboard se download kar sakte hain.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">📱 Mobile ya laptop par portal kaise use karein?</div>
+    <div class="faq-answer">Bas browser open karke student portal ka link kholen. Page mobile responsive hai.</div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">📞 Contact kahan karein agar dikkat ho?</div>
+    <div class="faq-answer">Aap school ke help number ya email par sampark kar sakte hain: ‪+91 8303606978‬ | email@school.com</div>
+  </div>
+
+</div>
+
+<script>
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      const isOpen = answer.style.display === 'block';
+      document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+      answer.style.display = isOpen ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>

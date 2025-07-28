@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal - Vivekanand School</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #023e8a;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #0077b6;
+      border-radius: 5px;
+    }
+
+    .dashboard {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Student Portal - S K Inter College
+</header>
+
+<nav>
+  <a href="dashboard.html">🏠 Dashboard</a>
+  <a href="assignmenr.html">📄 Assignments</a>
+  <a href="notification.html">📢 Notifications</a>
+  <a href="test.html">📊 Class wise Test</a>
+  <a href="download.html">📁 Downloads</a>
+  <a href="fee managment.html">📆Fees Managment</a>
+</nav>
+
+<section class="dashboard">
+  <div class="card">
+    <a href="profile.html">
+      <h3>📋 Your Profile</h3>
+      <p>View or update your basic details, class, and contact info.</p>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="announcement.html">
+      <h3>📢 Announcements</h3>
+      <p>Check the latest updates and school notices here.</p>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="materials.html">
+      <h3>📁 Study Materials</h3>
+      <p>Download notes, homework, and syllabus files.</p>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="test.html">
+      <h3>📊 Class wise Test</h3>
+      <p>"Simple tests. Smart minds. For every student from class 8 to 12 "</p>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="fee managment.html">
+      <h3>📅 Fees managment</h3>
+      <p>"Manage your school fees easily and securely - all in one Place."</p>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="school contact.html">
+      <h3>📞 Contact School</h3>
+      <p>Need help? Reach out to the school administration directly.</p>
+    </a>
+  </div>
+</section>
+
+<footer>
+||     S K Inter Collage 2025 Bari Bajhiya Kaundhiyara Prayagraj      ||
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 8 Reasoning Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      padding: 20px;
+    }
+    h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 25px;
+    }
+    .option {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .option.correct {
+      background-color: #c8e6c9;
+      border-color: green;
+    }
+    .option.wrong {
+      background-color: #ffcdd2;
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Class 8 Reasoning - 30 Questions</h2>
+<div id="quiz"></div>
+
+<script>
+  const questions = [
+    {
+      q: "1. CAT : DOG :: LION : ?",
+      options: ["Tiger", "Fox", "Wolf", "Goat"],
+      answer: 2
+    },
+    {
+      q: "2. 2, 4, 8, 16, ?",
+      options: ["24", "32", "20", "18"],
+      answer: 1
+    },
+    {
+      q: "3. 5, 10, 17, 26, ?",
+      options: ["37", "36", "35", "34"],
+      answer: 2
+    },
+    {
+      q: "4. DEAL : LAED :: LANE : ?",
+      options: ["ANEL", "ENAL", "NALE", "LEAN"],
+      answer: 1
+    },
+    {
+      q: "5. 3, 9, 27, ?",
+      options: ["36", "72", "81", "54"],
+      answer: 2
+    },
+    {
+      q: "6. PAINTER : BRUSH :: WRITER : ?",
+      options: ["Paper", "Book", "Pen", "Story"],
+      answer: 2
+    },
+    {
+      q: "7. If MONDAY = 123456, then D is?",
+      options: ["4", "3", "5", "2"],
+      answer: 0
+    },
+    {
+      q: "8. 11, 13, 17, 19, ?",
+      options: ["23", "25", "27", "29"],
+      answer: 0
+    },
+    {
+      q: "9. Which is odd: Apple, Banana, Tomato, Mango",
+      options: ["Apple", "Banana", "Tomato", "Mango"],
+      answer: 2
+    },
+    {
+      q: "10. Square : Cube :: Line : ?",
+      options: ["Point", "Angle", "Triangle", "Square"],
+      answer: 1
+    },
+    {
+      q: "11. 16, 25, 36, ?",
+      options: ["49", "64", "56", "40"],
+      answer: 0
+    },
+    {
+      q: "12. Pen : Write :: Knife : ?",
+      options: ["Cut", "Peel", "Slice", "Sharp"],
+      answer: 0
+    },
+    {
+      q: "13. Foot is to Shoe as Head is to ?",
+      options: ["Hair", "Hat", "Cap", "Scarf"],
+      answer: 1
+    },
+    {
+      q: "14. B, D, F, H, ?",
+      options: ["I", "K", "J", "L"],
+      answer: 1
+    },
+    {
+      q: "15. 4, 9, 16, 25, ?",
+      options: ["36", "49", "30", "34"],
+      answer: 0
+    },
+    {
+      q: "16. Which is different: Cow, Tiger, Dog, Car",
+      options: ["Cow", "Tiger", "Dog", "Car"],
+      answer: 3
+    },
+    {
+      q: "17. Tree : Leaf :: Book : ?",
+      options: ["Word", "Page", "Cover", "Library"],
+      answer: 1
+    },
+    {
+      q: "18. 6, 11, 16, 21, ?",
+      options: ["24", "26", "27", "28"],
+      answer: 2
+    },
+    {
+      q: "19. Monday, Wednesday, Friday, ?",
+      options: ["Saturday", "Sunday", "Tuesday", "Thursday"],
+      answer: 3
+    },
+    {
+      q: "20. Find the missing: 121, 144, ?, 196",
+      options: ["155", "164", "169", "180"],
+      answer: 2
+    },
+    {
+      q: "21. 8, 6, 9, 23, ?, 421",
+      options: ["87", "95", "72", "90"],
+      answer: 0
+    },
+    {
+      q: "22. Circle : Sphere :: Square : ?",
+      options: ["Cube", "Rectangle", "Triangle", "Box"],
+      answer: 0
+    },
+    {
+      q: "23. Doctor : Hospital :: Teacher : ?",
+      options: ["School", "Class", "Student", "Book"],
+      answer: 0
+    },
+    {
+      q: "24. Odd one out: Rose, Lily, Mango, Lotus",
+      options: ["Rose", "Lily", "Mango", "Lotus"],
+      answer: 2
+    },
+    {
+      q: "25. If 2+3=13, 3+4=25, then 4+5=?",
+      options: ["41", "30", "35", "45"],
+      answer: 0
+    },
+    {
+      q: "26. 15, 31, 63, ?, 255",
+      options: ["127", "129", "131", "133"],
+      answer: 1
+    },
+    {
+      q: "27. Day before yesterday was Friday, what is today?",
+      options: ["Sunday", "Monday", "Tuesday", "Wednesday"],
+      answer: 0
+    },
+    {
+      q: "28. Which word is different: Book, Notebook, Paper, Chair",
+      options: ["Book", "Notebook", "Paper", "Chair"],
+      answer: 3
+    },
+    {
+      q: "29. If A=1, B=2, ..., Z=26, then ACE=?",
+      options: ["9", "14", "11", "8"],
+      answer: 1
+    },
+    {
+      q: "30. Light : Bulb :: Sound : ?",
+      options: ["Ear", "Speaker", "Wire", "Phone"],
+      answer: 1
+    },
+    {
+  q: "31. यदि 2 + 3 = 13, 3 + 4 = 25, 4 + 5 = 41, तो 5 + 6 = ?",
+  options: ["61", "49", "51", "71"],
+  answer: 0
+},
+{
+  q: "32. एक कोड भाषा में यदि BALL = 42 और CALL = 45, तो DALL = ?",
+  options: ["48", "51", "43", "50"],
+  answer: 1
+},
+{
+  q: "33. SERIES शब्द में कितने अक्षर ऐसे हैं जिनके बीच वही अक्षर हैं जितने अंग्रेजी वर्णमाला में होते हैं?",
+  options: ["2", "3", "1", "0"],
+  answer: 0
+},
+{
+  q: "34. एक व्यक्ति उत्तर की ओर 20 मीटर चला, फिर दाएं मुड़ा और 30 मीटर चला। अब वह किस दिशा में है?",
+  options: ["पूर्व", "दक्षिण", "उत्तर", "पश्चिम"],
+  answer: 0
+},
+{
+  q: "35. यदि ‘PAPER’ को कोड में ‘RCRGT’ लिखा जाता है, तो ‘BOARD’ को कैसे लिखा जाएगा?",
+  options: ["DQCTF", "DQBTF", "DQBTE", "DQCUE"],
+  answer: 0
+},
+{
+  q: "36. B का पिता A है, C A का बेटा है, D C की बहन है। A का D से क्या संबंध है?",
+  options: ["चाचा", "पिता", "भाई", "मामा"],
+  answer: 1
+},
+{
+  q: "37. एक घड़ी में 3 बजकर 15 मिनट पर घंटे और मिनट की सुई के बीच कितना कोण होगा?",
+  options: ["0°", "7.5°", "15°", "22.5°"],
+  answer: 3
+},
+{
+  q: "38. यदि किसी शब्द में पहले और तीसरे, दूसरे और चौथे अक्षर को बदला जाए, तो WORD का नया रूप क्या होगा?",
+  options: ["OWRD", "DROW", "RWOD", "ORWD"],
+  answer: 2
+},
+{
+  q: "39. यदि BOY = 28, और GIRL = 52, तो MAN = ?",
+  options: ["28", "27", "32", "35"],
+  answer: 3
+},
+{
+  q: "40. एक परीक्षा में 60% छात्र उत्तीर्ण हुए। यदि कुल 200 छात्र थे, तो असफल छात्रों की संख्या कितनी होगी?",
+  options: ["120", "80", "100", "90"],
+  answer: 1
+},
+{
+  q: "41. यदि कुछ पंखे टेबल हैं और कुछ टेबल कुर्सियाँ हैं, तो निष्कर्ष क्या है?",
+  options: ["कुछ पंखे कुर्सियाँ हैं", "सभी पंखे कुर्सियाँ हैं", "कोई निष्कर्ष नहीं", "सभी टेबल कुर्सियाँ हैं"],
+  answer: 2
+},
+{
+  q: "42. एक परिवार में A, B, C, D हैं। A, B की माँ है, C B का भाई है और D C का पिता है। D का A से क्या संबंध है?",
+  options: ["पति", "भाई", "चाचा", "पिता"],
+  answer: 0
+},
+{
+  q: "43. एक व्यक्ति शनिवार को दिल्ली पहुँचा, तीन दिन बाद लखनऊ गया। वह किस दिन गया?",
+  options: ["मंगलवार", "बुधवार", "सोमवार", "रविवार"],
+  answer: 2
+},
+{
+  q: "44. एक कोड में TABLE को GZOVS लिखा गया है, तो CHAIR को कैसे लिखा जाएगा?",
+  options: ["XSRIB", "XUZIR", "XZIRM", "XZIRB"],
+  answer: 3
+},
+{
+  q: "45. यदि 3x + 2 = 17, तो x = ?",
+  options: ["5", "4", "3", "6"],
+  answer: 0
+},
+{
+  q: "46. यदि APPLE = 50, और ORANGE = 60, तो GRAPE = ?",
+  options: ["45", "48", "42", "50"],
+  answer: 1
+},
+{
+  q: "47. एक आदमी दक्षिण दिशा में 10 मीटर चलता है, फिर बाएं मुड़कर 10 मीटर चलता है, फिर बाएं मुड़कर 10 मीटर चलता है, वह अब किस दिशा में है?",
+  options: ["उत्तर", "पूर्व", "दक्षिण", "पश्चिम"],
+  answer: 0
+},
+{
+  q: "48. एक संख्या को 5 से गुणा करके 20 जोड़ा गया, उत्तर 95 आया। संख्या क्या है?",
+  options: ["15", "10", "20", "25"],
+  answer: 3
+},
+{
+  q: "49. निम्नलिखित में से कौन एक विषम है?",
+  options: ["पंखा", "टेलीविजन", "कंप्यूटर", "किताब"],
+  answer: 3
+},
+{
+  q: "50. ‘नीला : रंग :: मीठा : ?’",
+  options: ["खट्टा", "स्वाद", "नमकीन", "फल"],
+  answer: 1
+},
+  {
+  q: "51. यदि CLOCK को BNMKC लिखा जाए, तो WATCH को कैसे लिखा जाएगा?",
+  options: ["UYRAB", "VZUBG", "UYTBG", "UXSBG"],
+  answer: 3
+},
+{
+  q: "52. एक संख्या 5 से गुणा करने पर 225 आती है, वह संख्या क्या है?",
+  options: ["55", "45", "35", "60"],
+  answer: 1
+},
+{
+  q: "53. यदि TRAIN को RTANI लिखा जाए, तो PLANE को कैसे लिखा जाएगा?",
+  options: ["LNPAE", "NALPE", "NALPE", "LNPAE"],
+  answer: 1
+},
+{
+  q: "54. एक परिवार में A, B की माता है, C A की पुत्री है, तो B का C से क्या संबंध है?",
+  options: ["भाई", "बहन", "पिता", "माता"],
+  answer: 0
+},
+{
+  q: "55. अगर 8 का अर्थ 6 हो, 6 का अर्थ 4 हो, 4 का अर्थ 2 हो, तो 8 + 6 + 4 = ?",
+  options: ["14", "10", "12", "8"],
+  answer: 1
+},
+{
+  q: "56. एक कोड में STUDENT = TVVEFOU, तो SCHOOL = ?",
+  options: ["TIDPMM", "TIDPNN", "THDPLO", "TIDPLO"],
+  answer: 0
+},
+{
+  q: "57. यदि 3 * 4 = 25, 5 * 2 = 29, तो 6 * 3 = ?",
+  options: ["33", "35", "39", "41"],
+  answer: 2
+},
+{
+  q: "58. दिशा: कोई व्यक्ति उत्तर की ओर 10 किमी चला, फिर दाएं मुड़ा और 5 किमी चला, फिर बाएं मुड़ा और 5 किमी चला। अब वह किस दिशा में है?",
+  options: ["उत्तर", "पूर्व", "दक्षिण", "उत्तर-पूर्व"],
+  answer: 3
+},
+{
+  q: "59. A, B से ऊँचा है, B, C से नीचा है, C, D से ऊँचा है। सबसे ऊँचा कौन है?",
+  options: ["A", "B", "C", "D"],
+  answer: 0
+},
+{
+  q: "60. यदि 'BALL' को 'CCMM' लिखा जाए, तो 'CALL' को कैसे लिखा जाएगा?",
+  options: ["DBMM", "DBNN", "CBMM", "CBNN"],
+  answer: 0
+},
+{
+  q: "61. 2, 4, 8, 16, ?, 64 — शृंखला में प्रश्नवाचक चिह्न के स्थान पर क्या आएगा?",
+  options: ["18", "20", "24", "32"],
+  answer: 3
+},
+{
+  q: "62. यदि TABLE को GZYOV लिखा जाए, तो CHAIR को कैसे लिखा जाएगा?",
+  options: ["XSLIR", "XZSRH", "XSRIR", "XHSRI"],
+  answer: 0
+},
+{
+  q: "63. एक पंक्ति में 5वाँ दाएँ से और 4वाँ बाएँ से एक ही व्यक्ति है, तो पंक्ति में कुल कितने व्यक्ति हैं?",
+  options: ["7", "8", "9", "10"],
+  answer: 2
+},
+{
+  q: "64. एक घड़ी 3:15 पर किस दिशा में होगा मिनट की सुई और घंटे की सुई के बीच कोण?",
+  options: ["0°", "7.5°", "15°", "30°"],
+  answer: 1
+},
+{
+  q: "65. यदि ‘PENCIL’ को ‘QFODJM’ लिखा जाए, तो ‘ERASER’ को कैसे लिखा जाएगा?",
+  options: ["FSBTFQ", "FSBTFS", "FSBSFS", "FSBTFR"],
+  answer: 0
+},
+{
+  q: "66. यदि 5 @ 2 = 17, 4 @ 3 = 19, तो 6 @ 1 = ?",
+  options: ["13", "14", "15", "16"],
+  answer: 2
+},
+{
+  q: "67. अंकगणितीय संकेतों के अनुसार: 8 + 2 × 3 – 4 ÷ 2 = ?",
+  options: ["11", "12", "10", "13"],
+  answer: 0
+},
+{
+  q: "68. एक व्यक्ति 30 किमी उत्तर गया, फिर 40 किमी पूर्व और फिर 30 किमी दक्षिण। वह प्रारंभिक स्थान से कितनी दूर है?",
+  options: ["30 किमी", "40 किमी", "50 किमी", "60 किमी"],
+  answer: 2
+},
+{
+  q: "69. यदि A = 1, B = 2,... Z = 26 हो, तो DOG = ?",
+  options: ["26", "24", "27", "26"],
+  answer: 3
+},
+{
+  q: "70. 1, 4, 9, 16, 25, ?",
+  options: ["35", "36", "38", "34"],
+  answer: 1
+},
+
+  ];
+
+  const quiz = document.getElementById('quiz');
+
+  questions.forEach((q, i) => {
+    const box = document.createElement('div');
+    box.className = 'question';
+    const questionText = document.createElement('p');
+    questionText.textContent = q.q;
+    box.appendChild(questionText);
+
+    q.options.forEach((opt, idx) => {
+      const btn = document.createElement('div');
+      btn.className = 'option';
+      btn.textContent = opt;
+      btn.onclick = () => {
+        if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
+        if (idx === q.answer) {
+          btn.classList.add('correct');
+        } else {
+          btn.classList.add('wrong');
+          // Show correct one
+          box.querySelectorAll('.option')[q.answer].classList.add('correct');
+        }
+      };
+      box.appendChild(btn);
+    });
+
+    quiz.appendChild(box);
+  });
+</script>
+
+</body>
+</html>

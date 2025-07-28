@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 12 Physics Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .question p {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .options button {
+      display: block;
+      margin: 5px 0;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .options button.correct {
+      border-color: green;
+      background-color: #d4edda;
+    }
+    .options button.incorrect {
+      border-color: red;
+      background-color: #f8d7da;
+    }
+    ol li{
+      font-size: 25px;
+    }
+    .tick {
+      float: right;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>कक्षा 12 भौतिकी क्विज</h1>
+
+  <div class="question">
+    <p>1. प्रकाश का वेग सबसे अधिक किस माध्यम में होता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. निर्वात</button>
+      <button onclick="checkAnswer(this, 'B', 'A')">B. जल</button>
+      <button onclick="checkAnswer(this, 'C', 'A')">C. कांच</button>
+      <button onclick="checkAnswer(this, 'D', 'A')">D. वायु</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. विद्युत धारा की इकाई क्या है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'C')">A. वोल्ट</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">B. ओम</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. ऐम्पियर</button>
+      <button onclick="checkAnswer(this, 'D', 'C')">D. वाट</button>
+    </div>
+  </div>
+  <!-- Question 3 -->
+<div class="question">
+  <p>3. ध्वनि तरंगों का परिमाण किसमें मापा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. ऐम्पियर</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. हर्ट्ज</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. डेसिबल</button>
+  </div>
+</div>
+
+<!-- Question 4 -->
+<div class="question">
+  <p>4. प्रकाश वर्ष किसका मात्रक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. समय</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. वेग</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. दूरी</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. दाब</button>
+  </div>
+</div>
+
+<!-- Question 5 -->
+<div class="question">
+  <p>5. ध्वनि तरंग किस माध्यम में सबसे अधिक वेग से चलती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. वायु</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ठोस</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. जल</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. निर्वात</button>
+  </div>
+</div>
+
+<!-- Question 6 -->
+<div class="question">
+  <p>6. ओम का नियम किससे संबंधित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. विभवांतर और धारा</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. बल और गति</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. दाब और आयतन</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. धारा और प्रतिरोध</button>
+  </div>
+</div>
+
+<!-- Question 7 -->
+<div class="question">
+  <p>7. चुंबकीय क्षेत्र की इकाई क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. टेस्ला</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. टेस्ला</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. जूल</button>
+  </div>
+</div>
+
+<!-- Question 8 -->
+<div class="question">
+  <p>8. किसी वस्तु का संवेग क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. द्रव्यमान × वेग</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. बल × समय</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. दूरी / समय</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. द्रव्यमान / समय</button>
+  </div>
+</div>
+
+<!-- Question 9 -->
+<div class="question">
+  <p>9. ध्वनि तरंगें किस प्रकार की होती हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. अनुप्रस्थ</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. अनुदैर्ध्य</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. यांत्रिक</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. विद्युत चुंबकीय</button>
+  </div>
+</div>
+
+<!-- Question 10 -->
+<div class="question">
+  <p>10. वोल्टमीटर किसे मापता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. धारा</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. प्रतिरोध</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. आवेश</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. विभवांतर</button>
+  </div>
+</div>
+<div class="question">
+  <p>11. ध्वनि तरंग किस प्रकार की तरंग होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. अनुप्रस्थ तरंग</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. अनुदैर्ध्य तरंग</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. स्थायी तरंग</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. विवर्तन तरंग</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. विद्युत धारा के प्रभाव से चुंबकीय क्षेत्र उत्पन्न होने की खोज किसने की?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. ऑर्स्टेड</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. फैराडे</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. रदरफोर्ड</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. विद्युत फ्यूज किस धातु से बनाया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. तांबा</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. एल्युमिनियम</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. टिन और सीसा का मिश्रधातु</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. लोहा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. प्रत्यावर्ती धारा का मुख्य लाभ क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. यह सस्ती होती है</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. इसे परिवहन करना आसान होता है</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. इसका नुकसान कम होता है</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. इसे ट्रांसफॉर्मर द्वारा वोल्टेज में बदला जा सकता है</button>
+  </div>
+</div>
+
+<!-- इसी तरह प्रश्न 15 से 50 तक नीचे दिए जा रहे हैं -->
+
+<div class="question">
+  <p>15. चुंबकीय क्षेत्र की दिशा ज्ञात करने के लिए कौन-सा नियम प्रयोग किया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. बाएं हाथ का नियम</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. दाएं हाथ का अंगूठा नियम</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. स्नेल का नियम</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. रदरफोर्ड का नियम</button>
+  </div>
+</div>
+<div class="question">
+  <p>16. शक्ति का मात्रक क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. जूल</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. वाट</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. ऐम्पियर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. ध्वनि की चाल वायु में लगभग कितनी होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. 150 m/s</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. 100 m/s</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 340 m/s</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. 500 m/s</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. विद्युत धारा मापने के लिए किस उपकरण का प्रयोग होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. ऐमीटर</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. वोल्टमीटर</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. गैल्वानोमीटर</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. मीटर ब्रिज</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. चुंबकीय क्षेत्र की दिशा किस नियम से ज्ञात की जाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. फ्लेमिंग का बायाँ हाथ नियम</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. दायाँ हाथ का अंगूठा नियम</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. न्यूटन का नियम</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. किरचॉफ का नियम</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. जब ध्वनि किसी सतह से टकराकर लौटती है, तो वह क्या कहलाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. अपवर्तन</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. विसरण</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. विवर्तन</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. परावर्तन</button>
+  </div>
+</div>
+<div class="question">
+  <p>21. वोल्टमीटर को विद्युत परिपथ में कैसे जोड़ा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. श्रेणीक्रम में</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. समान्तर में</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. कोई नहीं</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. श्रेणीक्रम व समान्तर दोनों</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. ओम का नियम किस पर आधारित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. करंट</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. पावर</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. विभवान्तर और धारा के अनुपात पर</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. वोल्टता</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. विद्युत धारा की दिशा किसके अनुसार निर्धारित होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. धनावेश की गति</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. ऋणावेश की गति</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. इलेक्ट्रॉन की दिशा</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. कोई नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. विद्युत परिपथ में फ्यूज का कार्य क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. विद्युत ऊर्जा को बढ़ाना</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. अत्यधिक धारा को रोकना</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. वोल्टेज को नियंत्रित करना</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. करंट को बढ़ाना</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. प्रतिरोध की SI इकाई क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. वोल्ट</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. ऐम्पियर</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. ओम</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. वाट</button>
+  </div>
+</div>
+
+<!-- इसी तरह 26 से 50 तक के सवाल नीचे दिए गए हैं... -->
+
+<div class="question">
+  <p>26. किसी चालक की प्रतिरोधता किस पर निर्भर करती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. पदार्थ की प्रकृति</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. चालक की लंबाई</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. चालक की मोटाई</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. तापमान</button>
+  </div>
+</div>
+
+<!-- Add more questions from 27 to 50 below in same pattern -->
+
+<!-- 27 -->
+<div class="question">
+  <p>27. यदि किसी तार की लंबाई दोगुनी कर दी जाए, तो उसका प्रतिरोध क्या होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. आधा हो जाएगा</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. दोगुना हो जाएगा</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. चार गुना हो जाएगा</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. कोई परिवर्तन नहीं होगा</button>
+  </div>
+</div>
+<div class="question">
+  <p>28. ध्वनि तरंग किस माध्यम में सबसे तेज गति से चलती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. वायु</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. जल</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. ठोस</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. निर्वात</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>29. प्रकाश का अपवर्तन किस कारण होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. परावर्तन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. विभिन्न माध्यमों में प्रकाश की चाल में परिवर्तन</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. अवशोषण</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. ध्रुवण</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>30. ओम का नियम किससे संबंधित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. विद्युत धारा और विभवान्तर</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. धारा और ताप</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. प्रतिरोध और धारा</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. विभवान्तर और शक्ति</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>31. दर्पण में बनने वाला प्रतिबिंब कैसा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. वास्तविक और उल्टा</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. आभासी और सीधा</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. आभासी और उल्टा</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. वास्तविक और सीधा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>32. ट्रांजिस्टर में कौन-कौन से अर्धचालक भाग होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. एमिटर, बेस, कलेक्टर</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. एनोड, कैथोड</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. पॉजिटिव, नेगेटिव</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. डायोड, फ्यूज</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>33. विद्युत धारा के चुम्बकीय प्रभाव की खोज किसने की?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. ओम</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. फैराडे</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. लेंज</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. ऑस्टेड</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>34. फोटोन का द्रव्यमान होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. 1 ग्राम</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. शून्य</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. अनंत</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. निश्चित</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. प्रकाश वर्ष किसका मात्रक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. समय</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. वेग</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. दूरी</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. द्रव्यमान</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>36. किस उपकरण द्वारा ए.सी. को डी.सी. में बदला जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. ट्रांसफॉर्मर</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. मोटर</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. एमिटर</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. डायोड</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. विद्युत मोटर किस सिद्धांत पर कार्य करती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. अपवर्तन</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. चुम्बकीय बल</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. प्रेरण</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. अपवर्तन और परावर्तन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. किस वैज्ञानिक ने द्रव्यमान ऊर्जा समता का सिद्धांत दिया?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. फैराडे</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. आइंस्टीन</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. प्लैंक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. लेन्स का फोकस दूरी मापी जाती है:</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. सेंटीमीटर में</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. न्यूटन में</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. ओम में</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. वाट में</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. रेडियोधर्मी विकिरण की खोज किसने की?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. रदरफोर्ड</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. हेनरी बेकरल</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. मैडम क्यूरी</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. बोहर</button>
+  </div>
+</div>
+<div class="question">
+  <p>41. परावर्तन के नियम के अनुसार आपतन कोण और परावर्तन कोण के बीच संबंध क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. आपतन कोण बड़ा होता है</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. परावर्तन कोण बड़ा होता है</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. दोनों बराबर होते हैं</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. कोई संबंध नहीं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>42. प्रकाश वर्ष किसका मात्रक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. समय</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. दूरी</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. शक्ति</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. दाब</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>43. ध्वनि तरंग किस माध्यम में सबसे तेज गति से चलती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. वायु</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. जल</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. निर्वात</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. ठोस</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>44. यदि बल और विस्थापन में कोण 90° हो, तो कार्य होगा?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. अधिकतम</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. न्यूनतम</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. शून्य</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. अनन्त</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>45. न्यूटन का प्रथम नियम किससे संबंधित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. जड़त्व</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. गति</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. बल</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. ऊर्जा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>46. परिपथ में रोध प्रतिरोध का मात्रक क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. वोल्ट</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ओम</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. ऐम्पियर</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. वाट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>47. किस द्रव्य में मुक्त इलेक्ट्रॉन होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'C')">A. अर्धचालक</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">B. निरोधक</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. चालक</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">D. वायु</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>48. वोल्टमीटर का प्रयोग किया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. विभवांतर मापने के लिए</button>
+    <button onclick="checkAnswer(this, 'B', 'A')">B. धारा मापने के लिए</button>
+    <button onclick="checkAnswer(this, 'C', 'A')">C. प्रतिरोध मापने के लिए</button>
+    <button onclick="checkAnswer(this, 'D', 'A')">D. शक्ति मापने के लिए</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>49. विद्युत धारा उत्पन्न होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'B')">A. विद्युत परिपथ को तोड़ने पर</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. विद्युत परिपथ बंद करने पर</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">C. परिपथ में प्रतिरोध बढ़ाने पर</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">D. परिपथ को ग्राउंड करने पर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>50. विद्युत बल रेखाएँ किस दिशा में होती हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'D')">A. ऋण आवेश से धन आवेश की ओर</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">B. वृत्तीय</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">C. दोनो ओर</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. धन आवेश से ऋण आवेश की ओर</button>
+  </div>
+</div>
+
+  <script>
+    function checkAnswer(button, selected, correct) {
+      const buttons = button.parentElement.querySelectorAll('button');
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        const option = btn.textContent.trim().charAt(0);
+        if (option === correct) {
+          btn.classList.add('correct');
+          btn.innerHTML += ' <span class="tick">✔</span>';
+        } else if (option === selected) {
+          btn.classList.add('incorrect');
+        }
+      });
+    }
+  </script>
+
+  <h2>सिद्धांतात्मक प्रश्न:</h2>
+  <ol>
+    <li>ओम का नियम समझाइए।</li>
+    <li>किरचॉफ के नियमों की व्याख्या कीजिए।</li>
+    <li>फोटोइलेक्ट्रिक प्रभाव क्या है? इसके उपयोग बताइए।</li>
+    <li>विद्युत धारा और विभवांतर के बीच संबंध समझाइए।</li>
+    <li>लेन्स का सूत्र लिखिए तथा इसके प्रत्येक पद का अर्थ बताइए।</li>
+    <li> ओम का नियम समझाइए।</li>
+  <li> प्रतिरोधकता और चालकता में अंतर स्पष्ट कीजिए।</li>
+  <li> किर्कहॉफ के नियम क्या हैं? उदाहरण सहित समझाइए।</li>
+  <li>वोल्टामीटर और अमीटर में अंतर लिखिए।</li>
+  <li> विद्युत विभव और विभवांतर में क्या अंतर है?</li>
+  <li> विद्युत धारा की परिभाषा और इसकी SI इकाई बताइए।</li>
+  <li> सुपरकंडक्टर किसे कहते हैं? उदाहरण दीजिए।</li>
+  <li> कैपेसिटर क्या होता है? इसकी कार्यविधि समझाइए।</li>
+  <li> श्रृंखला (Series) और समानांतर (Parallel) संयोजन में प्रतिरोधों का गुण समझाइए।</li>
+  <li> बैटरी और सेल में क्या अंतर है?</li>
+  <li> चुम्बकीय क्षेत्र की रेखाएं क्या दर्शाती हैं?</li>
+  <li> लेंस के प्रकार और उनके उपयोग समझाइए।</li>
+  <li> कूलॉम्ब का नियम क्या है?</li>
+  <li> विद्युत परिपथ आरेख क्या होता है?</li>
+  <li> विद्युत मोटर का कार्य सिद्धांत समझाइए।</li>
+  <li> इलेक्ट्रॉनिक वोल्ट किसे कहते हैं?</li>
+  <li> विद्युत परिपथ में विद्युत धारा कैसे मापी जाती है?</li>
+  <li> इंडक्शन और स्व-प्रेरण में अंतर बताइए।</li>
+  <li> वैद्युत अपघटन क्या है? नियम समझाइए।</li>
+  <li> विद्युत विभव क्या होता है और इसे कैसे मापते हैं?</li>
+  <li> ट्रांसफॉर्मर का कार्य सिद्धांत क्या है?</li>
+  <li> ऊष्मीय अपवर्तन क्या होता है?</li>
+  <li> परावर्तन और अपवर्तन में अंतर लिखिए।</li>
+  <li> विद्युत ऊर्जा और शक्ति में संबंध समझाइए।</li>
+  <li> प्रिज्म के माध्यम से प्रकाश का विचलन कैसे होता है?</li>
+  <li> कंडक्टर और इंसुलेटर में क्या अंतर है?</li>
+  <li> फैराडे के विद्युत चुंबकीय प्रेरण के नियम लिखिए।</li>
+  <li> बल, कार्य और ऊर्जा में संबंध समझाइए।</li>
+  <li> गैल्वेनोमीटर और वोल्टमीटर में अंतर बताइए।</li>
+  <li> न्यूटन के गति के नियम लिखिए।</li>
+  <li> ऊष्मा और ताप में अंतर स्पष्ट कीजिए।</li>
+  <li> घर्षण क्या है? इसके लाभ और हानियाँ बताइए।</li>
+  <li> न्यूटन के गुरुत्वाकर्षण नियम को समझाइए।</li>
+  <li> सरल रेखीय गति और वक्र गति में अंतर बताइए।</li>
+  <li> बल और द्रव्यमान में क्या संबंध है?</li>
+  <li> ऊर्जा संरक्षण का नियम समझाइए।</li>
+  <li> आवेश संरक्षण का नियम क्या है?</li>
+  <li> किसी विद्युत परिपथ में पावर फैक्टर का महत्त्व समझाइए।</li>
+  <li> सेल के विद्युत रासायनिक सिद्धांत क्या हैं?</li>
+  <li> प्रतिध्वनि (Echo) क्या है और यह कब उत्पन्न होती है?</li>
+  <li> लेज़र का पूर्ण रूप एवं इसका उपयोग बताइए।</li>
+  <li> परावर्तक सूचकांक (Refractive Index) किसे कहते हैं?</li>
+  <li> गैसों का गुणधर्म किस प्रकार वर्णित किया जाता है?</li>
+  <li> आदर्श गैस समीकरण लिखिए और समझाइए।</li>
+  <li> न्यूटन के शीतलन नियम को समझाइए।</li>
+  <li> अपवर्तनांक किन बातों पर निर्भर करता है?</li>
+  <li> कैपेसिटेंस किसे कहते हैं?</li>
+  <li> द्रवों में पृष्ठ तनाव क्या होता है?</li>
+  <li> लेनज़ का नियम क्या है?</li>
+  <li> ऊष्मीय चालकता किसे कहते हैं?</li>
+  <li> रेडियोएक्टिव अपघटन क्या होता है?</li>
+  <li> फोटोन और क्वांटम में क्या अंतर है?</li>
+  <li> नाभिकीय संलयन और नाभिकीय विखंडन में अंतर बताइए।</li>
+  <li> रेडियोधर्मिता की इकाई क्या है?</li>
+  <li> बीटा, अल्फा और गामा किरणों में अंतर स्पष्ट करें।</li>
+  <li> ध्वनि तरंगों के प्रकार और उनके गुण समझाइए।</li>
+  <li> ध्वनि की गति किन पर निर्भर करती है?</li>
+  <li> पाई-मीटर क्या होता है और इसका उपयोग क्या है?</li>
+  <li> माइक्रोवेव और रेडियो तरंगों में अंतर लिखिए।</li>
+  <li> विधुत अपवर्तनांक को परिभाषित कीजिए।</li>
+  <li> परावर्तन के नियमों को उदाहरण सहित समझाइए।</li>
+  <li> किसी दर्पण में प्रतिबिंब की प्रकृति कैसे ज्ञात करें?</li>
+  <li> सापेक्षता का सिद्धांत किसने दिया और क्या है?</li>
+  <li> प्लैंक का क्वांटम सिद्धांत क्या है?</li>
+  <li> समय का फैलाव (Time dilation) क्या होता है?</li>
+  <li> प्रकाश वर्ष क्या होता है?</li>
+  <li> तापमान और ऊष्मा के बीच संबंध बताइए।</li>
+  <li> पृष्ठ तनाव और कोणीय संवेग में संबंध समझाइए।</li>
+  <li> न्यूटन के शीतलन नियम का प्रयोग कहां होता है?</li>
+  <li> स्पेक्ट्रोस्कोपी क्या है?</li>
+  <li> रेडियोधर्मी क्षय नियम को समझाइए।</li>
+  <li> हाफ-लाइफ और मींन-लाइफ में अंतर बताइए।</li>
+  <li> पद्धतिगत त्रुटियाँ और आकस्मिक त्रुटियों में अंतर बताइए।</li>
+  <li> कोणीय संवेग संरक्षण का नियम क्या है?</li>
+  <li> वोल्टेज और करेंट में संबंध लिखिए।</li>
+  <li> अर्धचालक और चालक में क्या अंतर होता है?</li>
+  <li> PN-जंक्शन डायोड की कार्यविधि क्या है?</li>
+  <li> ब्रिज वाइटस्टोन सर्किट क्या है?</li>
+  <li> स्थैतिक और गतिशील घर्षण में क्या अंतर है?</li>
+  <li> प्लाज्मा किसे कहते हैं?</li>
+  <li> समांतर दर्पण और उत्तल दर्पण में अंतर स्पष्ट करें।</li>
+  <li> ताप विस्तार क्या होता है?</li>
+  <li> सरल आवर्त गति को परिभाषित करें।</li>
+  <li> दाब और बल में क्या अंतर है?</li>
+  <li> सदिश और अदिश राशियों में अंतर समझाइए।</li>
+  <li> यांत्रिक तरंग और विद्युत चुम्बकीय तरंग में अंतर बताइए।</li>
+  <li> फ्लेमिंग का बांया और दांया नियम समझाइए।</li>
+  <li> गतिक ऊर्जा और स्थितिज ऊर्जा में अंतर समझाइए।</li>
+  <li> आदर्श गैसों के गुणों को समझाइए।</li>
+  <li> ऊर्जा के स्रोत क्या-क्या हैं?</li>
+  <li> उष्मा संचरण के प्रकार लिखिए।</li>
+  <li> किसी वस्तु की चाल और वेग में क्या अंतर होता है?</li>
+  <li> समय और दूरी के बीच संबंध स्पष्ट कीजिए।</li>
+  <li> गैलेलियो का गति का नियम क्या है?</li>
+  <li> चुम्बकीय क्षेत्र रेखाएं क्या दर्शाती हैं?</li>
+
+  </ol>
+
+</body>
+</html>

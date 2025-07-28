@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.logo h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .navbar ul li {
+    margin: 0;
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Notice Section */
+  .notice-section {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .notice-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .notice-container h2 {
+    font-size: 32px;
+    color: #004080;
+    margin-bottom: 30px;
+  }
+  
+  .notice-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notice-list li {
+    background: #f1f1f1;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 6px solid #004080;
+    text-align: left;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .notice-list li:hover {
+    background: #e9f0ff;
+  }
+  
+  .notice-list .date {
+    display: block;
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .notice-container h2 {
+      font-size: 26px;
+    }
+  
+    .notice-list li {
+      padding: 15px;
+    }
+  }

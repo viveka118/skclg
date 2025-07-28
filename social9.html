@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>कक्षा 9 सामाजिक विज्ञान टेस्ट</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .question, .theory-question {
+      background-color: #fff;
+      border-left: 5px solid #3498db;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      font-size: 25px;
+    }
+
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 20px;
+    }
+
+    .options button.correct {
+      background-color: #d4edda;
+      border-color: #28a745;
+      color: #155724;
+    }
+
+    .options button.wrong {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+      color: #721c24;
+    }
+
+    .theory-question p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>कक्षा 9 सामाजिक विज्ञान टेस्ट (UP Board NCERT)</h1>
+
+  <!-- Optional Questions (MCQs) -->
+  <div class="question" data-answer="B">
+    <p>1. भारतीय संविधान कब लागू हुआ था?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. 15 अगस्त 1947</button>
+      <button onclick="checkAnswer(this, 'B')">B. 26 जनवरी 1950</button>
+      <button onclick="checkAnswer(this, 'C')">C. 2 अक्टूबर 1949</button>
+      <button onclick="checkAnswer(this, 'D')">D. 26 नवंबर 1949</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>2. उपनिवेशवाद का अर्थ है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A')">A. एक देश का दूसरे पर शासन</button>
+      <button onclick="checkAnswer(this, 'B')">B. व्यापार करना</button>
+      <button onclick="checkAnswer(this, 'C')">C. खेती करना</button>
+      <button onclick="checkAnswer(this, 'D')">D. लोकतंत्र लाना</button>
+    </div>
+  </div>
+  <div class="question" data-answer="C">
+  <p>2. फ्रांसीसी क्रांति कब हुई थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1780</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1800</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1789</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1776</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>3. संविधान सभा के अध्यक्ष कौन थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. महात्मा गांधी</button>
+    <button onclick="checkAnswer(this, 'B')">B. डॉ. राजेन्द्र प्रसाद</button>
+    <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'D')">D. भीमराव अंबेडकर</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>4. भारत का सबसे बड़ा राज्य क्षेत्रफल की दृष्टि से कौन-सा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. राजस्थान</button>
+    <button onclick="checkAnswer(this, 'B')">B. उत्तर प्रदेश</button>
+    <button onclick="checkAnswer(this, 'C')">C. मध्य प्रदेश</button>
+    <button onclick="checkAnswer(this, 'D')">D. महाराष्ट्र</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>5. भारत के संविधान में कितने मूल अधिकार हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 5</button>
+    <button onclick="checkAnswer(this, 'B')">B. 7</button>
+    <button onclick="checkAnswer(this, 'C')">C. 9</button>
+    <button onclick="checkAnswer(this, 'D')">D. 6</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>6. भारत में मानसून कब आता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. मार्च में</button>
+    <button onclick="checkAnswer(this, 'B')">B. मई में</button>
+    <button onclick="checkAnswer(this, 'C')">C. जून में</button>
+    <button onclick="checkAnswer(this, 'D')">D. जुलाई में</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>7. संसदीय प्रणाली का प्रमुख अंग कौन होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. राज्यपाल</button>
+    <button onclick="checkAnswer(this, 'B')">B. प्रधानमंत्री</button>
+    <button onclick="checkAnswer(this, 'C')">C. राष्ट्रपति</button>
+    <button onclick="checkAnswer(this, 'D')">D. मुख्य न्यायाधीश</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>8. किसने 'अधिकारों की घोषणा' जारी की थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. फ्रांस</button>
+    <button onclick="checkAnswer(this, 'B')">B. अमेरिका</button>
+    <button onclick="checkAnswer(this, 'C')">C. रूस</button>
+    <button onclick="checkAnswer(this, 'D')">D. इंग्लैंड</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>9. लोकतंत्र का आधार क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. चुनाव</button>
+    <button onclick="checkAnswer(this, 'B')">B. धनबल</button>
+    <button onclick="checkAnswer(this, 'C')">C. पुलिस</button>
+    <button onclick="checkAnswer(this, 'D')">D. जनता की भागीदारी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>10. भूकंप की तीव्रता किस यंत्र से मापी जाती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. थर्मामीटर</button>
+    <button onclick="checkAnswer(this, 'B')">B. बैरोमीटर</button>
+    <button onclick="checkAnswer(this, 'C')">C. सिस्मोग्राफ</button>
+    <button onclick="checkAnswer(this, 'D')">D. हाइज्रोमीटर</button>
+  </div>
+</div>
+<div class="question" data-answer="A">
+  <p>11. भारत में सबसे लंबी नदी कौन-सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. गंगा</button>
+    <button onclick="checkAnswer(this, 'B')">B. यमुना</button>
+    <button onclick="checkAnswer(this, 'C')">C. ब्रह्मपुत्र</button>
+    <button onclick="checkAnswer(this, 'D')">D. गोदावरी</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>12. 'नागरिकता' शब्द किससे संबंधित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. धर्म</button>
+    <button onclick="checkAnswer(this, 'B')">B. व्यवसाय</button>
+    <button onclick="checkAnswer(this, 'C')">C. शिक्षा</button>
+    <button onclick="checkAnswer(this, 'D')">D. राज्य से संबंध</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>13. संसदीय प्रणाली में कार्यपालिका किसके प्रति उत्तरदायी होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. राष्ट्रपति</button>
+    <button onclick="checkAnswer(this, 'B')">B. राज्यपाल</button>
+    <button onclick="checkAnswer(this, 'C')">C. विधायिका</button>
+    <button onclick="checkAnswer(this, 'D')">D. न्यायपालिका</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>14. 'सविनय अवज्ञा आंदोलन' की शुरुआत किसने की थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'B')">B. महात्मा गांधी</button>
+    <button onclick="checkAnswer(this, 'C')">C. भगत सिंह</button>
+    <button onclick="checkAnswer(this, 'D')">D. बाल गंगाधर तिलक</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>15. भारतीय संविधान का प्रारंभिक मसौदा किसने तैयार किया था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. महात्मा गांधी</button>
+    <button onclick="checkAnswer(this, 'B')">B. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'C')">C. बी. आर. अंबेडकर</button>
+    <button onclick="checkAnswer(this, 'D')">D. राजेन्द्र प्रसाद</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>16. ग्रीष्म ऋतु में लो-प्रेशर क्षेत्र भारत के किस भाग में बनता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. पश्चिमी तट</button>
+    <button onclick="checkAnswer(this, 'B')">B. पूर्वी घाट</button>
+    <button onclick="checkAnswer(this, 'C')">C. दक्कन पठार</button>
+    <button onclick="checkAnswer(this, 'D')">D. उत्तर-पश्चिम भारत</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>17. भारत में अधिकतम वर्षा किस मानसून से होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. दक्षिण-पश्चिम मानसून</button>
+    <button onclick="checkAnswer(this, 'B')">B. उत्तर-पूर्व मानसून</button>
+    <button onclick="checkAnswer(this, 'C')">C. शीतकालीन पवनें</button>
+    <button onclick="checkAnswer(this, 'D')">D. पछुआ हवाएं</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>18. 'लोकतंत्र' शब्द का शाब्दिक अर्थ क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. राजा का शासन</button>
+    <button onclick="checkAnswer(this, 'B')">B. जनता का शासन</button>
+    <button onclick="checkAnswer(this, 'C')">C. मंत्रियों का शासन</button>
+    <button onclick="checkAnswer(this, 'D')">D. सेना का शासन</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>19. 'समानता का अधिकार' संविधान के किस भाग में वर्णित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. प्रस्तावना</button>
+    <button onclick="checkAnswer(this, 'B')">B. नीति निदेशक तत्व</button>
+    <button onclick="checkAnswer(this, 'C')">C. राज्य सूची</button>
+    <button onclick="checkAnswer(this, 'D')">D. मूल अधिकार</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>20. संविधान सभा का अध्यक्ष कौन था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. डॉ. राजेन्द्र प्रसाद</button>
+    <button onclick="checkAnswer(this, 'B')">B. डॉ. अंबेडकर</button>
+    <button onclick="checkAnswer(this, 'C')">C. जवाहरलाल नेहरू</button>
+    <button onclick="checkAnswer(this, 'D')">D. महात्मा गांधी</button>
+  </div>
+<div class="question" data-answer="C">
+  <p>21. भारतीय संविधान में कितने मूल कर्तव्य शामिल हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 9</button>
+    <button onclick="checkAnswer(this, 'B')">B. 10</button>
+    <button onclick="checkAnswer(this, 'C')">C. 11</button>
+    <button onclick="checkAnswer(this, 'D')">D. 12</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>22. हरित क्रांति का सबसे अधिक लाभ किस फसल को हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. गन्ना</button>
+    <button onclick="checkAnswer(this, 'B')">B. गेहूँ</button>
+    <button onclick="checkAnswer(this, 'C')">C. दलहन</button>
+    <button onclick="checkAnswer(this, 'D')">D. कपास</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>23. भारत में सबसे अधिक जनसंख्या वाला राज्य कौन सा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. महाराष्ट्र</button>
+    <button onclick="checkAnswer(this, 'B')">B. बिहार</button>
+    <button onclick="checkAnswer(this, 'C')">C. पश्चिम बंगाल</button>
+    <button onclick="checkAnswer(this, 'D')">D. उत्तर प्रदेश</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>24. संसद का उच्च सदन कौन सा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. राज्यसभा</button>
+    <button onclick="checkAnswer(this, 'B')">B. लोकसभा</button>
+    <button onclick="checkAnswer(this, 'C')">C. विधानसभा</button>
+    <button onclick="checkAnswer(this, 'D')">D. विधान परिषद</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>25. 'भारत छोड़ो आंदोलन' कब शुरू हुआ था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1935</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1940</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1942</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1947</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>26. भारतीय संविधान किस वर्ष लागू हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1947</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1950</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1952</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1962</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>27. भारत में सबसे बड़ा नदी तंत्र कौन सा है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. नर्मदा</button>
+    <button onclick="checkAnswer(this, 'B')">B. गोदावरी</button>
+    <button onclick="checkAnswer(this, 'C')">C. कृष्णा</button>
+    <button onclick="checkAnswer(this, 'D')">D. गंगा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>28. 'लोकतंत्र' का अर्थ है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. जनता के द्वारा शासन</button>
+    <button onclick="checkAnswer(this, 'B')">B. राजा द्वारा शासन</button>
+    <button onclick="checkAnswer(this, 'C')">C. सैनिकों का शासन</button>
+    <button onclick="checkAnswer(this, 'D')">D. धार्मिक शासन</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>29. संविधान सभा के अध्यक्ष कौन थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. पं. नेहरू</button>
+    <button onclick="checkAnswer(this, 'B')">B. डॉ. भीमराव अम्बेडकर</button>
+    <button onclick="checkAnswer(this, 'C')">C. डॉ. राजेन्द्र प्रसाद</button>
+    <button onclick="checkAnswer(this, 'D')">D. सच्चिदानंद सिन्हा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>30. भारत का राष्ट्रीय पशु कौन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सिंह</button>
+    <button onclick="checkAnswer(this, 'B')">B. बाघ</button>
+    <button onclick="checkAnswer(this, 'C')">C. हाथी</button>
+    <button onclick="checkAnswer(this, 'D')">D. हिरण</button>
+  </div>
+</div>
+</div><div class="question" data-answer="C">
+  <p>31. भारतीय संविधान को कब अंगीकृत किया गया था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 26 जनवरी 1952</button>
+    <button onclick="checkAnswer(this, 'B')">B. 15 अगस्त 1947</button>
+    <button onclick="checkAnswer(this, 'C')">C. 26 नवंबर 1949</button>
+    <button onclick="checkAnswer(this, 'D')">D. 2 अक्टूबर 1950</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>32. रूस में 1917 की क्रांति किसके नेतृत्व में हुई थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. व्लादिमीर लेनिन</button>
+    <button onclick="checkAnswer(this, 'B')">B. स्टालिन</button>
+    <button onclick="checkAnswer(this, 'C')">C. ट्रॉट्स्की</button>
+    <button onclick="checkAnswer(this, 'D')">D. हिटलर</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>33. भारत में पंचायत राज व्यवस्था की शुरुआत किस राज्य से हुई थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. उत्तर प्रदेश</button>
+    <button onclick="checkAnswer(this, 'B')">B. गुजरात</button>
+    <button onclick="checkAnswer(this, 'C')">C. बिहार</button>
+    <button onclick="checkAnswer(this, 'D')">D. राजस्थान</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>34. भारतीय किसान यूनियन के संस्थापक कौन थे?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. सर छोटूराम</button>
+    <button onclick="checkAnswer(this, 'B')">B. महेन्द्र सिंह टिकैत</button>
+    <button onclick="checkAnswer(this, 'C')">C. चौधरी चरण सिंह</button>
+    <button onclick="checkAnswer(this, 'D')">D. एन. जी. रंगा</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>35. 'ब्लिट्जक्रेग' युद्ध पद्धति किस देश ने अपनाई थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. जापान</button>
+    <button onclick="checkAnswer(this, 'B')">B. इटली</button>
+    <button onclick="checkAnswer(this, 'C')">C. जर्मनी</button>
+    <button onclick="checkAnswer(this, 'D')">D. रूस</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>36. भारत में जनगणना कितने वर्षों में होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 10 वर्षों में</button>
+    <button onclick="checkAnswer(this, 'B')">B. 5 वर्षों में</button>
+    <button onclick="checkAnswer(this, 'C')">C. हर वर्ष</button>
+    <button onclick="checkAnswer(this, 'D')">D. 20 वर्षों में</button>
+  </div>
+</div>
+
+<div class="question" data-answer="D">
+  <p>37. भारत में सबसे अधिक जनसंख्या वाला राज्य कौन है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. महाराष्ट्र</button>
+    <button onclick="checkAnswer(this, 'B')">B. बिहार</button>
+    <button onclick="checkAnswer(this, 'C')">C. पश्चिम बंगाल</button>
+    <button onclick="checkAnswer(this, 'D')">D. उत्तर प्रदेश</button>
+  </div>
+</div>
+
+<div class="question" data-answer="B">
+  <p>38. 'सविनय अवज्ञा आंदोलन' की शुरुआत कब हुई थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1920</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1930</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1935</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1942</button>
+  </div>
+</div>
+
+<div class="question" data-answer="A">
+  <p>39. भारत में पहली जनगणना कब हुई थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1872</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1901</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1951</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1947</button>
+  </div>
+</div>
+
+<div class="question" data-answer="C">
+  <p>40. उपभोक्ता आंदोलन भारत में किस दशक में शुरू हुआ?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. 1950</button>
+    <button onclick="checkAnswer(this, 'B')">B. 1960</button>
+    <button onclick="checkAnswer(this, 'C')">C. 1970</button>
+    <button onclick="checkAnswer(this, 'D')">D. 1980</button>
+  </div>
+</div>
+  
+
+<div class="theory-question">
+  <p>1. 'भारत में संसदीय प्रणाली' की विशेषताओं को स्पष्ट करें।</p>
+</div>
+
+<div class="theory-question">
+  <p>2. लोकतंत्र में नागरिकों की क्या भूमिका होती है? उदाहरण सहित स्पष्ट करें।</p>
+</div>
+
+<div class="theory-question">
+  <p>3. भारतीय संविधान में मौलिक अधिकारों की क्या महत्ता है?</p>
+</div>
+
+<div class="theory-question">
+  <p>4. 'संघात्मक शासन प्रणाली' क्या है? भारत में यह किस प्रकार कार्य करती है?</p>
+</div>
+
+<div class="theory-question">
+  <p>5. किसी एक सामाजिक सुधारक के कार्यों का वर्णन कीजिए जिन्होंने समाज में परिवर्तन लाया।</p>
+</div>
+
+<div class="theory-question">
+  <p>6. फ्रांसीसी क्रांति के मुख्य कारणों और प्रभावों की व्याख्या कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>7. भारत में राष्ट्रीय आंदोलन की प्रमुख घटनाओं का संक्षेप में वर्णन कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>8. 'जल संसाधन' की समस्या और संरक्षण के उपायों की व्याख्या कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>9. भारत में कृषि के प्रकारों और उनकी विशेषताओं को समझाइए।</p>
+</div>
+
+<div class="theory-question">
+  <p>10. भौगोलिक दृष्टि से भारत की स्थिति का विश्लेषण कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>11. वर्षा कैसे होती है? भारत में मानसून की भूमिका को समझाइए।</p>
+</div>
+
+<div class="theory-question">
+  <p>12. लोकतांत्रिक सरकार और तानाशाही सरकार में अंतर स्पष्ट करें।</p>
+</div>
+
+<div class="theory-question">
+  <p>13. 'संविधान निर्माण की प्रक्रिया' का वर्णन कीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>14. किसी एक प्रमुख क्रांतिकारी आंदोलन का विवरण दीजिए।</p>
+</div>
+
+<div class="theory-question">
+  <p>15. भारत में वन संसाधनों की स्थिति और महत्व पर टिप्पणी करें।</p>
+</div>
+
+<div class="theory-question">
+  <p>16. 'बाजार की अर्थव्यवस्था' और 'योजनाबद्ध अर्थव्यवस्था' में अंतर स्पष्ट करें।</p>
+</div>
+
+<div class="theory-question">
+  <p>17. 'जनसंख्या वृद्धि' के कारणों और उसके प्रभावों को समझाइए।</p>
+</div>
+
+<div class="theory-question">
+  <p>18. लोकतंत्र के लिए स्वतंत्र और निष्पक्ष चुनाव क्यों आवश्यक हैं?</p>
+</div>
+
+<div class="theory-question">
+  <p>19. औद्योगिक क्रांति का समाज पर क्या प्रभाव पड़ा?</p>
+</div>
+
+<div class="theory-question">
+  <p>20. भारत में सामाजिक और आर्थिक असमानताओं को दूर करने के उपायों की चर्चा कीजिए।</p>
+</div>
+  <div class="theory-question">
+    <p>21. 'भारत में संसदीय प्रणाली' की विशेषताओं को स्पष्ट करें।</p>
+  </div>
+
+  <div class="theory-question">
+    <p>22. भारत में भूमंडलीकरण के प्रभावों का वर्णन करें।</p>
+  </div>
+
+
+  <script>
+    function checkAnswer(button, selected) {
+      const parent = button.closest('.question');
+      const correct = parent.getAttribute('data-answer');
+      const buttons = parent.querySelectorAll('button');
+
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent.trim().startsWith(correct)) {
+          btn.classList.add('correct');
+        } else if (btn.textContent.trim().startsWith(selected)) {
+          btn.classList.add('wrong');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

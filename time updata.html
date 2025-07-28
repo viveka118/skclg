@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Update Notice</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .notice-box {
+      background-color: #fff;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .notice-box img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #005f73;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #d62828;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .btn-download {
+      margin-top: 25px;
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background-color: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice-box" id="noticeContent">
+    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Clock Icon" />
+    <h1>🕘 Time Update Notice</h1>
+    <h2>Effective from 1st July 2025</h2>
+    <p>
+      This is to inform all students and parents that the <strong>school timings have been updated</strong> starting from <strong>1st July 2025</strong>.
+    </p>
+    <p>
+      <strong>New Timings:</strong><br>
+      ⏰ Classes: <strong>8:00 AM to 1:00 PM</strong><br>
+      🕔 Office Hours: <strong>9:00 AM to 2:00 PM</strong><br><br>
+      Kindly adhere to the new timings and reach the school accordingly.
+    </p>
+    <p>
+      We appreciate your cooperation and punctuality.
+    </p>
+    <br>
+    <p><strong>Principal</strong><br>Narendr Kumar Patel</p>
+  </div>
+
+  <button class="btn-download" onclick="downloadPDF()">Download Notice as PDF</button>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById("noticeContent");
+      html2pdf().from(element).save("Time_Update_Notice_2025.pdf");
+    }
+  </script>
+
+</body>
+</html>

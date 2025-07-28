@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Grammar Quiz - Class 9</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f7ff;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .question {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .question h3 {
+      margin: 0 0 10px;
+    }
+
+    .options label {
+      font-size: 25px;
+      display: block;
+      background: #ecf0f1;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .options input {
+      display: none;
+    }
+
+    .options label.correct::after {
+      content: " ✅";
+      color: green;
+      float: right;
+    }
+
+    .options label.wrong::after {
+      content: " ❌";
+      color: red;
+      float: right;
+    }
+
+    @media(max-width: 600px) {
+      .question {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Class 9 English Grammar Quiz</h1>
+
+  <div id="quiz-container"></div>
+
+  <script>
+    const questions = [
+      {
+        q: "1. Identify the noun in the sentence: 'The cat chased the mouse.'",
+        options: ["chased", "cat", "the", "in"],
+        correct: 1
+      },
+      {
+        q: "2. Which is a verb in the sentence: 'She sings beautifully'?",
+        options: ["sings", "she", "beautifully", "a"],
+        correct: 0
+      },
+      {
+        q: "3. Choose the correct article: '___ apple a day keeps the doctor away.'",
+        options: ["A", "An", "The", "No article"],
+        correct: 1
+      },
+      {
+        q: "4. Pick the adjective: 'He wore a red shirt.'",
+        options: ["He", "wore", "red", "shirt"],
+        correct: 2
+      },
+      {
+        q: "5. Which is an adverb in the sentence: 'He runs fast'?",
+        options: ["He", "runs", "fast", "the"],
+        correct: 2
+      },
+      {
+        q: "6. Identify the pronoun: 'They went to the market.'",
+        options: ["went", "they", "market", "to"],
+        correct: 1
+      },
+      {
+        q: "7. 'Have' is used as:",
+        options: ["Verb", "Noun", "Adjective", "Adverb"],
+        correct: 0
+      },
+      {
+        q: "8. Pick the correct tense: 'She had gone to the fair.'",
+        options: ["Past Perfect", "Present Perfect", "Past Continuous", "Future Perfect"],
+        correct: 0
+      },
+      {
+        q: "9. Choose the correct preposition: 'He sat ___ the tree.'",
+        options: ["in", "on", "under", "to"],
+        correct: 2
+      },
+      {
+        q: "10. Which is an interjection?",
+        options: ["Wow!", "He", "Quickly", "Green"],
+        correct: 0
+      },
+      {
+        q: "11. What part of speech is 'quickly'?",
+        options: ["Adjective", "Noun", "Verb", "Adverb"],
+        correct: 3
+      },
+      {
+        q: "12. Identify the helping verb: 'She is cooking food.'",
+        options: ["cooking", "she", "is", "food"],
+        correct: 2
+      },
+      {
+        q: "13. Choose the correct passive form: 'He writes a letter.'",
+        options: ["A letter was written", "A letter is written", "A letter wrote", "A letter writes"],
+        correct: 1
+      },
+      {
+        q: "14. Which sentence is in present continuous tense?",
+        options: ["She is dancing", "She danced", "She will dance", "She has danced"],
+        correct: 0
+      },
+      {
+        q: "15. Pick the plural noun:",
+        options: ["children", "child", "a child", "an apple"],
+        correct: 0
+      },
+      {
+        q: "16. Choose the correct comparative form: 'taller' is the form of?",
+        options: ["tall", "tallest", "height", "high"],
+        correct: 0
+      },
+      {
+        q: "17. 'Can' is a:",
+        options: ["Preposition", "Modal verb", "Noun", "Adjective"],
+        correct: 1
+      },
+      {
+        q: "18. Which is a proper noun?",
+        options: ["river", "boy", "Delhi", "city"],
+        correct: 2
+      },
+      {
+        q: "19. What is the superlative form of 'good'?",
+        options: ["better", "best", "more good", "goodest"],
+        correct: 1
+      },
+      {
+        q: "20. 'He himself did it' — 'himself' is:",
+        options: ["Pronoun", "Emphatic pronoun", "Reflexive pronoun", "Noun"],
+        correct: 1
+      },
+      {
+        q: "21. Identify the correct plural: 'baby'",
+        options: ["babys", "babyes", "babies", "babie"],
+        correct: 2
+      },
+      {
+        q: "22. Which sentence uses future tense?",
+        options: ["He goes to school", "He went to school", "He is going to school", "He will go to school"],
+        correct: 3
+      },
+      {
+        q: "23. Which is a compound word?",
+        options: ["sun", "flower", "sunflower", "flow"],
+        correct: 2
+      },
+      {
+        q: "24. What kind of sentence is this: 'Shut the door!'",
+        options: ["Interrogative", "Imperative", "Exclamatory", "Declarative"],
+        correct: 1
+      },
+      {
+        q: "25. Choose the conjunction: 'He is poor but honest.'",
+        options: ["is", "but", "he", "honest"],
+        correct: 1
+      },
+      {
+        q: "26. Which is a synonym of 'happy'?",
+        options: ["sad", "angry", "joyful", "cry"],
+        correct: 2
+      },
+      {
+        q: "27. Identify the antonym of 'strong':",
+        options: ["heavy", "brave", "weak", "tall"],
+        correct: 2
+      },
+      {
+        q: "28. What type of noun is 'team'?",
+        options: ["Common", "Collective", "Proper", "Material"],
+        correct: 1
+      },
+      {
+        q: "29. 'Each' and 'every' are:",
+        options: ["Prepositions", "Adjectives", "Pronouns", "Conjunctions"],
+        correct: 2
+      },
+      {
+        q: "30. Which word is a verb?",
+        options: ["beautiful", "run", "fast", "blue"],
+        correct: 1
+      }
+    ];
+
+    const container = document.getElementById("quiz-container");
+
+    questions.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.className = "question";
+      const q = document.createElement("h3");
+      q.textContent = item.q;
+      div.appendChild(q);
+
+      const optContainer = document.createElement("div");
+      optContainer.className = "options";
+
+      item.options.forEach((opt, i) => {
+        const label = document.createElement("label");
+        label.textContent = opt;
+
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = "q" + index;
+
+        input.addEventListener("click", () => {
+          const labels = div.querySelectorAll("label");
+          labels.forEach((l, idx) => {
+            l.classList.remove("correct", "wrong");
+            if (idx === item.correct) {
+              l.classList.add("correct");
+            } else {
+              l.classList.add("wrong");
+            }
+          });
+        });
+
+        label.prepend(input);
+        optContainer.appendChild(label);
+      });
+
+      div.appendChild(optContainer);
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>

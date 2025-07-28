@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admission Notice 2025</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .notice-box {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #d62828;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .btn-download {
+      margin-top: 30px;
+      padding: 10px 25px;
+      background: #0077b6;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice-box" id="noticeContent">
+    <h1>📢 Admission Open - 2025</h1>
+    <p><strong>School Name:</strong> S K Inter College</p>
+    <p><strong>Academic Year:</strong> 2025-2026</p>
+    <p>We are pleased to inform you that admissions are now open for the academic year 2025-2026 for all classes.</p>
+    <p>Interested students and parents are requested to visit the school office between <strong>9:00 AM to 2:00 PM</strong> on working days.</p>
+    <p>Documents required:</p>
+    <ul style="text-align: left; max-width: 500px; margin: auto;">
+      <li>Birth Certificate</li>
+      <li>Previous Year Marksheet</li>
+      <li>Aadhar Card</li>
+      <li>2 Passport Size Photographs</li>
+    </ul>
+    <p><strong>Contact Us:</strong> +91-8303606978</p>
+    <p><strong>Address:</strong> Bari Bajhiya Kaundhiyara Prayagraj Utter Pradesh 212106</p>
+  </div>
+
+  <button class="btn-download" onclick="downloadPDF()">Download Notice as PDF</button>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById("noticeContent");
+      html2pdf().from(element).save("Admission_Notice_2025.pdf");
+    }
+  </script>
+
+</body>
+</html>

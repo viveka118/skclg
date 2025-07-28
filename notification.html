@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📢 Notifications - Student Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f0f8ff, #ffffff);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .notifications {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .note {
+      background-color: #ffffff;
+      border-left: 6px solid #0077b6;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .note:hover {
+      transform: translateY(-4px);
+    }
+
+    .note-title {
+      font-size: 18px;
+      color: #0077b6;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .note-body {
+      font-size: 15px;
+      color: #444;
+    }
+
+    .note-date {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #666;
+      text-align: right;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .note { padding: 15px; }
+      .note-title { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>📢 Latest Notifications</h1>
+
+<div class="notifications">
+  <div class="note">
+    <div class="note-title">🏫 School Reopening</div>
+    <div class="note-body">
+      School will reopen from <strong>5th July 2025</strong> for all classes. Students must wear proper uniform and carry ID cards.
+    </div>
+    <div class="note-date">Posted on: 28 June 2025</div>
+  </div>
+
+  <div class="note">
+    <div class="note-title">📘 Assignment Submission</div>
+    <div class="note-body">
+      All students must submit their pending assignments before <strong>3rd July</strong>. Late submissions will not be accepted.
+    </div>
+    <div class="note-date">Posted on: 27 June 2025</div>
+  </div>
+
+  <div class="note">
+    <div class="note-title">📅 Monthly Test Schedule</div>
+    <div class="note-body">
+      Monthly tests for classes 6 to 12 will begin from <strong>10th July</strong>. The full schedule will be shared soon.
+    </div>
+    <div class="note-date">Posted on: 26 June 2025</div>
+  </div>
+
+  <div class="note">
+    <div class="note-title">🎉 Independence Day Program</div>
+    <div class="note-body">
+      Students interested in participating in the 15th August cultural event can register with their class teachers before <strong>5th August</strong>.
+    </div>
+    <div class="note-date">Posted on: 25 June 2025</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!-- Header Start -->
+<header>
+  <link rel="stylesheet" href="about us.css">
+  <div class="container">
+    <div class="logo">
+      <img src="logo.jpg" alt="SK Inter College Logo">
+      <h1>SK Inter College</h1>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Notice.html">Notice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Admission</a></li>
+       <li><a href="my self.html">About Developer</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Header End -->
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Form | SK Inter College</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f7fc;
+      padding: 1px;
+    }
+    h1 {
+      text-align: center;
+      color: #800080;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #800080;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #photoPreview {
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      display: none;
+    }
+    #message {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .qr-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .qr-section img {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    .qr-section p {
+      color: #333;
+      font-size: 16px;
+    }
+    img{
+      border-radius: 20%;
+    }
+  </style>
+</head>
+<body>
+<br>
+  <h1>Admission Form</h1>
+<br>
+  <form id="admissionForm" name="submit-to-google-sheet">
+    <label>Student Name</label>
+    <input type="text" name="name" placeholder="Enter student's full name" required>
+
+    <label>Father's Name</label>
+    <input type="text" name="fatherName" placeholder="Enter father's full name" required>
+
+    <label>Aadhar Number</label>
+    <input type="text" name="aadhar" placeholder="Enter 12-digit Aadhar number" required maxlength="12" pattern="\d{12}">
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter your email address" required>
+
+    <label>Mobile Number</label>
+    <input type="text" name="phone" placeholder="Enter 10-digit mobile number" required maxlength="10" pattern="\d{10}">
+
+    <label>Gender</label>
+    <select name="gender" required>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label>Date of Birth</label>
+    <input type="date" name="dob" required>
+
+    <label>Class</label>
+    <select name="class" id="classSelect" required onchange="toggleCertificate()">
+      <option value="">Select Class</option>
+      <option value="1">Class 1</option>
+      <option value="2">Class 2</option>
+      <option value="3">Class 3</option>
+      <option value="4">Class 4</option>
+      <option value="5">Class 5</option>
+      <option value="6">Class 6</option>
+      <option value="7">Class 7</option>
+      <option value="8">Class 8</option>
+      <option value="9">Class 9</option>
+      <option value="10">Class 10</option>
+      <option value="11">Class 11</option>
+      <option value="12">Class 12</option>
+    </select>
+
+    <div id="certificateField" style="display:none;">
+      <label>Previous Year Certificate (PDF)</label>
+      <input type="file" name="certificate" accept="application/pdf">
+    </div>
+
+    <label>Upload Student Photo</label>
+    <input type="file" accept="image/*" onchange="previewPhoto(event)">
+    <img id="photoPreview" alt="Photo Preview">
+
+    <label>Payment Transfer ID (if paid online)</label>
+    <input type="text" name="payment" placeholder="Enter transfer ID (if any)">
+
+    <button type="submit">Submit Admission</button>
+    <p id="message"></p>
+  </form>
+<br><br>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    footer {
+      background: linear-gradient(to right, #002244, #005f73);
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, .footer-column a {
+      font-size: 15px;
+      color: #eee;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+      color: #FFD700;
+    }
+
+    .footer-social {
+      margin-top: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About School -->
+      <div class="footer-column">
+        <h3>SK Inter College</h3>
+        <p>Bari Bajhiya Kaundhiyara,<br> Prayagraj, Uttar Pradesh, 212306</p>
+        <p>Email: vivekanand00440@gmail.com</p>
+        <p>Phone:  91+  8303606978</p>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3><br>
+        <a href="index.html">Home</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="#">Admission</a><br>
+        <a href="notice.html">Notice</a><br>
+        <a href="gallery.html">Gallery</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Important Info -->
+      <div class="footer-column">
+        <h3>Information</h3><br>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a><br>
+        <a href="faqs.html">FAQs</a><br>
+        <a href="portal.html">Student Portal</a><br>
+        <a href="sign.html">Student Sign up</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>

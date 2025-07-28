@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Enter Result</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    h2 { text-align: center; }
+    form, .link-box {
+      max-width: 700px; margin: auto; background: white;
+      padding: 20px; border-radius: 10px; box-shadow: 0 0 10px gray;
+    }
+    input, button { width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc; }
+    .subject-group { display: flex; gap: 10px; margin-bottom: 10px; }
+    .subject-group input { flex: 1; }
+    .add-btn { background: #007bff; color: white; }
+    .save-btn { background: green; color: white; }
+    img { max-width: 100px; border-radius: 6px; margin-top: 10px; }
+    .link-box {
+      text-align: center;
+      margin-top: 30px;
+      background: #e0f0ff;
+    }
+    .link-box a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #0055cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 Admin - Result Entry</h2>
+  <form id="entryForm">
+    <input type="text" id="name" placeholder="Student Name" required />
+    <input type="text" id="roll" placeholder="Roll No" required />
+    <input type="text" id="class" placeholder="Class" required />
+    <input type="text" id="phone" placeholder="Phone Number" />
+    
+    <h4>📚 Subjects & Marks</h4>
+    <div id="subjects-container"></div>
+    <button type="button" class="add-btn" onclick="addSubject()">+ Add Subject</button>
+
+    <h4>🖼 Upload Student Photo</h4>
+    <input type="file" id="photo" accept="image/*" required />
+    <img id="preview" />
+
+    <button type="submit" class="save-btn">✅ Save Result</button>
+  </form>
+
+  <div class="link-box">
+    <p>🔎 Students can check result here:</p>
+    <a href="check.html" target="_blank">👉 Open Student Result Page</a>
+  </div>
+
+  <script>
+    const subjectsContainer = document.getElementById("subjects-container");
+    const photoInput = document.getElementById("photo");
+    const preview = document.getElementById("preview");
+    let base64Photo = "";
+
+    function addSubject() {
+      const div = document.createElement("div");
+      div.className = "subject-group";
+      div.innerHTML = `
+        <input type="text" placeholder="Subject" class="subject" required />
+        <input type="text" placeholder="Marks" class="marks" required />
+      `;
+      subjectsContainer.appendChild(div);
+    }
+
+    photoInput.addEventListener("change", function () {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        base64Photo = e.target.result;
+        preview.src = base64Photo;
+      };
+      reader.readAsDataURL(photoInput.files[0]);
+    });
+
+    document.getElementById("entryForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const roll = document.getElementById("roll").value.trim();
+      const studentClass = document.getElementById("class").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const subjectEls = document.querySelectorAll(".subject");
+      const marksEls = document.querySelectorAll(".marks");
+
+      const subjects = [];
+      for (let i = 0; i < subjectEls.length; i++) {
+        subjects.push({ subject: subjectEls[i].value.trim(), marks: marksEls[i].value.trim() });
+      }
+
+      const student = { name, roll, studentClass, phone, subjects, photo: base64Photo };
+
+      let allResults = JSON.parse(localStorage.getItem("results")) || [];
+      allResults.push(student);
+      localStorage.setItem("results", JSON.stringify(allResults));
+
+      alert("✅ Result Saved!");
+      e.target.reset();
+      preview.src = "";
+      subjectsContainer.innerHTML = "";
+      addSubject();
+    });
+
+    addSubject();
+  </script>
+</body>
+</html>

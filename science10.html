@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 10 Science Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef4f8;
+      padding: 20px;
+    }
+
+    .question, .theory-question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 6px solid #2196F3;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      font-size: 25px;
+    }
+
+    .options button {
+      flex: 1 1 calc(50% - 10px);
+      font-size: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .options button.correct {
+      background-color: #c8e6c9;
+      border-color: green;
+    }
+
+    .options button.wrong {
+      background-color: #ffcdd2;
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Class 10 Science Quiz (MCQ + Theory)</h1>
+
+  <script>
+    function checkAnswer(button, correct, selected) {
+      const buttons = button.parentElement.querySelectorAll('button');
+      buttons.forEach(btn => btn.disabled = true);
+
+      if (correct === selected) {
+        button.classList.add("correct");
+      } else {
+        button.classList.add("wrong");
+        buttons.forEach(btn => {
+          if (btn.textContent.trim().startsWith(correct + '.')) {
+            btn.classList.add("correct");
+          }
+        });
+      }
+    }
+  </script>
+
+  <!-- MCQ Questions Start -->
+  <div class="question">
+    <p>1. रक्त का लाल रंग किसकी उपस्थिति से होता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'C', 'A')">A. प्लाज्मा</button>
+      <button onclick="checkAnswer(this, 'C', 'B')">B. श्वेत रक्त कण</button>
+      <button onclick="checkAnswer(this, 'C', 'C')">C. हीमोग्लोबिन</button>
+      <button onclick="checkAnswer(this, 'C', 'D')">D. रक्त प्लेटलेट्स</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. प्रकाश का पूर्ण आंतरिक परावर्तन किसमें होता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'B', 'A')">A. वायु से जल में</button>
+      <button onclick="checkAnswer(this, 'B', 'B')">B. जल से वायु में</button>
+      <button onclick="checkAnswer(this, 'B', 'C')">C. कांच से जल में</button>
+      <button onclick="checkAnswer(this, 'B', 'D')">D. धातु से वायु में</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. हृदय की धड़कन को नियंत्रित करता है?</p>
+    <div class="options">
+      <button onclick="checkAnswer(this, 'A', 'A')">A. मेडुला</button>
+      <button onclick="checkAnswer(this, 'A', 'B')">B. सेरीब्रम</button>
+      <button onclick="checkAnswer(this, 'A', 'C')">C. थैलेमस</button>
+      <button onclick="checkAnswer(this, 'A', 'D')">D. हाइपोथैलेमस</button>
+    </div>
+  </div>
+  <div class="question">
+  <p>4. श्वसन की प्रक्रिया में कौन-सी गैस प्रयोग में आती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. कार्बन डाइऑक्साइड</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. ऑक्सीजन</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. हाइड्रोजन</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. नाइट्रोजन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. प्रकाश संश्लेषण की क्रिया में कौन आवश्यक नहीं है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. कार्बन डाइऑक्साइड</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. सूर्य का प्रकाश</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. ऑक्सीजन</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. जल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. डीएनए का पूरा नाम क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. डाइऑक्साइड न्यूक्लिक अम्ल</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. डबल न्यूक्लिक अम्ल</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. डाइऑक्साइड न्यूक्लियस एसिड</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. डिऑक्सीराइबोन्यूक्लिक एसिड</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. आवर्त सारणी में कुल कितने समूह होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 7</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 18</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 18</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 12</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>8. अम्लीय विलयन का pH मान क्या होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. 7 से कम</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. 7</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. 7 से अधिक</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. 14</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. विद्युत धारा का मात्रक क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. वोल्ट</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. एम्पीयर</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. ओम</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. वाट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. हरे पौधे अपना भोजन कैसे बनाते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. जल सोखकर</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. मृदा से पोषण लेकर</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. केवल हवा से</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. प्रकाश संश्लेषण द्वारा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>11. रक्त में ऑक्सीजन को कौन ले जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. हीमोग्लोबिन</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. प्लाज्मा</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. प्लेटलेट्स</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. श्वेत रक्त कोशिकाएं</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. हाइड्रोक्लोरिक अम्ल कहाँ पाया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. लिवर</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. आमाशय</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. अमाशय</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. पाचन रस में</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. विद्युत धारा के रासायनिक प्रभाव से किस गैस का निर्माण होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. ऑक्सीजन</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. हीलियम</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. हाइड्रोजन</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. नाइट्रोजन</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. प्रकाश वर्ष किसका मात्रक है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. समय</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. शक्ति</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. दाब</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. दूरी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. डीएनए की खोज किसने की थी?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. वाटसन और क्रिक</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. रदरफोर्ड</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. डाल्टन</button>
+  </div>
+</div>
+  <div class="question">
+<div class="question">
+  <p>16. द्रवों में दाब किस दिशा में कार्य करता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. केवल नीचे की ओर</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. सभी दिशाओं में</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. केवल ऊपर की ओर</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. क्षैतिज दिशा में</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. विद्युत धारा का SI मात्रक क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. वोल्ट</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. ओम</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. ऐंपियर</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. वाट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. किसी वस्तु का परावर्तन तब होता है जब वह किस सतह से टकराती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. चमकदार सतह</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. खुरदरी सतह</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. द्रव सतह</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. गैसीय सतह</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. मानव नेत्र में प्रकाश को केंद्रित करने वाला भाग कौन-सा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. पुतली</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. रेटिना</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. कॉर्निया</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. लेन्स</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. जल का pH मान लगभग कितना होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. 5</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. 9</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. 7</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. 2</button>
+  </div>
+</div>
+<div class="question">
+  <p>21. विद्युत धारा की इकाई क्या होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. वोल्ट</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. एम्पीयर</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. ओम</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. वाट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>22. किसी वस्तु की चाल को मापने के लिए कौन-सा उपकरण प्रयोग में लाया जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. स्पीडोमीटर</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. वोल्टमीटर</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. बैरोमीटर</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. थर्मामीटर</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>23. न्यूटन का दूसरा नियम किससे संबंधित है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. संवेग संरक्षण</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. जड़त्व</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. बल और संवेग परिवर्तन</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. क्रिया-प्रतिक्रिया</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>24. प्रकाश वर्ष किसे मापा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. समय</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. ऊर्जा</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. शक्ति</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. दूरी</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>25. ताँबा किस प्रकार का चालक होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. कुचालक</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. सुचालक</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. अर्धचालक</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. प्रेरक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>26. किस ग्रह को 'लाल ग्रह' कहा जाता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. बुध</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. शुक्र</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. मंगल</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. शनि</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>27. पौधों में जल का परिवहन किसके द्वारा होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A', 'A')">A. जाइलम</button>
+    <button onclick="checkAnswer(this, 'A', 'B')">B. फ्लोएम</button>
+    <button onclick="checkAnswer(this, 'A', 'C')">C. स्टोमाटा</button>
+    <button onclick="checkAnswer(this, 'A', 'D')">D. क्लोरोप्लास्ट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>28. प्रकाश संश्लेषण के लिए आवश्यक मुख्य गैस कौन-सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D', 'A')">A. ऑक्सीजन</button>
+    <button onclick="checkAnswer(this, 'D', 'B')">B. नाइट्रोजन</button>
+    <button onclick="checkAnswer(this, 'D', 'C')">C. हीलियम</button>
+    <button onclick="checkAnswer(this, 'D', 'D')">D. कार्बन डाइऑक्साइड</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>29. DNA की संरचना का प्रस्ताव किसने दिया था?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C', 'A')">A. न्यूटन और गैलीलियो</button>
+    <button onclick="checkAnswer(this, 'C', 'B')">B. थॉमसन और रदरफोर्ड</button>
+    <button onclick="checkAnswer(this, 'C', 'C')">C. वॉटसन और क्रिक</button>
+    <button onclick="checkAnswer(this, 'C', 'D')">D. बोहर और हाइजेनबर्ग</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>30. मनुष्य में रक्त का शुद्धिकरण कहाँ होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B', 'A')">A. यकृत</button>
+    <button onclick="checkAnswer(this, 'B', 'B')">B. वृक्क (किडनी)</button>
+    <button onclick="checkAnswer(this, 'B', 'C')">C. हृदय</button>
+    <button onclick="checkAnswer(this, 'B', 'D')">D. फेफड़े</button>
+  </div>
+</div>
+<div class="question">
+  <p>31. प्रकाश का अपवर्तन किस कारण से होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. प्रकाश की गति</button>
+    <button onclick="checkAnswer(this, 'C')">B. द्रव्यमान</button>
+    <button onclick="checkAnswer(this, 'C')">C. माध्यम परिवर्तन</button>
+    <button onclick="checkAnswer(this, 'C')">D. गुरुत्व बल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>32. विद्युत धारा की इकाई क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. वोल्ट</button>
+    <button onclick="checkAnswer(this, 'B')">B. एम्पियर</button>
+    <button onclick="checkAnswer(this, 'B')">C. ओम</button>
+    <button onclick="checkAnswer(this, 'B')">D. वाट</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>33. मानव हृदय में कुल कितने कक्ष होते हैं?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. चार</button>
+    <button onclick="checkAnswer(this, 'A')">B. तीन</button>
+    <button onclick="checkAnswer(this, 'A')">C. दो</button>
+    <button onclick="checkAnswer(this, 'A')">D. एक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>34. सबसे मजबूत मांसपेशी किसकी होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. पैर</button>
+    <button onclick="checkAnswer(this, 'D')">B. पीठ</button>
+    <button onclick="checkAnswer(this, 'D')">C. हाथ</button>
+    <button onclick="checkAnswer(this, 'D')">D. हृदय</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>35. अपवर्तन सूचकांक सबसे अधिक होता है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'B')">A. जल</button>
+    <button onclick="checkAnswer(this, 'B')">B. हीरा</button>
+    <button onclick="checkAnswer(this, 'B')">C. कांच</button>
+    <button onclick="checkAnswer(this, 'B')">D. वायु</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>36. लेंस की शक्ति की इकाई क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. मीटर</button>
+    <button onclick="checkAnswer(this, 'C')">B. न्यूटन</button>
+    <button onclick="checkAnswer(this, 'C')">C. डायोप्टर</button>
+    <button onclick="checkAnswer(this, 'C')">D. जूल</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>37. DNA की पूर्ण रूप क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. Deoxyribonucleic acid</button>
+    <button onclick="checkAnswer(this, 'A')">B. Dioxyriboprotein</button>
+    <button onclick="checkAnswer(this, 'A')">C. Double nitrogen acid</button>
+    <button onclick="checkAnswer(this, 'A')">D. None</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>38. सबसे अधिक ऊष्मा चालक धातु कौन सी है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'C')">A. लोहा</button>
+    <button onclick="checkAnswer(this, 'C')">B. एल्युमिनियम</button>
+    <button onclick="checkAnswer(this, 'C')">C. चांदी</button>
+    <button onclick="checkAnswer(this, 'C')">D. तांबा</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>39. परिपूर्ण दर्पण का फोकस दूरी कैसी होती है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'D')">A. धनात्मक</button>
+    <button onclick="checkAnswer(this, 'D')">B. ऋणात्मक</button>
+    <button onclick="checkAnswer(this, 'D')">C. अनंत</button>
+    <button onclick="checkAnswer(this, 'D')">D. वास्तविक</button>
+  </div>
+</div>
+
+<div class="question">
+  <p>40. ऊष्मा का SI मात्रक क्या है?</p>
+  <div class="options">
+    <button onclick="checkAnswer(this, 'A')">A. जूल</button>
+    <button onclick="checkAnswer(this, 'A')">B. कैलोरी</button>
+    <button onclick="checkAnswer(this, 'A')">C. वाट</button>
+    <button onclick="checkAnswer(this, 'A')">D. एम्पियर</button>
+  </div>
+</div>
+
+
+  <h2>थ्योरी प्रश्न (उत्तर लिखिए):</h2>
+
+  <div class="theory-question"><p>1. अपवर्तन क्या है? एक उदाहरण दीजिए।</p></div>
+  <div class="theory-question"><p>2. जीवन की विभिन्न प्रक्रियाओं में पाचन की भूमिका क्या है?</p></div>
+  <div class="theory-question"><p>3. मेंडेल के वंशानुक्रम के नियमों को समझाइए।</p></div>
+  <div class="theory-question"><p>4. डीएनए की संरचना एवं कार्य समझाइए।</p></div>
+  <div class="theory-question"><p>5. नियंत्रण एवं समन्वय में हार्मोन की भूमिका क्या है?</p></div>
+  <div class="theory-question"><p>6. विद्युत धारा के प्रभावों को समझाइए।</p></div>
+  <div class="theory-question"><p>7. स्थायी चुंबक और अस्थायी चुंबक में क्या अंतर है?</p></div>
+  <div class="theory-question"><p>8. पारिस्थितिकी तंत्र क्या है?</p></div>
+  <div class="theory-question"><p>9. वायु प्रदूषण के कारण एवं प्रभाव क्या हैं?</p></div>
+  <div class="theory-question"><p>10. अम्ल और क्षार में अंतर बताइए।</p></div>
+  <div class="theory-question"><p>11. ऊर्जा के स्रोत कितने प्रकार के होते हैं? उदाहरण सहित।</p></div>
+  <div class="theory-question"><p>12. जैव विविधता का संरक्षण क्यों आवश्यक है?</p></div>
+  <div class="theory-question"><p>13. विद्युत परिपथ में फ्यूज का कार्य क्या है?</p></div>
+  <div class="theory-question"><p>14. जल संरक्षण क्यों आवश्यक है?</p></div>
+  <div class="theory-question"><p>15. प्रकाश का अपवर्तन कैसे होता है? चित्र सहित समझाइए।</p></div>
+  <div class="theory-question"><p>16. मानव नेत्र की रचना एवं कार्य समझाइए।</p></div>
+  <div class="theory-question"><p>17. रासायनिक अभिक्रियाएँ क्या होती हैं? उदाहरण दीजिए।</p></div>
+  <div class="theory-question"><p>18. लवण क्या हैं? दो उदाहरण दीजिए।</p></div>
+  <div class="theory-question"><p>19. संतुलित भोजन क्यों आवश्यक है?</p></div>
+  <div class="theory-question"><p>20. रेखीय समवर्ती दर्पणों का उपयोग कहाँ किया जाता है?</p></div>
+  <div class="theory-question"><p>21. परावर्तन के नियम क्या हैं?</p></div>
+<div class="theory-question"><p>22. उत्तल और अवतल दर्पणों के उपयोग लिखिए।</p></div>
+<div class="theory-question"><p>23. अपवर्तन क्या है? इसका कोई उदाहरण दीजिए।</p></div>
+<div class="theory-question"><p>24. लेंस का प्रमुख अक्ष किसे कहते हैं?</p></div>
+<div class="theory-question"><p>25. आवर्धन क्या होता है? इसका सूत्र लिखिए।</p></div>
+<div class="theory-question"><p>26. वायु दाब क्या है? यह ऊँचाई के साथ क्यों घटता है?</p></div>
+<div class="theory-question"><p>27. विद्युत धारा की परिभाषा दीजिए।</p></div>
+<div class="theory-question"><p>28. ओम का नियम समझाइए।</p></div>
+<div class="theory-question"><p>29. विद्युत ऊर्जा एवं शक्ति में अंतर स्पष्ट कीजिए।</p></div>
+<div class="theory-question"><p>30. चुंबकीय क्षेत्र की परिभाषा दीजिए।</p></div>
+<div class="theory-question"><p>31. फ्यूज क्या होता है? इसका उपयोग कहाँ होता है?</p></div>
+<div class="theory-question"><p>32. प्रकाश के विचलन का क्या कारण है?</p></div>
+<div class="theory-question"><p>33. मानव नेत्र का कार्य समझाइए।</p></div>
+<div class="theory-question"><p>34. परावर्तन और अपवर्तन में अंतर कीजिए।</p></div>
+<div class="theory-question"><p>35. एसिड और बेस में अंतर बताइए।</p></div>
+<div class="theory-question"><p>36. न्यूट्रलाइज़ेशन अभिक्रिया क्या होती है?</p></div>
+<div class="theory-question"><p>37. pH मान क्या है? इसका महत्व बताइए।</p></div>
+<div class="theory-question"><p>38. धातु और अधातु में अंतर स्पष्ट कीजिए।</p></div>
+<div class="theory-question"><p>39. अम्ल वर्षा क्या है? इसके प्रभाव लिखिए।</p></div>
+<div class="theory-question"><p>40. पानी के अणु का संरचनात्मक सूत्र लिखिए।</p></div>
+<div class="theory-question"><p>41. रासायनिक अभिक्रिया एवं उसका प्रकार समझाइए।</p></div>
+<div class="theory-question"><p>42. अपघटन अभिक्रिया क्या होती है?</p></div>
+<div class="theory-question"><p>43. जंग लगना किस प्रकार की अभिक्रिया है?</p></div>
+<div class="theory-question"><p>44. गैसों के गुणधर्म समझाइए।</p></div>
+<div class="theory-question"><p>45. जल के स्रोत एवं संरक्षण के उपाय बताइए।</p></div>
+<div class="theory-question"><p>46. कोयला एवं पेट्रोलियम के उपयोग और हानियाँ लिखिए।</p></div>
+<div class="theory-question"><p>47. हरितगृह प्रभाव क्या है?</p></div>
+<div class="theory-question"><p>48. ओजोन परत का क्षरण किस कारण होता है?</p></div>
+<div class="theory-question"><p>49. खाद्य शृंखला किसे कहते हैं?</p></div>
+<div class="theory-question"><p>50. पारिस्थितिकी तंत्र क्या है?</p></div>
+<div class="theory-question"><p>51. जैव विविधता का संरक्षण क्यों आवश्यक है?</p></div>
+<div class="theory-question"><p>52. असंतुलित पोषण से कौन-कौन सी बीमारियाँ होती हैं?</p></div>
+<div class="theory-question"><p>53. प्रतिरक्षा तंत्र क्या है?</p></div>
+<div class="theory-question"><p>54. टीकाकरण क्या है?</p></div>
+<div class="theory-question"><p>55. माइक्रोब्स (सूक्ष्मजीव) के लाभदायक और हानिकारक प्रभाव बताइए।</p></div>
+<div class="theory-question"><p>56. रोगों की रोकथाम के उपाय क्या हैं?</p></div>
+<div class="theory-question"><p>57. यौन संचारित रोगों के नाम लिखिए।</p></div>
+<div class="theory-question"><p>58. संयुग्मन (Fertilization) क्या है?</p></div>
+<div class="theory-question"><p>59. वनस्पति जनन और लैंगिक जनन में अंतर कीजिए।</p></div>
+<div class="theory-question"><p>60. क्लोनिंग क्या है?</p></div>
+<div class="theory-question"><p>61. जीन क्या होते हैं?</p></div>
+<div class="theory-question"><p>62. डीएनए की संरचना बताइए।</p></div>
+<div class="theory-question"><p>63. अनुवांशिकता के नियम किसने दिए?</p></div>
+<div class="theory-question"><p>64. गुणसूत्र क्या है?</p></div>
+<div class="theory-question"><p>65. लिंग निर्धारण की प्रक्रिया समझाइए।</p></div>
+<div class="theory-question"><p>66. विकास (Evolution) क्या है?</p></div>
+<div class="theory-question"><p>67. प्राकृतिक वरण सिद्धांत को समझाइए।</p></div>
+<div class="theory-question"><p>68. जीवाश्मों का क्या महत्व है?</p></div>
+<div class="theory-question"><p>69. प्रकाश संश्लेषण की परिभाषा दीजिए।</p></div>
+<div class="theory-question"><p>70. श्वसन क्रिया क्या है?</p></div>
+<div class="theory-question"><p>71. मनुष्य की पाचन क्रिया समझाइए।</p></div>
+<div class="theory-question"><p>72. परिसंचरण तंत्र क्या है?</p></div>
+<div class="theory-question"><p>73. वृक्कों (Kidneys) का कार्य क्या है?</p></div>
+<div class="theory-question"><p>74. हार्मोन क्या है?</p></div>
+<div class="theory-question"><p>75. पादप हार्मोन का उदाहरण दीजिए।</p></div>
+<div class="theory-question"><p>76. ध्वनि तरंग क्या है?</p></div>
+<div class="theory-question"><p>77. ध्वनि की गति किन बातों पर निर्भर करती है?</p></div>
+<div class="theory-question"><p>78. मनुष्य के कान की रचना क्या होती है?</p></div>
+<div class="theory-question"><p>79. पराश्रव्य और अवश्रव्य तरंगों में अंतर कीजिए।</p></div>
+<div class="theory-question"><p>80. ऊर्जा संरक्षण के उपाय बताइए।</p></div>
+<div class="theory-question"><p>81. सौर ऊर्जा का उपयोग किस रूप में किया जाता है?</p></div>
+<div class="theory-question"><p>82. पवन ऊर्जा क्या है?</p></div>
+<div class="theory-question"><p>83. नाभिकीय ऊर्जा के लाभ और खतरे क्या हैं?</p></div>
+<div class="theory-question"><p>84. पेट्रोलियम और गैस का उपयोग समझाइए।</p></div>
+<div class="theory-question"><p>85. पारिस्थितिकी में कार्बन चक्र समझाइए।</p></div>
+<div class="theory-question"><p>86. नाइट्रोजन चक्र का महत्व समझाइए।</p></div>
+<div class="theory-question"><p>87. जल प्रदूषण के कारण और समाधान क्या हैं?</p></div>
+<div class="theory-question"><p>88. वायु प्रदूषण से होने वाले नुकसान लिखिए।</p></div>
+<div class="theory-question"><p>89. अपशिष्ट प्रबंधन के उपाय बताइए।</p></div>
+<div class="theory-question"><p>90. स्थायी विकास किसे कहते हैं?</p></div>
+<div class="theory-question"><p>91. ग्रीनहाउस गैसों के उदाहरण दीजिए।</p></div>
+<div class="theory-question"><p>92. सजीवों में अनुक्रिया (Response) क्या है?</p></div>
+<div class="theory-question"><p>93. जलचरों में गैसों का विनिमय कैसे होता है?</p></div>
+<div class="theory-question"><p>94. ऊष्मा का संचरण किन-किन तरीकों से होता है?</p></div>
+<div class="theory-question"><p>95. प्रतिवर्तन और परावर्तन में क्या अंतर है?</p></div>
+<div class="theory-question"><p>96. गतिक ऊर्जा एवं स्थितिज ऊर्जा में अंतर स्पष्ट कीजिए।</p></div>
+<div class="theory-question"><p>97. बल और दाब के बीच संबंध समझाइए।</p></div>
+<div class="theory-question"><p>98. ध्वनि का परावर्तन किन परिस्थितियों में होता है?</p></div>
+<div class="theory-question"><p>99. तापमान और ऊष्मा में क्या अंतर है?</p></div>
+</body>
+</html>

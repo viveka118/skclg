@@ -1,0 +1,357 @@
+<!-- Header Start -->
+  <header>
+    <link rel="stylesheet" href="gallery.css">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.jpg" alt="SK Inter College Logo">
+        <h1>SK Inter College</h1>
+      </div>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="Notice.html">Notice</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="my self.html">About Developer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+  </script>
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | SK Inter College</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    .gallery-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Responsive Grid */
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 992px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 993px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 999;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .download-btn {
+      display: none;
+      margin-top: 20px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .modal.show .download-btn {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="gallery-section">
+    <h2>Our School Gallery</h2>
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Image" onclick="openModal(this)">
+      <img src="14.jpg" alt="Image" onclick="openModal(this)">
+      <img src="first.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q1.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q2.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q3.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q5.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q6.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q7.jpg" alt="Image" onclick="openModal(this)">
+      <img src="q14.jpg" alt="Image" onclick="openModal(this)">
+      <img src="qqqq.jpg" alt="Image" onclick="openModal(this)">
+      <img src="toor.jpg" alt="Image" onclick="openModal(this)">
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="imageModal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Fullscreen Image">
+    <a id="downloadLink" class="download-btn" download>Download Image</a>
+  </div>
+
+  <script>
+    let longPressTimer;
+
+    function openModal(img) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const downloadLink = document.getElementById("downloadLink");
+
+      modal.style.display = "flex";
+      modal.classList.remove("show");
+      modalImg.src = img.src;
+      downloadLink.href = img.src;
+
+      // Remove previous event listeners
+      modalImg.replaceWith(modalImg.cloneNode(true));
+      const newImg = document.getElementById("modalImage");
+
+      // Long press for mobile
+      newImg.addEventListener("touchstart", () => {
+        longPressTimer = setTimeout(() => {
+          modal.classList.add("show");
+        }, 700);
+      });
+
+      newImg.addEventListener("touchend", () => {
+        clearTimeout(longPressTimer);
+      });
+
+      // Long press for desktop
+      newImg.addEventListener("mousedown", () => {
+        longPressTimer = setTimeout(() => {
+          modal.classList.add("show");
+        }, 700);
+      });
+
+      newImg.addEventListener("mouseup", () => {
+        clearTimeout(longPressTimer);
+      });
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+      modal.classList.remove("show");
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    footer {
+      background: linear-gradient(to right, #002244, #005f73);
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, .footer-column a {
+      font-size: 15px;
+      color: #eee;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+      color: #FFD700;
+    }
+
+    .footer-social {
+      margin-top: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About School -->
+      <div class="footer-column">
+        <h3>SK Inter College</h3>
+        <p>Bari Bajhiya Kaundhiyara<br> Prayagraj, Uttar Pradesh, 212306/p>
+        <p>Email: vivekanand00440@gmail.com</p>
+        <p>Phone: +91 8303606978</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3><br>
+        <a href="index.html">Home</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="admission.html">Admission</a><br>
+        <a href="notice.html">Notice</a><br>
+        <a href="gallery.html">Gallery</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Important Info -->
+      <div class="footer-column">
+        <h3>Information</h3><br>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a><br>
+        <a href="faqs.html">FAQs</a><br>
+        <a href="portal.html">Student Portal</a><br>
+        <a href="sign.html">Student Sign up</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>

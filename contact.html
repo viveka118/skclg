@@ -1,0 +1,245 @@
+<!-- Header Start -->
+<header>
+  <link rel="stylesheet" href="contact.css">
+  <div class="container">
+    <div class="logo">
+      <img src="logo.jpg" alt="SK Inter College Logo">
+      <h1>SK Inter College</h1>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Notice.html">Notice</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="my self.html">About Developer</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Header End -->
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+  }
+</script>
+<section style="padding: 60px 20px; background: #eef2f5; font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 750px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; margin-bottom: 30px; color: #333;">📩 Contact Us</h2>
+    <form id="contactForm">
+
+      <div style="margin-bottom: 25px;">
+        <label style="font-weight: 600;">Full Name</label>
+        <input type="text" placeholder="Enter Your Full Name" id="name" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <label style="font-weight: 600;">Email Address</label>
+        <input type="email" placeholder="Enter Your Email" id="email" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <label style="font-weight: 600;">Mobile Number</label>
+        <input type="tel" placeholder="Enter Your Mobile Number" id="phone" maxlength="10" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <label style="font-weight: 600;">Your Query / Message</label>
+        <textarea placeholder="Enter Your massege..." id="message" rows="5" required style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+      </div>
+
+      <button type="submit" style="padding: 14px; background-color: #007bff; color: white; border: none; border-radius: 6px; font-size: 17px; width: 100%;">
+        Submit
+      </button>
+
+      <div id="success" style="display: none; margin-top: 20px; text-align: center; color: green; font-weight: 600;">
+        ✅ Message sent successfully!
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('success');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value
+    };
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzu6Snl5Uc5CN7kD9Dx6Wb1H9ddj015TCTyApmIrp-X_tSxv_G7p2nsTSPG6G-sFr1Xdw/exec";
+
+    try {
+      const res = await fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(data)
+      });
+
+      if (res.ok) {
+        success.style.display = "block";
+        form.reset();
+      } else {
+        alert("Form submit failed. Please try again.");
+      }
+    } catch (err) {
+      alert("Error: " + err.message);
+    }
+  });
+</script>
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    footer {
+      background: linear-gradient(to right, #002244, #005f73);
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, .footer-column a {
+      font-size: 15px;
+      color: #eee;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+      color: #FFD700;
+    }
+
+    .footer-social {
+      margin-top: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About School -->
+      <div class="footer-column">
+        <h3>SK Inter College</h3>
+        <p>Bari Bajhiya Kaundhiyara ,<br> Prayagraj, Uttar Pradesh, 212306</p>
+        <p>Email: vivekanand00440@gmail.com</p>
+        <p>Phone: +91 8303606978</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3><br>
+        <a href="index.html">Home</a><br>
+        <a href="about us.html">About Us</a><br>
+        <a href="admission.html">Admission</a><br>
+        <a href="notice.html">Notice</a><br>
+        <a href="gallery.html">Gallery</a><br>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Important Info -->
+      <div class="footer-column">
+        <h3>Information</h3><br>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a><br>
+        <a href="faqs.html">FAQs</a><br>
+        <a href="portal.html">Student Portal</a><br>
+        <a href="sign.html">Student Sign up</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>

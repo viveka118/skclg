@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📄 Assignments - Student Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #f1faff, #ffffff);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+    .assignment-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .assignment-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 25px;
+      transition: transform 0.3s;
+    }
+    .assignment-card:hover {
+      transform: translateY(-5px);
+    }
+    .subject {
+      font-size: 20px;
+      color: #0077b6;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .due {
+      font-size: 14px;
+      color: #e63946;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+      .assignment-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>📄 Your Assignments</h1>
+
+<div class="assignment-container">
+  <div class="assignment-card">
+    <div class="subject">📘 English Literature</div>
+    <div class="description">Read Chapter 5 and write a summary in 200 words.</div>
+    <div class="due">Due: 5th July 2025</div>
+  </div>
+
+  <div class="assignment-card">
+    <div class="subject">🧪 Science</div>
+    <div class="description">Make a chart of the human digestive system. Submit with labels.</div>
+    <div class="due">Due: 7th July 2025</div>
+  </div>
+
+  <div class="assignment-card">
+    <div class="subject">📐 Mathematics</div>
+    <div class="description">Solve Ex. 8.3 (Questions 1–10) in your notebook.</div>
+    <div class="due">Due: 4th July 2025</div>
+  </div>
+
+  <div class="assignment-card">
+    <div class="subject">🌍 Geography</div>
+    <div class="description">Create a map of major rivers in India with labeling.</div>
+    <div class="due">Due: 9th July 2025</div>
+  </div>
+
+  <div class="assignment-card">
+    <div class="subject">💻 Computer</div>
+    <div class="description">Write an HTML program that creates a table of 5 rows and 3 columns.</div>
+    <div class="due">Due: 6th July 2025</div>
+  </div>
+</div>
+
+</body>
+</html>
