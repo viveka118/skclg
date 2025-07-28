@@ -1,0 +1,373 @@
+<!-- Header Start -->
+<header>
+  <link rel="stylesheet" href="about us.css">
+  <div class="container">
+    <div class="logo">
+      <img src="logo.jpg" alt="SK Inter College Logo">
+      <h1>SK Inter College</h1>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Notice.html">Notice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="my self.html">About Developer</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Header End -->
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+  }
+</script>
+<!-- ✅ ABOUT US SECTION START -->
+<section style="padding: 40px 20px; background-color: #f5f8fc;">
+  <div class="about-container">
+    
+    <center><h1 class="fade-in">About Us</h1></center>
+
+    <div class="image-box fade-in">
+      <img src="first.jpg" alt="Our School">
+    </div>
+
+    <p class="about-text fade-in">
+      <strong>SK Inter College</strong> is committed to providing a supportive learning environment where students grow academically, socially, and morally.
+      Our school believes in discipline, innovation, and holistic development.
+      <br><br>
+      We provide modern facilities like smart classrooms, well-equipped laboratories, sports grounds, a huge library, and cultural activity centers.
+      Our goal is to shape responsible citizens with strong values.
+    </p>
+
+    <!-- ✅ STAFF MEMBERS -->
+    <div class="staff-section fade-in">
+      <div class="staff-grid">
+        <div class="staff-card">
+          <img src="santosh.jpg" alt="Mr. A Sharma">
+          <h4>Mr. Santosh Kumar</h4>
+          <h5>M.Sc (Chemistry)</h5>
+          <p>Science Teacher</p>
+          <small>"Passionate about numbers and logic."</small>
+        </div>
+        <div class="staff-card">
+          <img src="akhilesh.jpg" alt="Ms. R Verma">
+          <h4>Mr. Akhilesh Patel</h4>
+          <h5>M.A. (History)</h5>
+          <p>History Teacher</p>
+          <small>"Inspiring curiosity through experiments."</small>
+        </div>
+        <div class="staff-card">
+          <img src="kamal sir.jpg" alt="Mr. V Kumar">
+          <h4>Mr.Kamal kumar</h4>
+          <h5>M.A. (Sanskrit)</h5>
+          <p>Sanskrit Teacher</p>
+          <small>"Empowering students with communication."</small>
+        </div>
+        <div class="staff-card">
+          <img src="mauji.jpg" alt="Ms. S Gupta">
+          <h4>Mr. Mauji Lal Patel</h4>
+          <h5> B.A., M.A.</h5>
+          <p>Social Science Teacher</p>
+          <small>"Bringing the past to life for the future."</small>
+        </div>
+      </div>
+    </div>
+
+   <center> <h1 class="fade-in">Key Highlights</h1></center>
+
+    <div class="features">
+      <a href="quality.html" class="feature-box fade-in">📚 Quality Education</a>
+      <a href="class.html" class="feature-box fade-in">💻 Smart Classrooms</a>
+      <a href="lab.html" class="feature-box fade-in">🔬 Science Lab</a>
+      <a href="event.html" class="feature-box fade-in">🎭 Cultural Events</a>
+    </div>
+
+  </div>
+</section>
+<!-- ✅ ABOUT US SECTION END -->
+
+<!-- ✅ STYLES -->
+<style>
+  .about-container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+  }
+
+  h2, h3 {
+    text-align: center;
+    color: #e7ecf1;
+    margin-bottom: 20px;
+  }
+
+  .image-box {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .about-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .staff-section {
+    margin: 40px 0;
+  }
+
+  .staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .staff-card {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  }
+
+  .staff-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .staff-card h4 {
+    margin: 10px 0 5px;
+    color: #003366;
+  }
+
+  .staff-card p {
+    margin: 0;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .staff-card small {
+    color: #666;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .feature-box {
+    background: #e0f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #003366;
+    display: block;
+    font-weight: 600;
+  }
+
+  .feature-box:hover {
+    transform: scale(1.05);
+    background-color: #d1e7ff;
+  }
+
+  /* Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 600px) {
+    .about-text {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<!-- ✅ JS ANIMATION -->
+<script>
+  // Scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+</script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    footer {
+      background: linear-gradient(to right, #002244, #005f73);
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, .footer-column a {
+      font-size: 15px;
+      color: #eee;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+      color: #FFD700;
+    }
+
+    .footer-social {
+      margin-top: 15px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- About School -->
+      <div class="footer-column">
+        <h3>SK Inter College</h3>
+        <p>Bari Bajhiya Kaundhiyara,<br> Prayagraj, Uttar Pradesh, 212306</p>
+        <p>Email: vivekanand00440@gmail.com</p>
+        <p>Phone: +91 8303606978</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3><br>
+        <a href="index.html">Home</a><br>
+        <a href="#">About Us</a><br>
+        <a href="admission.html">Admission</a><br>
+        <a href="notice.html">Notice</a><br>
+        <a href="gallery.html">Gallery</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Important Info -->
+      <div class="footer-column">
+        <h3>Information</h3><br>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a><br>
+        <a href="faqs.html">FAQs</a><br>
+        <a href="portal.html">Student Portal</a><br>
+        <a href="sign.html">Student Sign up</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>
